@@ -61,4 +61,24 @@
   <span class="dot"></span>
   <!-- Custom Cursor End -->
 
+  <!-- ==================== Search Popup Start Here ==================== -->
+  <div class="search-popup bg-white tw-py-17 tw-px-4 d-flex align-items-center justify-content-center bg-white">
+    <div class="container">
+      <div class="tw-pb-15">
+        <button type="button"
+          class="search-popup__close d-flex justify-content-center align-items-center text-white tw-text-2xl tw-w-16 tw-h-16 bg-main rounded-circle mx-auto hover-bg-main-two">
+          <i class="fa-regular fa-xmark"></i>
+        </button>
+      </div>
+      <form action="#" class="search-popup__form position-relative tw-pt-6">
+        <input type="search" class="search-popup__input text-black" placeholder="Search Here...">
+        <button type="submit"
+          class="tw-text-3xl tw-leading-none text-black position-absolute end-0 top-50 translate-middle-y">
+          <i class="ph ph-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- ==================== Search Popup End Here ==================== -->
+
   @@include('../partials/_mobile-menu.html')

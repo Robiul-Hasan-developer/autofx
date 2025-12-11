@@ -37,6 +37,7 @@ $spaces: (
   "9": #{rem(36px)},
   "10": #{rem(40px)},
   "11": #{rem(44px)},
+  "1105": #{rem(46px)},
   "12": #{rem(48px)},
   "13": #{rem(52px)},
   "14": #{rem(56px)},
@@ -70,13 +71,14 @@ $font-sizes: (
   /* Font Size End */
 
   /* template main color */
-  --vs-theme-color1: #DB3705;
+  // --vs-theme-color1: #DB3705;
+  --vs-theme-color1: #F25000;
   --vs-theme-color2: #161616;
   /* template main color ennd */
 
   /* White Color */
   --white: 0 0% 100%;
-  --black: 0 0% 0%;
+  --black: 0 0% 3%;
   --body: 0 0% 43%;
 
   --heading-color: var(--black);

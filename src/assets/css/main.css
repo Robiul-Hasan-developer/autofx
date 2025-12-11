@@ -88,12 +88,12 @@
     --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
   /* Font Size End */
   /* template main color */
-    --vs-theme-color1: #DB3705;
+    --vs-theme-color1: #F25000;
     --vs-theme-color2: #161616;
   /* template main color ennd */
   /* White Color */
     --white: 0 0% 100%;
-    --black: 0 0% 0%;
+    --black: 0 0% 3%;
     --body: 0 0% 43%;
     --heading-color: var(--black);
     --body-color: var(--body);
@@ -118,6 +118,7 @@
     --size-9: 2.25rem;
     --size-10: 2.5rem;
     --size-11: 2.75rem;
+    --size-1105: 2.875rem;
     --size-12: 3rem;
     --size-13: 3.25rem;
     --size-14: 3.5rem;
@@ -202,12 +203,19 @@
     border: 0;
     color: hsl(var(--white));
     line-height: 1;
-    padding: 18px 32px;
+    padding: 22px 30px;
     position: relative;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 0px;
     z-index: 1;
     transition: 0.2s linear;
+    position: relative;
+}
+
+@media (min-width: 1300px) {
+    .btn {
+        padding: 22px 40px;
+    }
 }
 
 .btn:hover, .btn:focus, .btn:focus-visible {
@@ -245,6 +253,31 @@
 
 .hover-style-two .button__flair::before {
     background-color: hsl(var(--white));
+}
+
+.button-shape {
+    position: relative;
+}
+
+.button-shape::before, .button-shape::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: calc(100% - 16px);
+    inset-inline-end: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: #fff;
+}
+
+.button-shape::after {
+    inset-inline-end: auto;
+    inset-inline-start: 0;
+}
+
+.shape-bg-black::before, .shape-bg-black::after {
+    background-color: var(--vs-theme-color2);
 }
 
 /* =========================== Button Css End =================== */
@@ -742,95 +775,95 @@ input:focus, input:focus-visible {
 /* Bg Image Css End */
 /* hover bg class start */
 .bg-neutral-50 {
-    background-color: var(--neutral-50) !important;
+    background-color: var(--neutral-50);
 }
 
 .bg-neutral-100 {
-    background-color: var(--neutral-100) !important;
+    background-color: var(--neutral-100);
 }
 
 .bg-neutral-200 {
-    background-color: var(--neutral-200) !important;
+    background-color: var(--neutral-200);
 }
 
 .bg-neutral-300 {
-    background-color: var(--neutral-300) !important;
+    background-color: var(--neutral-300);
 }
 
 .bg-neutral-400 {
-    background-color: var(--neutral-400) !important;
+    background-color: var(--neutral-400);
 }
 
 .bg-neutral-500 {
-    background-color: var(--neutral-500) !important;
+    background-color: var(--neutral-500);
 }
 
 .bg-neutral-600 {
-    background-color: var(--neutral-600) !important;
+    background-color: var(--neutral-600);
 }
 
 .bg-neutral-700 {
-    background-color: var(--neutral-700) !important;
+    background-color: var(--neutral-700);
 }
 
 .bg-neutral-800 {
-    background-color: var(--neutral-800) !important;
+    background-color: var(--neutral-800);
 }
 
 .bg-neutral-900 {
-    background-color: var(--neutral-900) !important;
+    background-color: var(--neutral-900);
 }
 
 .bg-neutral-950 {
-    background-color: var(--neutral-950) !important;
+    background-color: var(--neutral-950);
 }
 
 .hover-bg-neutral-50:hover {
-    background-color: var(--neutral-50) !important;
+    background-color: var(--neutral-50);
 }
 
 .hover-bg-neutral-100:hover {
-    background-color: var(--neutral-100) !important;
+    background-color: var(--neutral-100);
 }
 
 .hover-bg-neutral-200:hover {
-    background-color: var(--neutral-200) !important;
+    background-color: var(--neutral-200);
 }
 
 .hover-bg-neutral-300:hover {
-    background-color: var(--neutral-300) !important;
+    background-color: var(--neutral-300);
 }
 
 .hover-bg-neutral-400:hover {
-    background-color: var(--neutral-400) !important;
+    background-color: var(--neutral-400);
 }
 
 .hover-bg-neutral-500:hover {
-    background-color: var(--neutral-500) !important;
+    background-color: var(--neutral-500);
 }
 
 .hover-bg-neutral-600:hover {
-    background-color: var(--neutral-600) !important;
+    background-color: var(--neutral-600);
 }
 
 .hover-bg-neutral-700:hover {
-    background-color: var(--neutral-700) !important;
+    background-color: var(--neutral-700);
 }
 
 .hover-bg-neutral-800:hover {
-    background-color: var(--neutral-800) !important;
+    background-color: var(--neutral-800);
 }
 
 .hover-bg-neutral-900:hover {
-    background-color: var(--neutral-900) !important;
+    background-color: var(--neutral-900);
 }
 
 .hover-bg-neutral-950:hover {
-    background-color: var(--neutral-950) !important;
+    background-color: var(--neutral-950);
 }
 
 .hover-bg-white:hover {
-    background-color: hsl(var(--white)) !important;
+    background-color: hsl(var(--white));
 }
 
 .bg-main {
@@ -1305,6 +1338,10 @@ input:focus, input:focus-visible {
     font-size: 2.75rem;
 }
 
+.tw-text-1105 {
+    font-size: 2.875rem;
+}
+
 .tw-text-12 {
     font-size: 3rem;
 }
@@ -1409,6 +1446,10 @@ input:focus, input:focus-visible {
 
 .tw-h-11 {
     height: 2.75rem;
+}
+
+.tw-h-1105 {
+    height: 2.875rem;
 }
 
 .tw-h-12 {
@@ -1564,6 +1605,10 @@ input:focus, input:focus-visible {
 
 .tw-gap-11 {
     gap: var(--size-11);
+}
+
+.tw-gap-1105 {
+    gap: var(--size-1105);
 }
 
 .tw-gap-12 {
@@ -1827,6 +1872,10 @@ input:focus, input:focus-visible {
     margin: var(--size-11);
 }
 
+.tw-m-1105 {
+    margin: var(--size-1105);
+}
+
 .tw-m-12 {
     margin: var(--size-12);
 }
@@ -1921,6 +1970,10 @@ input:focus, input:focus-visible {
 
 .tw-mx-11 {
     margin-inline: var(--size-11);
+}
+
+.tw-mx-1105 {
+    margin-inline: var(--size-1105);
 }
 
 .tw-mx-12 {
@@ -2019,6 +2072,10 @@ input:focus, input:focus-visible {
     margin-block: var(--size-11);
 }
 
+.tw-my-1105 {
+    margin-block: var(--size-1105);
+}
+
 .tw-my-12 {
     margin-block: var(--size-12);
 }
@@ -2113,6 +2170,10 @@ input:focus, input:focus-visible {
 
 .tw-ms-11 {
     margin-inline-start: var(--size-11);
+}
+
+.tw-ms-1105 {
+    margin-inline-start: var(--size-1105);
 }
 
 .tw-ms-12 {
@@ -2211,6 +2272,10 @@ input:focus, input:focus-visible {
     margin-inline-end: var(--size-11);
 }
 
+.tw-me-1105 {
+    margin-inline-end: var(--size-1105);
+}
+
 .tw-me-12 {
     margin-inline-end: var(--size-12);
 }
@@ -2307,6 +2372,10 @@ input:focus, input:focus-visible {
     margin-block-start: var(--size-11);
 }
 
+.tw-mt-1105 {
+    margin-block-start: var(--size-1105);
+}
+
 .tw-mt-12 {
     margin-block-start: var(--size-12);
 }
@@ -2401,6 +2470,10 @@ input:focus, input:focus-visible {
 
 .tw-mb-11 {
     margin-block-end: var(--size-11);
+}
+
+.tw-mb-1105 {
+    margin-block-end: var(--size-1105);
 }
 
 .tw-mb-12 {
@@ -2521,16 +2594,8 @@ input:focus, input:focus-visible {
 
 /* Max Height Css Class End */
 /* Max width Css Class Start */
-.max-w-200-px {
-    max-width: 200px;
-}
-
-.max-w-1140-px {
-    max-width: 1140px;
-}
-
-.max-w-1290-px {
-    max-width: 1290px;
+.max-w-1610-px {
+    max-width: 1610px;
 }
 
 /* Max width Css Class End */
@@ -2653,6 +2718,10 @@ input:focus, input:focus-visible {
     padding: var(--size-11);
 }
 
+.tw-p-1105 {
+    padding: var(--size-1105);
+}
+
 .tw-p-12 {
     padding: var(--size-12);
 }
@@ -2747,6 +2816,10 @@ input:focus, input:focus-visible {
 
 .tw-px-11 {
     padding-inline: var(--size-11);
+}
+
+.tw-px-1105 {
+    padding-inline: var(--size-1105);
 }
 
 .tw-px-12 {
@@ -2845,6 +2918,10 @@ input:focus, input:focus-visible {
     padding-block: var(--size-11);
 }
 
+.tw-py-1105 {
+    padding-block: var(--size-1105);
+}
+
 .tw-py-12 {
     padding-block: var(--size-12);
 }
@@ -2939,6 +3016,10 @@ input:focus, input:focus-visible {
 
 .tw-ps-11 {
     padding-inline-start: var(--size-11);
+}
+
+.tw-ps-1105 {
+    padding-inline-start: var(--size-1105);
 }
 
 .tw-ps-12 {
@@ -3037,6 +3118,10 @@ input:focus, input:focus-visible {
     padding-inline-end: var(--size-11);
 }
 
+.tw-pe-1105 {
+    padding-inline-end: var(--size-1105);
+}
+
 .tw-pe-12 {
     padding-inline-end: var(--size-12);
 }
@@ -3133,6 +3218,10 @@ input:focus, input:focus-visible {
     padding-block-start: var(--size-11);
 }
 
+.tw-pt-1105 {
+    padding-block-start: var(--size-1105);
+}
+
 .tw-pt-12 {
     padding-block-start: var(--size-12);
 }
@@ -3227,6 +3316,10 @@ input:focus, input:focus-visible {
 
 .tw-pb-11 {
     padding-block-end: var(--size-11);
+}
+
+.tw-pb-1105 {
+    padding-block-end: var(--size-1105);
 }
 
 .tw-pb-12 {
@@ -3777,6 +3870,10 @@ input:focus, input:focus-visible {
 
 .tw-w-11 {
     width: 2.75rem;
+}
+
+.tw-w-1105 {
+    width: 2.875rem;
 }
 
 .tw-w-12 {
@@ -4367,13 +4464,14 @@ input:focus, input:focus-visible {
 
 .has-submenu > a::before {
     position: absolute;
-    content: "\e136";
+    content: "\f078";
     inset-inline-end: 0;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    font-family: "Phosphor";
-    font-weight: 900;
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 500;
     color: inherit;
+    font-size: 14px;
     transition: 0.2s linear;
 }
 
@@ -4408,21 +4506,66 @@ input:focus, input:focus-visible {
     font-size: 14px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
     .nav-menu__link,
 .nav-submenu__link {
         font-size: 16px;
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
     .nav-menu__link,
 .nav-submenu__link {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 /* Submenu End */
 /* Header Menu and Submenu Css End */
+.logo-bg-shape {
+    padding-inline-end: clamp(0.375rem, -40.75rem + 47vw, 6.25rem);
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .logo-bg-shape {
+        padding-block: 12px;
+    }
+}
+
+.logo-bg-shape::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset-inline-end: calc(100% - 1px);
+    background: inherit;
+}
+
+.logo-bg-shape::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 100%;
+    background: inherit;
+    inset-inline-start: calc(100% - 1px);
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+@media (max-width: 991px) {
+    .mobile-padding-0 {
+        padding-block: 0;
+    }
+}
+
+.logo-w-200-px {
+    max-width: 160px;
+}
+
+@media (min-width: 992px) {
+    .logo-w-200-px {
+        max-width: 200px;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -4625,6 +4768,84 @@ input:focus, input:focus-visible {
 }
 
 /* Custom Cursor Css End */
+/* ============================ Search Popup css start ===================================== */
+.search-popup {
+    height: 0;
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    z-index: 999999;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.search-popup__form {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.search-popup__input {
+    height: 64px;
+    line-height: 64px;
+    font-size: 28px;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid var(--neutral-500);
+    padding-left: 0;
+    border-radius: 0;
+    width: 100%;
+    padding-inline-end: 44px;
+}
+
+.search-popup__input:focus {
+    outline: 0;
+    border-color: var(--vs-theme-color1);
+}
+
+.search-popup__close {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid hsl(var(--heading-color));
+    transform: translateY(80px);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.search-popup__close i {
+    transition: 0.2s linear;
+}
+
+.search-popup__close:hover i {
+    transform: rotate(90deg);
+}
+
+.search-popup.active {
+    visibility: visible;
+    opacity: 2;
+    height: 400px;
+}
+
+.search-popup.active .search-popup__form {
+    transition-delay: 0.3s;
+    width: 100%;
+}
+
+.search-popup.active .search-popup__close {
+    transition-delay: 0.5s;
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ============================ Search Popup css end ===================================== */
 /* ================================== rtl css start ================================== */
 /* ================================== rtl css End ================================== */
 /*# sourceMappingURL=main.css.map */

@@ -123,23 +123,45 @@
   <span class="dot"></span>
   <!-- Custom Cursor End -->
 
+  <!-- ==================== Search Popup Start Here ==================== -->
+  <div class="search-popup bg-white tw-py-17 tw-px-4 d-flex align-items-center justify-content-center bg-white">
+    <div class="container">
+      <div class="tw-pb-15">
+        <button type="button"
+          class="search-popup__close d-flex justify-content-center align-items-center text-white tw-text-2xl tw-w-16 tw-h-16 bg-main rounded-circle mx-auto hover-bg-main-two">
+          <i class="fa-regular fa-xmark"></i>
+        </button>
+      </div>
+      <form action="#" class="search-popup__form position-relative tw-pt-6">
+        <input type="search" class="search-popup__input text-black" placeholder="Search Here...">
+        <button type="submit"
+          class="tw-text-3xl tw-leading-none text-black position-absolute end-0 top-50 translate-middle-y">
+          <i class="ph ph-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- ==================== Search Popup End Here ==================== -->
+
   <!-- ==================== Mobile Menu Start Here ==================== -->
-<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-z-999 tw--translate-x-full tw-pb-68 ">
 
     <button type="button" class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
-        <i class="ph ph-x"></i>
+        <i class="fa-regular fa-xmark"></i>
     </button>
 
-    <div class="mobile-menu__inner">
-        <a href="index.html" class="mobile-menu__logo">
-            <img src="assets/images/logo/logo.png" alt="Logo">
-        </a>
-        <div class="mobile-menu__menu">
+    <div class="mobile-menu__inner ">
+        <div class="tw-p-6 bg-main">
+            <a href="index.html" class="mobile-menu__logo">
+                <img src="assets/images/logo/logo-dark.png" alt="Logo">
+            </a>
+        </div>
+        <div class="mobile-menu__menu tw-p-6 ">
             <!-- Nav menu Start -->
 <ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
   <li class="nav-menu__item has-submenu activePage">
     <a href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-semibold text-uppercase w-100">Home</a>
+      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-semibold w-100 text-uppercase">Home</a>
 
     <!-- mega menu start -->
 <div
@@ -556,7 +578,7 @@
 <!-- mega menu end -->
   </li>
   <li class="nav-menu__item">
-    <a href="about.html" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100">About</a>
+    <a href="about.html" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-uppercase">About</a>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)"
@@ -565,12 +587,12 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Services</a>
       </li>
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Services Details</a>
       </li>
     </ul>
@@ -583,7 +605,7 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           FAQ</a>
       </li>
     </ul>
@@ -595,13 +617,13 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Shop
         </a>
       </li>
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">Shop
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">Shop
           Details</a>
       </li>
     </ul>
@@ -613,18 +635,18 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Blog</a>
       </li>
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Blog Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item">
-    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100">Contacts</a>
+    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-uppercase">Contacts</a>
   </li>
 </ul>
 <!-- Nav menu End  -->
@@ -634,19 +656,13 @@
 <!-- ==================== Mobile Menu End Here ==================== -->
 
     <!-- ==================== Header Start Here ==================== -->
-<header class="header bg-main-two-60 tw-transition-all tw-z-99">
-  <div class="container container-two">
-    <nav
-      class="d-flex align-items-center justify-content-between position-relative"
-    >
+<header class="header bg-main-two-60 tw-transition-all tw-z-99 mobile-padding-0">
+  <div class="container max-w-1610-px">
+    <nav class="d-flex justify-content-between position-relative">
       <!-- Logo Start -->
-      <div class="logo bg-main">
+      <div class="logo bg-main logo-bg-shape d-flex align-items-center justify-content-center">
         <a href="index.html" class="link">
-          <img
-            src="assets/images/logo/logo-dark.png"
-            alt="Logo"
-            class="max-w-200-px"
-          >
+          <img src="assets/images/logo/logo-dark.png" alt="Logo" class="logo-w-200-px">
         </a>
       </div>
       <!-- Logo End  -->
@@ -657,7 +673,7 @@
 <ul class="nav-menu d-lg-flex align-items-center tw-gap-6">
   <li class="nav-menu__item has-submenu activePage">
     <a href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-semibold text-uppercase w-100">Home</a>
+      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-semibold w-100 text-uppercase">Home</a>
 
     <!-- mega menu start -->
 <div
@@ -1074,7 +1090,7 @@
 <!-- mega menu end -->
   </li>
   <li class="nav-menu__item">
-    <a href="about.html" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100">About</a>
+    <a href="about.html" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-uppercase">About</a>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)"
@@ -1083,12 +1099,12 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Services</a>
       </li>
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Services Details</a>
       </li>
     </ul>
@@ -1101,7 +1117,7 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           FAQ</a>
       </li>
     </ul>
@@ -1113,13 +1129,13 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Shop
         </a>
       </li>
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">Shop
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">Shop
           Details</a>
       </li>
     </ul>
@@ -1131,18 +1147,18 @@
       class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Blog</a>
       </li>
       <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
         <a href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 text-uppercase tw-rounded">
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-semibold w-100 text-uppercase d-block tw-py-2 tw-px-305 tw-rounded">
           Blog Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item">
-    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100">Contacts</a>
+    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-semibold w-100 text-uppercase">Contacts</a>
   </li>
 </ul>
 <!-- Nav menu End  -->
@@ -1150,33 +1166,43 @@
       <!-- Menu End  -->
 
       <!-- Header Right start -->
-      <div class="d-lg-block d-none">
-        <div class="d-flex align-items-center tw-gap-105 flex-shrink-0">
-          <a
-            href="register.html"
-            class="hover--translate-y-1 transition-all text-lg hover-underline text-heading hover-text-neutral-900 fw-medium"
-            >Login</a
-          >
-          <span>/</span>
-          <a
-            href="register.html"
-            class="hover--translate-y-1 transition-all text-lg hover-underline text-heading hover-text-neutral-900 fw-medium"
-            >Register</a
-          >
+      <div class="d-lg-block d-none  align-self-center">
+        <div class="d-flex align-items-center tw-gap-5 flex-shrink-0">
+          <div class="position-relative d-xxl-flex d-none align-items-center justify-content-center">
+            <span class="tw-w-05 tw-h-8 bg-main"></span>
+            <span
+              class="tw-w-2 tw-h-2 bg-main rounded-circle position-absolute top-50 start-50 translate-middle"></span>
+          </div>
+
+          <div class="d-flex align-items-center tw-gap-3">
+            <button type="button"
+              class="tw-w-1105 tw-h-1105 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center hover-bg-main hover-text-white tw-duration-300 tw-text-xl">
+              <i class="fa-regular fa-basket-shopping"></i>
+            </button>
+            <button type="button"
+              class="tw-w-1105 tw-h-1105 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center hover-bg-main hover-text-white tw-duration-300 tw-text-xl search-popup__button">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="d-xl-block d-none">
+            <a href="contact.html"
+              class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder button-shape shape-bg-white"
+              data-block="button">
+              <span class="button__flair"></span>
+              <span class="button__label">Get Quote</span>
+            </a>
+          </div>
         </div>
       </div>
-      <button
-        type="button"
-        class="toggle-mobileMenu leading-none d-lg-none ms-3 text-neutral-800 tw-text-9"
-      >
-        <i class="ph ph-list"></i>
+      <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-heading tw-text-9">
+        <i class="fa-regular fa-bars-staggered"></i>
       </button>
       <!-- Header Right End  -->
     </nav>
   </div>
 </header>
 <!-- ==================== Header End Here ==================== -->
-
 
     <div class="container my-5">
         <div class="">
@@ -1514,7 +1540,7 @@
     <!-- Jquery js -->
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <!-- phosphor Js -->
-<script src="assets/js/phosphor-icon.js"></script>
+<!-- <script src="assets/js/phosphor-icon.js"></script> -->
 <!-- Bootstrap Bundle Js -->
 <script src="assets/js/boostrap.bundle.min.js"></script>
 <!-- aos -->

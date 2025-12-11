@@ -1,17 +1,11 @@
 <!-- ==================== Header Start Here ==================== -->
-<header class="header bg-main-two-60 tw-transition-all tw-z-99">
-  <div class="container container-two">
-    <nav
-      class="d-flex align-items-center justify-content-between position-relative"
-    >
+<header class="header bg-main-two-60 tw-transition-all tw-z-99 mobile-padding-0">
+  <div class="container max-w-1610-px">
+    <nav class="d-flex justify-content-between position-relative">
       <!-- Logo Start -->
-      <div class="logo bg-main">
+      <div class="logo bg-main logo-bg-shape d-flex align-items-center justify-content-center">
         <a href="index.html" class="link">
-          <img
-            src="assets/images/logo/logo-dark.png"
-            alt="Logo"
-            class="max-w-200-px"
-          >
+          <img src="assets/images/logo/logo-dark.png" alt="Logo" class="logo-w-200-px">
         </a>
       </div>
       <!-- Logo End  -->
@@ -23,26 +17,37 @@
       <!-- Menu End  -->
 
       <!-- Header Right start -->
-      <div class="d-lg-block d-none">
-        <div class="d-flex align-items-center tw-gap-105 flex-shrink-0">
-          <a
-            href="register.html"
-            class="hover--translate-y-1 transition-all text-lg hover-underline text-heading hover-text-neutral-900 fw-medium"
-            >Login</a
-          >
-          <span>/</span>
-          <a
-            href="register.html"
-            class="hover--translate-y-1 transition-all text-lg hover-underline text-heading hover-text-neutral-900 fw-medium"
-            >Register</a
-          >
+      <div class="d-lg-block d-none  align-self-center">
+        <div class="d-flex align-items-center tw-gap-5 flex-shrink-0">
+          <div class="position-relative d-xxl-flex d-none align-items-center justify-content-center">
+            <span class="tw-w-05 tw-h-8 bg-main"></span>
+            <span
+              class="tw-w-2 tw-h-2 bg-main rounded-circle position-absolute top-50 start-50 translate-middle"></span>
+          </div>
+
+          <div class="d-flex align-items-center tw-gap-3">
+            <button type="button"
+              class="tw-w-1105 tw-h-1105 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center hover-bg-main hover-text-white tw-duration-300 tw-text-xl">
+              <i class="fa-regular fa-basket-shopping"></i>
+            </button>
+            <button type="button"
+              class="tw-w-1105 tw-h-1105 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center hover-bg-main hover-text-white tw-duration-300 tw-text-xl search-popup__button">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="d-xl-block d-none">
+            <a href="contact.html"
+              class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder button-shape shape-bg-white"
+              data-block="button">
+              <span class="button__flair"></span>
+              <span class="button__label">Get Quote</span>
+            </a>
+          </div>
         </div>
       </div>
-      <button
-        type="button"
-        class="toggle-mobileMenu leading-none d-lg-none ms-3 text-neutral-800 tw-text-9"
-      >
-        <i class="ph ph-list"></i>
+      <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-heading tw-text-9">
+        <i class="fa-regular fa-bars-staggered"></i>
       </button>
       <!-- Header Right End  -->
     </nav>
