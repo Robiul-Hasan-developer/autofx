@@ -66,7 +66,7 @@
     transition: .2s linear;
     position: relative;
     font-size: 1rem;
-    
+
     @media (min-width: 1300px) {
         padding: 21px 40px;
         font-size: 18px;
@@ -88,7 +88,17 @@
                 border-color: transparent;
             }
         }
+    }
 
+    &-white {
+        background-color: hsl(var(--white)) !important;
+        color: hsl(var(--heading-color)) !important;
+
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
     }
 }
 
@@ -132,6 +142,27 @@
             }
         }
     }
+
+    &-three {
+        
+        &:hover,
+        &:active {
+            color: hsl(var(--white)) !important;
+            background-color: var(--vs-theme-color1);
+
+            &.button--stroke {
+                &::after {
+                    border-color: transparent;
+                }
+            }
+        }
+
+        .button__flair {
+            &::before {
+                background-color: var(--vs-theme-color1);
+            }
+        }
+    }
 }
 
 .button-shape {
@@ -157,6 +188,7 @@
 }
 
 .shape-bg-black {
+
     &::before,
     &::after {
         background-color: var(--vs-theme-color2);
