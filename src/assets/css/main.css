@@ -4925,6 +4925,10 @@ input:focus, input:focus-visible {
     padding: 260px 0 112px;
 }
 
+.banner-image-wrapper {
+    inset-inline-end: 20%;
+}
+
 /* ========================== Banner One section end ============================= */
 /* ================================== rtl css start ================================== */
 /* ================================== rtl css End ================================== */
