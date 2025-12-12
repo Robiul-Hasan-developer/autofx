@@ -5,7 +5,7 @@
       &-white {
         color: hsl(var(--white)) !important;
       }
-      &-main-600 {
+      &-main {
         color: var(--vs-theme-color1) !important;
       }
     }
@@ -13,8 +13,11 @@
       &-white {
         background-color: hsl(var(--white)) !important;
       }
-      &-main-600 {
+      &-main {
         background-color: var(--vs-theme-color1) !important;
+      }
+      &-main-two {
+        background-color: var(--vs-theme-color2) !important;
       }
     }
   }
