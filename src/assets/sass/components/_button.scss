@@ -58,15 +58,18 @@
     border: 0;
     color: hsl(var(--white));
     line-height: 1;
-    padding: 22px 30px;
+    padding: 18px 30px;
     position: relative;
     overflow: hidden;
     border-radius: 0px;
     z-index: 1;
     transition: .2s linear;
     position: relative;
+    font-size: 1rem;
+    
     @media (min-width: 1300px) {
-        padding: 22px 40px;
+        padding: 21px 40px;
+        font-size: 18px;
     }
 
     &:hover,
@@ -144,7 +147,7 @@
         inset-block-start: 50%;
         transform: translateY(-50%);
         z-index: 1;
-        background-color: #fff;
+        background-color: hsl(var(--white));
     }
 
     &::after {
@@ -152,9 +155,12 @@
         inset-inline-start: 0;
     }
 }
+
 .shape-bg-black {
-    &::before, &::after {
+    &::before,
+    &::after {
         background-color: var(--vs-theme-color2);
     }
 }
+
 /* =========================== Button Css End =================== */

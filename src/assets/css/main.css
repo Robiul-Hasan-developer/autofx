@@ -203,18 +203,20 @@
     border: 0;
     color: hsl(var(--white));
     line-height: 1;
-    padding: 22px 30px;
+    padding: 18px 30px;
     position: relative;
     overflow: hidden;
     border-radius: 0px;
     z-index: 1;
     transition: 0.2s linear;
     position: relative;
+    font-size: 1rem;
 }
 
 @media (min-width: 1300px) {
     .btn {
-        padding: 22px 40px;
+        padding: 21px 40px;
+        font-size: 18px;
     }
 }
 
@@ -268,7 +270,7 @@
     inset-block-start: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    background-color: #fff;
+    background-color: hsl(var(--white));
 }
 
 .button-shape::after {
@@ -1362,6 +1364,15 @@ input:focus, input:focus-visible {
     font-size: 4rem;
 }
 
+.text-lg-res {
+    font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+    .text-lg-res {
+        font-size: 18px;
+    }
+}
 /* Font Size Class End */
 .font-heading {
     font-family: var(--heading-font);
@@ -4251,6 +4262,10 @@ input:focus, input:focus-visible {
 }
 
 /* ======================== Animation Css End ==================================== */
+.tw-tracking-2-percent {
+    letter-spacing: 0.36px;
+}
+
 /* ================================= preload Css Start =========================== */
 .loader-mask {
     position: fixed;
@@ -4521,6 +4536,11 @@ input:focus, input:focus-visible {
 }
 /* Submenu End */
 /* Header Menu and Submenu Css End */
+.nav-menu-white .nav-menu__link {
+    color: hsl(var(--white));
+}
+
+/* Logo Shape */
 .logo-bg-shape {
     padding-inline-end: clamp(0.375rem, -40.75rem + 47vw, 6.25rem);
     position: relative;
@@ -4566,6 +4586,7 @@ input:focus, input:focus-visible {
         max-width: 200px;
     }
 }
+/* Logo Shape */
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {

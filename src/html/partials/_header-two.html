@@ -1,0 +1,63 @@
+<!-- ==================== Header Start Here ==================== -->
+<header class="header tw-transition-all tw-z-99 bg-main-two @@headerTwoClass">
+  <div class="container max-w-1610-px">
+    <nav class="d-flex align-items-center justify-content-between position-relative">
+      <!-- Logo Start -->
+      <div class="logo">
+        <a href="index.html" class="link">
+          <img src="assets/images/logo/logo.png" alt="Logo" class="logo-w-200-px">
+        </a>
+      </div>
+      <!-- Logo End  -->
+
+      <!-- Menu Start  -->
+      <div class="header-menu d-lg-block d-none">
+        @@include('../partials/_nav-menu.html', { "class" : "tw-gap-6 nav-menu-white" })
+      </div>
+      <!-- Menu End  -->
+
+      <!-- Header Right start -->
+      <div class="d-lg-block d-none  align-self-center">
+        <div class="d-flex align-items-center tw-gap-6 flex-shrink-0">
+            <div class="d-xxl-flex d-none align-items-center tw-gap-205">
+                <span class="d-flex">
+                    <img src="assets/images/icons/phone-message-icon.png" alt="Phone Icon">
+                </span>
+                <a href="tel:+1558956854" class="text-white fw-bold hover-underline text-lg-res">+1 558 956 854</a>
+            </div>
+            
+          <div class="position-relative d-xxl-flex d-none align-items-center justify-content-center">
+            <span class="tw-w-05 tw-h-8 bg-main"></span>
+            <span
+              class="tw-w-2 tw-h-2 bg-main rounded-circle position-absolute top-50 start-50 translate-middle"></span>
+          </div>
+
+          <div class="d-flex align-items-center tw-gap-505">
+            <button type="button"
+              class="text--white tw-duration-300 tw-text-xl hover-text-main">
+              <i class="fa-regular fa-basket-shopping"></i>
+            </button>
+            <button type="button"
+              class="text--white tw-duration-300 tw-text-xl hover-text-main search-popup__button">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="d-xl-block d-none">
+            <a href="contact.html"
+              class="btn btn-main hover-style-two button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder button-shape shape-bg-black tw-tracking-2-percent"
+              data-block="button">
+              <span class="button__flair"></span>
+              <span class="button__label">APPOINTMENT</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-white tw-text-3xl">
+        <i class="fa-regular fa-bars-staggered"></i>
+      </button>
+      <!-- Header Right End  -->
+    </nav>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->

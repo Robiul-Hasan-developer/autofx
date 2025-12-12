@@ -152,9 +152,18 @@
 /* Submenu End */
 /* Header Menu and Submenu Css End */
 
+.nav-menu-white {
+  .nav-menu__link {
+    color: hsl(var(--white));
+  }
+}
+
+
+/* Logo Shape */
 .logo-bg-shape {
   padding-inline-end: clamp(0.375rem, -40.75rem + 47vw, 6.25rem);
   position: relative;
+
   @media (max-width: 991px) {
     padding-block: 12px;
   }
@@ -188,9 +197,12 @@
 }
 
 .logo-w-200-px {
-    max-width: 160px;
+  max-width: 160px;
+
   @media (min-width: 992px) {
     max-width: 200px;
   }
 }
+
+/* Logo Shape */
 /* ================================= Header Css End =========================== */
