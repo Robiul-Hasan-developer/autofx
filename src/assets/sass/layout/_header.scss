@@ -203,6 +203,20 @@
     max-width: 200px;
   }
 }
-
 /* Logo Shape */
+
+
+.header-style-absolute {
+    position: absolute;
+    inset-block-start: 0;
+    width: 100%;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+}
+
+.phone-info-none {
+  .phone-info {
+    display: none !important;
+  }
+}
 /* ================================= Header Css End =========================== */
