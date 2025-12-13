@@ -4630,6 +4630,11 @@ input:focus, input:focus-visible {
     display: none !important;
 }
 
+.header-style-absolute.fixed-header {
+    position: fixed;
+    background-color: var(--vs-theme-color2);
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
