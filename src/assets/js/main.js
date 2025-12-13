@@ -217,12 +217,6 @@
     });
     // ========================= Form Submit Js End ===================
 
-    // ========================= AOS Js Start ===========================
-    AOS.init({
-      once: true,
-    });
-    // ========================= AOS Js End ===========================
-
     // ========================= Search Popup Js Start ===================
     $(".search-popup__button").on("click", function () {
       $(".search-popup").addClass("active");
@@ -234,11 +228,52 @@
     });
     // ========================= Search Popup Js End ===================
 
+    // ========================== Add Attribute For Bg Image Js Start ====================
+    $(".background-img").css("background", function () {
+      var bg = "url(" + $(this).data("background-image") + ")";
+      return bg;
+    });
+    // ========================== Add Attribute For Bg Image Js End =====================
+
+    // ================================= Banner slider Start =========================
+    var swiper = new Swiper(".banner-one-slider", {
+      slidesPerView: 1,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+       creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: [0, 0, -400],
+        },
+        next: {
+          translate: ["100%", 0, 0],
+        },
+      },
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".banner-one-slider-pagination",
+        clickable: true,
+      },
+    });
+    // ================================= Banner slider End =========================
+
+    // ========================= AOS Js Start ===========================
+    AOS.init({
+      once: true,
+    });
+    // ========================= AOS Js End ===========================
+
     // // ================================= Brand slider Start =========================
-    // var brandSlider = new Swiper('.brand-slider', {
+    // var brandSlider = new Swiper(".brand-slider", {
     //   autoplay: {
     //     delay: 2000,
-    //     disableOnInteraction: false
+    //     disableOnInteraction: false,
     //   },
     //   autoplay: true,
     //   speed: 1500,
@@ -246,25 +281,25 @@
     //   loop: true,
     //   slidesPerView: 7,
     //   breakpoints: {
-    //       300: {
-    //           slidesPerView: 2,
-    //       },
-    //       575: {
-    //           slidesPerView: 3,
-    //       },
-    //       768: {
-    //           slidesPerView: 4,
-    //       },
-    //       992: {
-    //           slidesPerView: 5,
-    //       },
-    //       1200: {
-    //           slidesPerView: 6,
-    //       },
-    //       1400: {
-    //           slidesPerView: 7,
-    //       },
-    //   }
+    //     300: {
+    //       slidesPerView: 2,
+    //     },
+    //     575: {
+    //       slidesPerView: 3,
+    //     },
+    //     768: {
+    //       slidesPerView: 4,
+    //     },
+    //     992: {
+    //       slidesPerView: 5,
+    //     },
+    //     1200: {
+    //       slidesPerView: 6,
+    //     },
+    //     1400: {
+    //       slidesPerView: 7,
+    //     },
+    //   },
     // });
     // // ================================= Brand slider End =========================
 
@@ -301,13 +336,6 @@
     //   });
     // }
     // ========================= Counter Up Js End ===================
-
-    // ========================== Add Attribute For Bg Image Js Start ====================
-    // $(".background-img").css('background', function () {
-    //   var bg = ('url(' + $(this).data("background-image") + ')');
-    //   return bg;
-    // });
-    // ========================== Add Attribute For Bg Image Js End =====================
   });
   // ==========================================
   //      End Document Ready function

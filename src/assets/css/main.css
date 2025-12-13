@@ -89,7 +89,7 @@
   /* Font Size End */
   /* template main color */
   // --vs-theme-color1: #DB3705;
-    --vs-theme-color1: #F25000;
+    --vs-theme-color1: #f25000;
     --vs-theme-color2: #161616;
   /* template main color ennd */
   /* White Color */
@@ -790,9 +790,9 @@ input:focus, input:focus-visible {
 /* ================================= Typography Css End =========================== */
 /* Bg Image Css Start */
 .bg-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
     width: 100%;
     height: 100%;
 }
@@ -4922,11 +4922,40 @@ input:focus, input:focus-visible {
 /* Top header css end */
 /* ========================== Banner One section start ============================= */
 .banner-one {
-    padding: 260px 0 112px;
+    padding: 160px 0 112px;
 }
 
-.banner-image-wrapper {
-    inset-inline-end: 20%;
+@media (min-width: 992px) {
+    .banner-one {
+        padding: 260px 0 112px;
+    }
+}
+
+.banner-img {
+    inset-inline-start: 50%;
+}
+
+.wheel-img {
+    top: 30%;
+    inset-inline-start: 73%;
+}
+
+.tw-mt-150-px {
+    margin-block-start: clamp(3.75rem, -1.4423rem + 10.8173vw, 9.375rem);
+}
+
+.swiper-pagination-bullet {
+    width: 18px;
+    height: 10px;
+    border-radius: 50rem;
+    opacity: 1;
+    background: #FFFFFF8C;
+    transition: 0.3s linear;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 40px;
+    background-color: var(--vs-theme-color1);
 }
 
 /* ========================== Banner One section end ============================= */
