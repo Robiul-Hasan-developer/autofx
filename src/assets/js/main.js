@@ -263,46 +263,54 @@
     });
     // ================================= Banner slider End =========================
 
+    // ================================= Brand slider Start =========================
+    var brandOneSlider = new Swiper(".brand-one-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1000,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 5,
+      breakpoints: {
+        300: {
+          slidesPerView: 3,
+        },
+        575: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+    });
+    // ================================= Brand slider End =========================
+
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: true,
     });
     // ========================= AOS Js End ===========================
 
-    // // ================================= Brand slider Start =========================
-    // var brandSlider = new Swiper(".brand-slider", {
-    //   autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    //   },
-    //   autoplay: true,
-    //   speed: 1500,
-    //   grabCursor: true,
-    //   loop: true,
-    //   slidesPerView: 7,
-    //   breakpoints: {
-    //     300: {
-    //       slidesPerView: 2,
-    //     },
-    //     575: {
-    //       slidesPerView: 3,
-    //     },
-    //     768: {
-    //       slidesPerView: 4,
-    //     },
-    //     992: {
-    //       slidesPerView: 5,
-    //     },
-    //     1200: {
-    //       slidesPerView: 6,
-    //     },
-    //     1400: {
-    //       slidesPerView: 7,
-    //     },
-    //   },
-    // });
-    // // ================================= Brand slider End =========================
+    // ========================= magnific Popup Js Start =====================
+    $(".play-button").magnificPopup({
+      type: "iframe",
+      removalDelay: 300,
+      mainClass: "mfp-fade",
+    });
+    // ========================= magnific Popup Js End =====================
 
+
+
+    
     // ========================= Counter Up Js End ===================
     // const counterUp = window.counterUp.default;
 

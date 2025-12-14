@@ -4939,7 +4939,7 @@ input:focus, input:focus-visible {
 /* Top header css end */
 /* ========================== Banner One section start ============================= */
 .banner-one {
-    padding: 160px 0 112px;
+    padding: 180px 0 112px;
 }
 
 @media (min-width: 992px) {
@@ -4976,6 +4976,44 @@ input:focus, input:focus-visible {
 }
 
 /* ========================== Banner One section end ============================= */
+/* Brand One css start */
+.brand-one {
+    position: relative;
+    z-index: 1;
+}
+
+.brand-one::before, .brand-one::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    height: 50%;
+    background-color: var(--vs-theme-color1);
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.brand-one::after {
+    background-image: url("../images/shapes/brand-bg-shape.png");
+    background-color: transparent;
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .brand-one::before, .brand-one::after {
+        height: 100%;
+        width: calc(35% + 3px);
+    }
+}
+
+@media (min-width: 1600px) {
+    .brand-one::before, .brand-one::after {
+        height: 100%;
+        width: calc(39% + 3px);
+    }
+}
+/* Brand One css end */
 /* ================================== rtl css start ================================== */
 /* ================================== rtl css End ================================== */
 /*# sourceMappingURL=main.css.map */
