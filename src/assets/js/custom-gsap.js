@@ -18,6 +18,20 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // });
 // **************************** Nav Menu js End ****************************
 
+// **************************** ScrollSmoother js start ****************************
+gsap.registerPlugin(ScrollTrigger,  );
+
+const smoother = ScrollSmoother.create({
+  wrapper: "#smooth-wrapper",
+  content: "#smooth-content",
+  smooth: 1.35,
+  effects: true,
+  smoothTouch: 0.1,
+  ignoreMobileResize: false,
+});
+// **************************** ScrollSmoother js End ****************************
+
+
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
 var cursor = document.querySelector(".cursor");
@@ -170,83 +184,6 @@ if ($(".splitTextStyleOne").length > 0) {
     });
   });
 }
-
-// if ($(".splitTextStyleOne").length) {
-//   let staggerAmount = 0.03,
-//     translateXValue = 20,
-//     delayValue = 0.1,
-//     easeType = "power2.out",
-//     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
-
-//   animatedTextElements.forEach((element) => {
-//     let animationSplitText = new SplitText(element, { type: "chars, words" });
-//     gsap.from(animationSplitText.chars, {
-//       duration: 1,
-//       delay: delayValue,
-//       x: translateXValue,
-//       autoAlpha: 0,
-//       stagger: staggerAmount,
-//       ease: easeType,
-//       scrollTrigger: { trigger: element, start: "top 85%" },
-//     });
-//   });
-// }
-
-
-
-
-// if ($(".splitTextStyleTwo").length) {
-//   let animatedTextElements = document.querySelectorAll(".splitTextStyleTwo");
-
-//   animatedTextElements.forEach((element) => {
-//     //Reset if needed
-//     if (element.animation) {
-//       element.animation.progress(1).kill();
-//       element.split.revert();
-//     }
-
-//     element.split = new SplitText(element, {
-//       type: "lines,words,chars",
-//       linesClass: "split-line",
-//     });
-//     gsap.set(element, { perspective: 400 });
-
-//     gsap.set(element.split.chars, {
-//       opacity: 0,
-//       x: "50",
-//     });
-
-//     element.animation = gsap.to(element.split.chars, {
-//       scrollTrigger: { trigger: element, start: "top 90%" },
-//       x: "0",
-//       y: "0",
-//       rotateX: "0",
-//       opacity: 1,
-//       duration: 1,
-//       ease: Back.easeOut,
-//       stagger: 0.02,
-//     });
-//   });
-// }
-
-// if ($(".splitTextStyleThree").length) {
-//   let staggerAmount = 0.05,
-//     translateXValue = 0,
-//     delayValue = 0.5,
-//     animatedTextElements = document.querySelectorAll(".splitTextStyleThree");
-
-//   animatedTextElements.forEach((element) => {
-//     let animationSplitText = new SplitText(element, { type: "chars, words" });
-//     gsap.from(animationSplitText.words, {
-//       duration: 1,
-//       delay: delayValue,
-//       x: 20,
-//       autoAlpha: 0,
-//       stagger: staggerAmount,
-//       scrollTrigger: { trigger: element, start: "top 85%" },
-//     });
-//   });
-// }
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
@@ -371,6 +308,54 @@ if ($(".split-reveal").length) {
   });
 }
 // **************************** split Reveal js End ****************************
+
+
+// **************************** item goes bottom on scroll js start ****************************
+if ($(".item-goes-bottom-on-scroll").length > 0) {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".item-goes-bottom-on-scroll",
+        start: "top 20%",
+        end: "bottom 5%",
+        scrub: true,
+        invalidateOnRefresh: true,
+        markers: false,
+      },
+    })
+    .to(".item-goes-bottom-on-scroll", {
+      y: "80%",
+      x: "-100px",
+      scale: 1.6,
+    });
+}
+// **************************** item goes bottom on scroll js End ****************************
+
+
+// **************************** item rotate on scroll js start ****************************
+if ($(".item-rotate-on-scroll").length > 0) {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".item-rotate-on-scroll",
+        start: "top 28%",
+        end: "bottom 1%",
+        scrub: true,
+        invalidateOnRefresh: true,
+        markers: true,
+      },
+    })
+    .to(".item-rotate-on-scroll", {
+      rotate: 360,
+      y: "80%",
+      scale: 1.6,
+    });
+}
+// **************************** item rotate on scroll js End ****************************
+
+
+
+
 
 /* **************************************************************************** 
                           Custom GSAP js start 
