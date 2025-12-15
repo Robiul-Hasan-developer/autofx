@@ -342,7 +342,7 @@ if ($(".item-rotate-on-scroll").length > 0) {
         end: "bottom 1%",
         scrub: true,
         invalidateOnRefresh: true,
-        markers: true,
+        markers: false,
       },
     })
     .to(".item-rotate-on-scroll", {

@@ -37,7 +37,7 @@
 
     &-body {
         &:hover {
-            color: hsl(var(--body-color)) !important;
+            color: var(--body-color) !important;
         }
     }
 }

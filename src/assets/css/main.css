@@ -95,7 +95,8 @@
   /* White Color */
     --white: 0 0% 100%;
     --black: 0 0% 3%;
-    --body: 0 0% 30%;
+    --body: #4C4C4C;
+    --section-bg: #F5F4EE;
     --heading-color: var(--black);
     --body-color: var(--body);
     --translate-x-50: translateX(-50%);
@@ -234,6 +235,15 @@
     border-color: transparent;
 }
 
+.btn-main-two {
+    background-color: var(--vs-theme-color2) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.btn-main-two.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-white {
     background-color: hsl(var(--white)) !important;
     color: hsl(var(--heading-color)) !important;
@@ -323,7 +333,7 @@
     line-height: 25px;
     position: relative;
     margin-inline-start: 15px;
-    color: hsl(var(--body-color)) !important;
+    color: var(--body-color) !important;
 }
 
 .common-file[type=file]::file-selector-button:hover {
@@ -495,6 +505,17 @@ input[type=number] {
 
 /* Switch Css End */
 /* ================================= Form Css End =========================== */
+/* ================================= Tab Css Start =========================== */
+.common-tab .nav-item .nav-link.active {
+    color: hsl(var(--white)) !important;
+    background-color: var(--vs-theme-color1) !important;
+}
+
+.common-tab .nav-item .nav-link:hover {
+    color: var(--vs-theme-color1);
+}
+
+/* ================================= Tab Css End =========================== */
 /* Toast Message Css start  */
 :root {
     --success-600: #16A34A;
@@ -669,7 +690,7 @@ html {
 
 body {
     font-family: var(--body-font);
-    color: hsl(var(--body-color));
+    color: var(--body-color);
     word-break: break-word;
     background-color: hsl(var(--white));
     min-height: 100vh;
@@ -680,7 +701,7 @@ body {
 p {
     font-weight: 400;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 span {
@@ -909,6 +930,10 @@ figure {
 
 .hover-bg-main-two:hover {
     background-color: var(--vs-theme-color2);
+}
+
+.section-bg {
+    background-color: var(--section-bg);
 }
 
 .bg-white-08 {
@@ -1154,7 +1179,7 @@ figure {
 }
 
 .text-body {
-    color: hsl(var(--body-color));
+    color: var(--body-color);
 }
 
 /* Colors class End */
@@ -1221,7 +1246,7 @@ figure {
 }
 
 .hover-text-body:hover {
-    color: hsl(var(--body-color)) !important;
+    color: var(--body-color) !important;
 }
 
 /* Hover color class end */
@@ -2638,6 +2663,10 @@ figure {
 /* Max width Css Class Start */
 .max-w-685-px {
     max-width: 685px;
+}
+
+.max-w-576-px {
+    max-width: 576px;
 }
 
 .max-w-1610-px {
@@ -4919,6 +4948,40 @@ figure {
 }
 
 /* ============================ Search Popup css end ===================================== */
+/* ======================== Section Heading Css start ========================== */
+.triangle-left {
+    position: relative;
+}
+
+.triangle-left::before {
+    position: absolute;
+    content: "";
+    inset-inline-end: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--vs-theme-color1);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.triangle-right {
+    position: relative;
+}
+
+.triangle-right::before {
+    position: absolute;
+    content: "";
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--vs-theme-color1);
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+/* ======================== Section Heading Css end ========================== */
 /* Top header css start */
 .before-bg-end::before {
     position: absolute;
@@ -5017,6 +5080,25 @@ figure {
         width: calc(39% + 3px);
     }
 }
+
+.left-right-gradient::before,
+.left-right-gradient::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, var(--vs-theme-color2), transparent);
+    z-index: 2;
+}
+
+.left-right-gradient::after {
+    background: linear-gradient(90deg, transparent, var(--vs-theme-color2));
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}
+
 /* Brand One css end */
 /* ================================== rtl css start ================================== */
 /* ================================== rtl css End ================================== */

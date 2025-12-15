@@ -89,6 +89,16 @@
             }
         }
     }
+    &-main-two {
+        background-color: var(--vs-theme-color2) !important;
+        color: hsl(var(--white)) !important;
+
+        &.button--stroke {  
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
 
     &-white {
         background-color: hsl(var(--white)) !important;

@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  color: hsl(var(--body-color));
+  color: var(--body-color);
   word-break: break-word;
   background-color: hsl(var(--white));
   min-height: 100vh;
@@ -22,7 +22,7 @@ body {
 p {
   font-weight: 400;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 span {

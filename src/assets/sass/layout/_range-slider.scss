@@ -10,7 +10,7 @@
 
 .custom--range input {
     border: 0;
-    color: hsl(var(--body-color));
+    color: var(--body-color);
     font-weight: 400;
     outline: none;
 }

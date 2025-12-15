@@ -13,7 +13,7 @@
         line-height: 25px;
         position: relative;
         margin-inline-start: 15px;
-        color: hsl(var(--body-color)) !important;
+        color: var(--body-color) !important;
         &:hover {
             background-color: var(--vs-theme-color1);
             border: 1px solid var(--vs-theme-color1);

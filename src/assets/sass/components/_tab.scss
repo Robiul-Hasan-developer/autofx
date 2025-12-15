@@ -4,7 +4,7 @@
         .nav-link {
             &.active {
                 color: hsl(var(--white)) !important; 
-                border-color: hsl(var(--main)) !important;
+                background-color: var(--vs-theme-color1) !important;
             }
             &:hover {
                 color: var(--vs-theme-color1);
