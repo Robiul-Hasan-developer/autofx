@@ -3417,6 +3417,10 @@ figure {
     padding-block-end: var(--size-16);
 }
 
+.tw-p-32-px {
+    padding: clamp(1rem, -6.1013rem + 9.4763vw, 2rem);
+}
+
 .tw-p-36-px {
     padding: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
 }
