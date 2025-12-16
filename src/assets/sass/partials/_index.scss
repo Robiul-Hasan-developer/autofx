@@ -1,6 +1,11 @@
 // top header
 @import "top-header";
-// top header
-@import "home-one/index";
+@import './banner-one';
+@import './brand';
+@import './working-process';
+@import './book-appointment';
+@import './choose-us-one';
+@import './team';
+
 // RTL
 @import "rtl";

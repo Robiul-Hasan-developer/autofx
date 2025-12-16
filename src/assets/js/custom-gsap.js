@@ -333,22 +333,24 @@ if ($(".scale-up-wrapper").length > 0) {
 
 // **************************** item goes bottom on scroll js start ****************************
 if ($(".item-goes-bottom-on-scroll").length > 0) {
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".item-goes-bottom-on-scroll",
-        start: "top 20%",
-        end: "bottom 5%",
-        scrub: true,
-        invalidateOnRefresh: true,
-        markers: false,
-      },
-    })
-    .to(".item-goes-bottom-on-scroll", {
-      y: "80%",
-      x: "-100px",
-      scale: 1.6,
-    });
+  document.querySelectorAll(".item-goes-bottom-on-scroll").forEach((scrollItem) => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: scrollItem,
+          start: "top 20%",
+          end: "bottom 5%",
+          scrub: true,
+          invalidateOnRefresh: true,
+          markers: false,
+        },
+      })
+      .to(scrollItem, {
+        y: "80%",
+        x: "-100px",
+        scale: 1.6,
+      });
+  });
 }
 // **************************** item goes bottom on scroll js End ****************************
 
@@ -371,7 +373,7 @@ if ($(".item-goes-bottom-on-scroll").length > 0) {
 //       scale: 1.6,
 //     });
 // }
-if ($(".item-rotate-on-scroll").length > 0) { 
+if ($(".item-rotate-on-scroll").length > 0) {
   gsap.utils.toArray(".item-rotate-on-scroll").forEach((item) => {
     gsap
       .timeline({
