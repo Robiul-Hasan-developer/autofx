@@ -329,6 +329,14 @@
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
+/* Change calendar icon color */
+input[type=date]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  /* white icon */
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 /* Autofill Css */
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active,
 textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, textarea:-webkit-autofill:active {
@@ -2524,6 +2532,10 @@ figure {
     max-height: 100vh;
 }
 
+.tw-max-h-200-px {
+    max-height: 200px;
+}
+
 /* Max Height Css Class End */
 /* Max width Css Class Start */
 .max-w-685-px {
@@ -2532,6 +2544,10 @@ figure {
 
 .max-w-310-px {
     max-width: 310px;
+}
+
+.max-w-220-px {
+    max-width: 220px;
 }
 
 .max-w-576-px {
@@ -5082,6 +5098,26 @@ figure {
 }
 
 /* ===================== Book Appointment section css end ========================= */
+/* choose us one css start */
+.choose-us-item__icon {
+    width: 94px;
+    height: 100px;
+    border-bottom-right-radius: 10px;
+}
+
+.choose-us-item__icon::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 20px);
+    height: 18px;
+    background-color: inherit;
+    inset-block-end: -11px;
+    transform: rotate(-12deg);
+    border-radius: inherit;
+    inset-inline-end: 0;
+}
+
+/* choose us one css end */
 /* ================================== rtl css start ================================== */
 /* ================================== rtl css End ================================== */
 /*# sourceMappingURL=main.css.map */

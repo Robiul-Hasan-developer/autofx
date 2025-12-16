@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // **************************** Nav Menu js End ****************************
 
 // **************************** ScrollSmoother js start ****************************
-gsap.registerPlugin(ScrollTrigger,  );
+gsap.registerPlugin(ScrollTrigger);
 
 const smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
@@ -30,7 +30,6 @@ const smoother = ScrollSmoother.create({
   ignoreMobileResize: false,
 });
 // **************************** ScrollSmoother js End ****************************
-
 
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
@@ -309,6 +308,28 @@ if ($(".split-reveal").length) {
 }
 // **************************** split Reveal js End ****************************
 
+// **************************** Scale Image up scale js End ****************************
+if ($(".scale-up-wrapper").length > 0) {
+  document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
+    const img = section.querySelector(".scale-up__img");
+    if (!img) return; // skip if no target found
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: "top 95%",
+        end: "bottom 10%",
+        scrub: 1,
+        markers: false,
+      },
+    });
+
+    tl.to(section.querySelector(".scale-up__img"), {
+      scale: 1.5,
+    });
+  });
+}
+// **************************** Scale Image up scale js End ****************************
 
 // **************************** item goes bottom on scroll js start ****************************
 if ($(".item-goes-bottom-on-scroll").length > 0) {
@@ -331,31 +352,47 @@ if ($(".item-goes-bottom-on-scroll").length > 0) {
 }
 // **************************** item goes bottom on scroll js End ****************************
 
-
 // **************************** item rotate on scroll js start ****************************
-if ($(".item-rotate-on-scroll").length > 0) {
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".item-rotate-on-scroll",
-        start: "top 28%",
-        end: "bottom 1%",
-        scrub: true,
-        invalidateOnRefresh: true,
-        markers: false,
-      },
-    })
-    .to(".item-rotate-on-scroll", {
-      rotate: 360,
-      y: "80%",
-      scale: 1.6,
-    });
+// if ($(".item-rotate-on-scroll").length > 0) {
+//   gsap
+//     .timeline({
+//       scrollTrigger: {
+//         trigger: ".item-rotate-on-scroll",
+//         start: "top 28%",
+//         end: "bottom 1%",
+//         scrub: true,
+//         invalidateOnRefresh: true,
+//         markers: false,
+//       },
+//     })
+//     .to(".item-rotate-on-scroll", {
+//       rotate: 360,
+//       y: "80%",
+//       scale: 1.6,
+//     });
+// }
+if ($(".item-rotate-on-scroll").length > 0) { 
+  gsap.utils.toArray(".item-rotate-on-scroll").forEach((item) => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: item,
+          start: "top 28%",
+          end: "bottom 1%",
+          scrub: true,
+          invalidateOnRefresh: true,
+          markers: false,
+        },
+      })
+      .to(item, {
+        rotate: 360,
+        y: "80%",
+        scale: 1.6,
+        ease: "none",
+      });
+  });
 }
 // **************************** item rotate on scroll js End ****************************
-
-
-
-
 
 /* **************************************************************************** 
                           Custom GSAP js start 
