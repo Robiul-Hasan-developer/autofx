@@ -236,13 +236,12 @@
     // ========================== Add Attribute For Bg Image Js End =====================
 
     // ================================= Banner slider Start =========================
-    var swiper = new Swiper(".banner-one-slider", {
+    var bannerOne = new Swiper(".banner-one-slider", {
       slidesPerView: 1,
-      centeredSlides: true,
       grabCursor: true,
       loop: true,
       speed: 1000,
-       creativeEffect: {
+      creativeEffect: {
         prev: {
           shadow: true,
           translate: [0, 0, -400],
@@ -251,7 +250,6 @@
           translate: ["100%", 0, 0],
         },
       },
-      loop: true,
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
@@ -294,9 +292,27 @@
     });
     // ================================= Brand slider End =========================
 
+    // ================================= Testimonials One slider Start =========================
+    var testimonialsSlider = new Swiper(".testimonials-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1000,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+       pagination: {
+        el: ".testimonials-slider-pagination",
+        clickable: true,
+      },
+    });
+    // ================================= Testimonials One slider End =========================
+
     // ========================= AOS Js Start ===========================
     AOS.init({
-      once: true,
+      once: false,
     });
     // ========================= AOS Js End ===========================
 
@@ -308,9 +324,6 @@
     });
     // ========================= magnific Popup Js End =====================
 
-
-
-    
     // ========================= Counter Up Js End ===================
     // const counterUp = window.counterUp.default;
 
