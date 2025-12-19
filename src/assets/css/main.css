@@ -3330,6 +3330,11 @@ figure {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
 }
 
+.py-80-px {
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -3378,57 +3383,6 @@ figure {
 @media (min-width: 992px) {
     .pb-120 {
         padding-block-end: 120px;
-    }
-}
-
-.py-60 {
-    padding-block-start: 30px;
-    padding-block-end: 30px;
-}
-
-@media (min-width: 576px) {
-    .py-60 {
-        padding-block-start: 40px;
-        padding-block-end: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    .py-60 {
-        padding-block-start: 60px;
-        padding-block-end: 60px;
-    }
-}
-
-.pt-60 {
-    padding-block-start: 30px;
-}
-
-@media (min-width: 576px) {
-    .pt-60 {
-        padding-block-start: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    .pt-60 {
-        padding-block-start: 60px;
-    }
-}
-
-.pb-60 {
-    padding-block-end: 30px;
-}
-
-@media (min-width: 576px) {
-    .pb-60 {
-        padding-block-end: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    .pb-60 {
-        padding-block-end: 60px;
     }
 }
 /* ================================= Padding Css End =========================== */
