@@ -303,7 +303,7 @@
       grabCursor: true,
       loop: true,
       slidesPerView: 1,
-       pagination: {
+      pagination: {
         el: ".testimonials-slider-pagination",
         clickable: true,
       },
@@ -323,6 +323,18 @@
       mainClass: "mfp-fade",
     });
     // ========================= magnific Popup Js End =====================
+
+    // ============== Magnific Popup Js Start =======================
+    $(".popup-video-link").magnificPopup({
+      type: "iframe",
+    });
+    $(".gallery-popup").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: true,
+      },
+    });
+    // ============== Magnific Popup Js End =======================
 
     // ========================= Counter Up Js End ===================
     // const counterUp = window.counterUp.default;

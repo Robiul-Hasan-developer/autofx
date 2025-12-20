@@ -425,7 +425,7 @@ input[type=number] {
 
 .common-check .form-check-input::before {
     position: absolute;
-    content: "\f002";
+    content: "\f00c";
     font-family: "Font Awesome 6 Pro";
     font-weight: 900;
     color: hsl(var(--white));
@@ -5310,6 +5310,21 @@ figure {
 /* Footer Css Start */
 .bg-dark-light {
     background-color: #1F1F1F;
+}
+
+.border-bottom-black-main {
+    position: relative;
+    border-bottom: 3px solid #FFFFFF26;
+}
+
+.border-bottom-black-main::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: var(--vs-theme-color1);
+    bottom: -3px;
+    inset-inline-start: 0;
 }
 
 /* Footer Css End */
