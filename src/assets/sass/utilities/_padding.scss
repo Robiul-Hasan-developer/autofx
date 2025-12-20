@@ -59,13 +59,18 @@
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
     }
   }
+
   &-px-50-px {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.125rem);
   }
 }
 
-.lg-tw-pe-200-px {
-    padding-inline-end: 200px;
+.lg-tw-pe-170-px {
+  padding-inline-end: 90px;
+
+  @media (min-width: 768px) {
+    padding-inline-end: 170px;
+  }
 }
 
 
