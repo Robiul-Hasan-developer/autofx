@@ -150,7 +150,7 @@
           <div class="d-flex align-items-start justify-content-between mb-1">
             <h6 class="toast-message__title">${messageTitle}</h6>
             <button type="button" class="toast-message__close">
-              <i class="ph-bold ph-x"></i>
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
           <span class="toast-message__text">${messageText}</span>
@@ -212,7 +212,7 @@
         "success",
         "Success",
         "Form submitted successfully!",
-        "ph-fill ph-check-circle"
+        "fa-solid fa-circle-check"
       );
     });
     // ========================= Form Submit Js End ===================
@@ -306,6 +306,33 @@
       pagination: {
         el: ".testimonials-slider-pagination",
         clickable: true,
+      },
+    });
+    // ================================= Testimonials One slider End =========================
+
+    // ================================= Testimonials One slider Start =========================
+    var blogSlider = new Swiper(".blog-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1000,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: ".blog-slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        992: {
+          slidesPerView: 2,
+        },
       },
     });
     // ================================= Testimonials One slider End =========================

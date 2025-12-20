@@ -29,14 +29,14 @@
 </head>
 
 <body>
-  <!--==================== Preloader Start ====================-->
+  <!-- ==================== Preloader Start ==================== -->
   <!-- <div class="loader-mask">
     <div class="loader">
       <div></div>
       <div></div>
     </div>
   </div> -->
-  <!--==================== Preloader End ====================-->
+  <!-- ==================== Preloader End ==================== -->
 
   <!-- ========================== Settings Panel start ==================================== -->
 <div
@@ -102,13 +102,13 @@
 <!-- ========================== Settings Panel end ==================================== -->
 
 
-  <!--==================== Overlay Start ====================-->
+  <!-- ==================== Overlay Start ==================== -->
   <div class="overlay"></div>
-  <!--==================== Overlay End ====================-->
+  <!-- ==================== Overlay End ==================== -->
 
-  <!--==================== Sidebar Overlay End ====================-->
+  <!-- ==================== Sidebar Overlay End ==================== -->
   <div class="side-overlay"></div>
-  <!--==================== Sidebar Overlay End ====================-->
+  <!-- ==================== Sidebar Overlay End ==================== -->
 
   <!-- Custom Toast Message start -->
   <div id="toast-container"></div>
@@ -492,8 +492,6 @@
   </div>
 </header>
 <!-- ==================== Header End Here ==================== -->
-
-
 
 <div id="smooth-wrapper" class="">
     <div id="smooth-content">
@@ -987,7 +985,7 @@
 </section>
 <!-- =========================== Service One section end =========================== -->
 
-            <!-- ===================== Book Appointment section start =========================-->
+            <!-- ===================== Book Appointment section start ========================= -->
 <section class="book-appointment bg-main-two py-120 position-relative z-1">
     <img src="assets/images/thumbs/book-appointment-light-img.png" alt="Book Appointment Light Image"
         class="position-absolute bottom-0 start-0 z-n1">
@@ -1004,20 +1002,20 @@
                         </div>
                         <h2 class="splitTextStyleOne text-white" data-aos="fade-up">Book An Appointment</h2>
                     </div>
-                    <form class="" action="#">
+                    <form class="form-submit" action="#">
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <div class="">
                                     <input type="text"
                                         class="placeholder-text-light bg-neutral-800 border border-neutral-800 tw-py-5 tw-px-505 tw-rounded-lg shadow-none outline-0 text-white focus-border-main w-100"
-                                        placeholder="Your Name *">
+                                        placeholder="Your Name *" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="">
                                     <input type="email"
                                         class="placeholder-text-light bg-neutral-800 border border-neutral-800 tw-py-5 tw-px-505 tw-rounded-lg shadow-none outline-0 text-white focus-border-main w-100"
-                                        placeholder="Your Email *">
+                                        placeholder="Your Email *" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -1033,8 +1031,7 @@
                             <div class="col-sm-6">
                                 <div class="">
                                     <input type="date"
-                                        class="placeholder-text-light bg-neutral-800 border border-neutral-800 tw-py-5 tw-px-505 tw-rounded-lg shadow-none outline-0 focus-border-main w-100 text-dark-light"
-                                        placeholder="Select Date *">
+                                        class="placeholder-text-light bg-neutral-800 border border-neutral-800 tw-py-5 tw-px-505 tw-rounded-lg shadow-none outline-0 focus-border-main w-100 text-dark-light" required>
                                 </div>
                             </div>
                             <div class="col-sm-12">
@@ -1076,8 +1073,8 @@
         </a>
     </div>
 </section>
-<!-- ===================== Book Appointment section end =========================-->
-            
+<!-- ===================== Book Appointment section end ========================= -->
+
             <!-- ======================= CTA One start ========================= -->
 <section class="cta-one tw-py-11 bg-img background-img" data-background-image="assets/images/bg/cta-bg.png">
     <div class="container">
@@ -1435,7 +1432,7 @@
     </div>
 </section>
 <!-- ===================== Team section end ========================= -->
-            
+
             <!-- ============================= Testimonials section start ========================= -->
 <section class="testimonials bg-img background-img gradient-black-bg position-relative z-1" data-background-image="assets/images/bg/testimonials-bg-img.png">
     <div class="curve-arrow-shape d-lg-block d-none"> 
@@ -1584,7 +1581,7 @@
     </div>
 </section>
 <!-- ============================= Testimonials section end ========================= -->
-            
+
             <!-- ========================= Blog section start ========================== -->
 <section class="block py-120 section-bg">
     <div class="container">
@@ -1598,181 +1595,143 @@
             <h2 class="splitTextStyleOne" data-aos="fade-up">Recent Blog Post</h2>
         </div>
 
-        <div class="row gy-4">
-            <div class="col-lg-6">
-                <div class="bg-white tw-rounded-xl tw-p-4 d-flex tw-gap-30-px flex-sm-row flex-column flex-lg-column flex-xl-row common-shadow-three">
-                    <a href="team-details.html" class="w-100 d-flex tw-rounded-xl overflow-hidden hover-animation-white scale-up-wrapper hover-bg-main-light ">
-                        <img src="assets/images/thumbs/blog-img1.png" class="object-fit-cover scale-up__img w-100 h-100"
-                            alt="Team Image 1">
-                        <div class="bg-main border border-white border-3 tw-px-4 tw-py-3 tw-rounded-xl text-center position-absolute top-0 start-0 tw-mt-505 tw-ms-505">
-                            <span class="d-block h3 text-white">24</span>
-                            <span class="d-block h6 text-white text-uppercase">Aug</span>
-                        </div>
-                    </a>
-                    <div class="align-self-center">
-                        <div class="">
-                            <div class="d-flex align-items-center tw-gap-205 tw-mb-6">
-                                <span class="fw-bold text-uppercase tw-text-base tw-px-4 tw-py-05 border border-neutral-200 tw-rounded text-main">Repair</span>
-                                <p class="fw-semibold tw-text-base text-heading">By <span class="text-body fw-normal">Tomas hak</span> </p>
+        <div class="swiper blog-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div
+                        class="bg-white tw-rounded-xl tw-p-4 d-flex tw-gap-30-px flex-sm-row flex-column flex-lg-column flex-xl-row common-shadow-three">
+                        <a href="team-details.html"
+                            class="w-100 d-flex tw-rounded-xl overflow-hidden hover-animation-white scale-up-wrapper hover-bg-main-light ">
+                            <img src="assets/images/thumbs/blog-img1.png"
+                                class="object-fit-cover scale-up__img w-100 h-100" alt="Team Image 1">
+                            <div
+                                class="bg-main border border-white border-3 tw-px-4 tw-py-3 tw-rounded-xl text-center position-absolute top-0 start-0 tw-mt-505 tw-ms-505">
+                                <span class="d-block h3 text-white">24</span>
+                                <span class="d-block h6 text-white text-uppercase">Aug</span>
                             </div>
-                            <h3 class="h4">
-                                <a href="blog-details.html" class="hover-text-main">Providing The Client High Quality Service</a>
-                            </h3>
-                            <p class="text-body tw-mt-6">On the other hand we denounce with righteous indignation and dislikes men beguiled and demoral.</p>
-                            <div class="tw-mt-10">
-                                <a href="blog-details.html" class="text-capitalize fw-bold tw-text-xl text-heading hover-text-heading group group-item d-flex align-items-center tw-gap-205">
-                                    Read More
-                                    <span class="tw-w-8 tw-h-8 d-flex align-items-center justify-content-center rounded-circle text-white bg-main-two tw-duration-300 group-hover-bg-main tw-text-sm">
-                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                    </span>
-                                </a>
+                        </a>
+                        <div class="align-self-center">
+                            <div class="">
+                                <div class="d-flex align-items-center tw-gap-205 tw-mb-6">
+                                    <span
+                                        class="fw-bold text-uppercase tw-text-base tw-px-4 tw-py-05 border border-neutral-200 tw-rounded text-main">Repair</span>
+                                    <p class="fw-semibold tw-text-base text-heading">By <span
+                                            class="text-body fw-normal">Tomas hak</span> </p>
+                                </div>
+                                <h3 class="h4">
+                                    <a href="blog-details.html" class="hover-text-main">Providing The Client High
+                                        Quality
+                                        Service</a>
+                                </h3>
+                                <p class="text-body tw-mt-6">On the other hand we denounce with righteous indignation
+                                    and
+                                    dislikes men beguiled and demoral.</p>
+                                <div class="tw-mt-10">
+                                    <a href="blog-details.html"
+                                        class="text-capitalize fw-bold tw-text-xl text-heading hover-text-heading group group-item d-flex align-items-center tw-gap-205">
+                                        Read More
+                                        <span
+                                            class="tw-w-8 tw-h-8 d-flex align-items-center justify-content-center rounded-circle text-white bg-main-two tw-duration-300 group-hover-bg-main tw-text-sm">
+                                            <i class="fa-solid fa-arrow-up-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-white tw-rounded-xl tw-p-4 d-flex tw-gap-30-px flex-sm-row flex-column flex-lg-column flex-xl-row common-shadow-three">
+                        <a href="team-details.html"
+                            class="w-100 d-flex tw-rounded-xl overflow-hidden hover-animation-white scale-up-wrapper hover-bg-main-light ">
+                            <img src="assets/images/thumbs/blog-img2.png"
+                                class="object-fit-cover scale-up__img w-100 h-100" alt="Team Image 2">
+                            <div
+                                class="bg-main border border-white border-3 tw-px-4 tw-py-3 tw-rounded-xl text-center position-absolute top-0 start-0 tw-mt-505 tw-ms-505">
+                                <span class="d-block h3 text-white">29</span>
+                                <span class="d-block h6 text-white text-uppercase">Sep</span>
+                            </div>
+                        </a>
+                        <div class="align-self-center">
+                            <div class="">
+                                <div class="d-flex align-items-center tw-gap-205 tw-mb-6">
+                                    <span
+                                        class="fw-bold text-uppercase tw-text-base tw-px-4 tw-py-05 border border-neutral-200 tw-rounded text-main">Vehicle</span>
+                                    <p class="fw-semibold tw-text-base text-heading">By <span
+                                            class="text-body fw-normal">Tomas hak</span> </p>
+                                </div>
+                                <h3 class="h4">
+                                    <a href="blog-details.html" class="hover-text-main">Well Trained Members Members</a>
+                                </h3>
+                                <p class="text-body tw-mt-6">On the other hand we denounce with righteous indignation
+                                    and
+                                    dislikes men beguiled and demoral.</p>
+                                <div class="tw-mt-10">
+                                    <a href="blog-details.html"
+                                        class="text-capitalize fw-bold tw-text-xl text-heading hover-text-heading group group-item d-flex align-items-center tw-gap-205">
+                                        Read More
+                                        <span
+                                            class="tw-w-8 tw-h-8 d-flex align-items-center justify-content-center rounded-circle text-white bg-main-two tw-duration-300 group-hover-bg-main tw-text-sm">
+                                            <i class="fa-solid fa-arrow-up-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div
+                        class="bg-white tw-rounded-xl tw-p-4 d-flex tw-gap-30-px flex-sm-row flex-column flex-lg-column flex-xl-row common-shadow-three">
+                        <a href="team-details.html"
+                            class="w-100 d-flex tw-rounded-xl overflow-hidden hover-animation-white scale-up-wrapper hover-bg-main-light ">
+                            <img src="assets/images/thumbs/blog-img1.png"
+                                class="object-fit-cover scale-up__img w-100 h-100" alt="Team Image 1">
+                            <div
+                                class="bg-main border border-white border-3 tw-px-4 tw-py-3 tw-rounded-xl text-center position-absolute top-0 start-0 tw-mt-505 tw-ms-505">
+                                <span class="d-block h3 text-white">24</span>
+                                <span class="d-block h6 text-white text-uppercase">Aug</span>
+                            </div>
+                        </a>
+                        <div class="align-self-center">
+                            <div class="">
+                                <div class="d-flex align-items-center tw-gap-205 tw-mb-6">
+                                    <span
+                                        class="fw-bold text-uppercase tw-text-base tw-px-4 tw-py-05 border border-neutral-200 tw-rounded text-main">Repair</span>
+                                    <p class="fw-semibold tw-text-base text-heading">By <span
+                                            class="text-body fw-normal">Tomas hak</span> </p>
+                                </div>
+                                <h3 class="h4">
+                                    <a href="blog-details.html" class="hover-text-main">Providing The Client High
+                                        Quality
+                                        Service</a>
+                                </h3>
+                                <p class="text-body tw-mt-6">On the other hand we denounce with righteous indignation
+                                    and
+                                    dislikes men beguiled and demoral.</p>
+                                <div class="tw-mt-10">
+                                    <a href="blog-details.html"
+                                        class="text-capitalize fw-bold tw-text-xl text-heading hover-text-heading group group-item d-flex align-items-center tw-gap-205">
+                                        Read More
+                                        <span
+                                            class="tw-w-8 tw-h-8 d-flex align-items-center justify-content-center rounded-circle text-white bg-main-two tw-duration-300 group-hover-bg-main tw-text-sm">
+                                            <i class="fa-solid fa-arrow-up-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="bg-white tw-rounded-xl tw-p-4 d-flex tw-gap-30-px flex-sm-row flex-column flex-lg-column flex-xl-row common-shadow-three">
-                    <a href="team-details.html" class="w-100 d-flex tw-rounded-xl overflow-hidden hover-animation-white scale-up-wrapper hover-bg-main-light ">
-                        <img src="assets/images/thumbs/blog-img2.png" class="object-fit-cover scale-up__img w-100 h-100"
-                            alt="Team Image 2">
-                        <div class="bg-main border border-white border-3 tw-px-4 tw-py-3 tw-rounded-xl text-center position-absolute top-0 start-0 tw-mt-505 tw-ms-505">
-                            <span class="d-block h3 text-white">29</span>
-                            <span class="d-block h6 text-white text-uppercase">Sep</span>
-                        </div>
-                    </a>
-                    <div class="align-self-center">
-                        <div class="">
-                            <div class="d-flex align-items-center tw-gap-205 tw-mb-6">
-                                <span class="fw-bold text-uppercase tw-text-base tw-px-4 tw-py-05 border border-neutral-200 tw-rounded text-main">Vehicle</span>
-                                <p class="fw-semibold tw-text-base text-heading">By <span class="text-body fw-normal">Tomas hak</span> </p>
-                            </div>
-                            <h3 class="h4">
-                                <a href="blog-details.html" class="hover-text-main">Well Trained Members Members</a>
-                            </h3>
-                            <p class="text-body tw-mt-6">On the other hand we denounce with righteous indignation and dislikes men beguiled and demoral.</p>
-                            <div class="tw-mt-10">
-                                <a href="blog-details.html" class="text-capitalize fw-bold tw-text-xl text-heading hover-text-heading group group-item d-flex align-items-center tw-gap-205">
-                                    Read More
-                                    <span class="tw-w-8 tw-h-8 d-flex align-items-center justify-content-center rounded-circle text-white bg-main-two tw-duration-300 group-hover-bg-main tw-text-sm">
-                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center tw-mt-13">
+                <div class="blog-slider-pagination style-dark"></div>
             </div>
         </div>
     </div>
 </section>
 <!-- ========================= Blog section end ========================== -->
-
-
-
-            <div class="py-120"></div>
-            <div class="py-120"></div>
-
-
-            <!-- <div class="container my-5">
-        <div class="">
-            <a href="#" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2" data-block="button">
-                <span class="button__flair"></span>
-                <span class="button__label">View services</span>
-                <span class="tw-w-7 tw-h-7 bg-white text-main tw-text-sm tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-bg-main group-hover-text-white tw-duration-500">
-                    <i class="ph-bold ph-check"></i>
-                </span>
-            </a>
-        </div>
-        <div class="">
-            <h2 class="cursor-big splitTextStyleOne my-5 fw-semibold border-main hover-border-main-two border">This starter pack created by <br> Front End Developer Md. Robiul Hasan</h2>
-        </div>        
-
-        <div class="row justify-content-center tw-mb-10">
-            <div class="col-xl-7 pe-lg-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                <div class="bg-neutral-100 py-60 tw-px-13">
-                    <h3 class="tw-mb-4 cursor-big">Fill Up The Form</h3>
-                    <p class="text-neutral-1000 max-w-444-px">Your email address will not be published. Required fields are marked *</p>
-                    <form action="#" class="tw-mt-14 d-flex flex-column tw-gap-15 form-submit">
-                        <div class="position-relative">
-                            <input type="text" class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main" placeholder="Your Name*" required="">
-                            <span class="tw-text-xl d-flex text-main-two position-absolute top-0 tw-start-0">
-                                <i class="ph-bold ph-user"></i>
-                            </span>
-                        </div>
-                        <div class="position-relative">
-                            <input type="email" class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main" placeholder="Email Address*" required="">
-                            <span class="tw-text-xl d-flex text-main-two position-absolute top-0 tw-start-0">
-                                <i class="ph-bold ph-envelope"></i>
-                            </span>
-                        </div>
-                        <div class="position-relative">
-                            <textarea class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main tw-h-108-px" placeholder="Enter Your Message here"></textarea>
-                            <span class="tw-text-xl d-flex text-main-two position-absolute top-0 tw-start-0">
-                                <i class="ph-bold ph-note-pencil"></i>
-                            </span>
-                        </div>
-                        <div class="">
-                            <button type="submit" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 rounded-0" data-block="button">
-                                <span class="button__flair"></span>
-                                <span class="text-white tw-text-2xl group-hover-text-white tw-duration-500 position-relative">
-                                    <i class="ph-bold ph-paper-plane-tilt"></i>
-                                </span>
-                                <span class="button__label">Get In Touch</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-xl-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                <div class="d-flex flex-column tw-gap-5">
-                    <div class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
-                        <h6 class="">Todo Item 1</h6>
-                        <button type="button" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button" data-block="button">
-                            <span class="button__flair"></span>
-                            <span class="button__label">Delete</span>
-                        </button>
-                    </div>
-                    <div class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
-                        <h6 class="">Todo Item 2</h6>
-                        <button type="button" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button" data-block="button">
-                            <span class="button__flair"></span>
-                            <span class="button__label">Delete</span>
-                        </button>
-                    </div>
-                    <div class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
-                        <h6 class="">Todo Item 3</h6>
-                        <button type="button" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button" data-block="button">
-                            <span class="button__flair"></span>
-                            <span class="button__label">Delete</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-            <!-- ================================= Image Animation Start ================================== -->
-            <!-- <div class="about pb-120 tw-mt-10">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <figure class="hover-animation-white split-reveal position-relative overflow-hidden">
-                        <img src="https://html.awaikenthemes.com/artistic/freelancer/images/intro-video-bg.jpg" alt="Thumb" class="split-reveal-element tw-rounded-2xl w-100 h-100 object-fit-cover origin-left">
-                    </figure>
-                    <figure class="hover-animation-white split-reveal position-relative overflow-hidden">
-                        <img src="https://html.awaikenthemes.com/artistic/freelancer/images/about-img-3.jpg" alt="Thumb" class="split-reveal-element tw-rounded-2xl w-100 h-100 object-fit-cover origin-left">
-                    </figure>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <figure class="hover-animation-white split-reveal position-relative overflow-hidden h-100">
-                        <img src="https://html.awaikenthemes.com/artistic/images/why-choose-image.jpg" alt="Thumb" class="split-reveal-element tw-rounded-2xl w-100 h-100 object-fit-cover origin-left">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div> -->
-            <!-- ================================= Image Animation End ================================== -->
 
             <!-- ==================== Footer Start Here ==================== -->
 <footer class="footer position-relative z-1 mt-auto">
@@ -1786,10 +1745,10 @@
           <h4 class="h2 text-white">Subscribe to Our <span class="text-main">Newsletter.</span> </h4>
         </div>
         <div class="max-w-645-px w-100">
-          <form action="#" class="position-relative">
+          <form action="#" class="position-relative form-submit">
             <input type="email"
               class="tw-ps-7 lg-tw-pe-170-px tw-py-405 bg-white-13 border border-transparent outline-0 focus-border-main rounded-pill text-white tw-text-lg w-100"
-              placeholder="Enter Email...">
+              placeholder="Enter Email..." required>
             <button type="submit"
               class="btn btn-main hover-style-two button--stroke active-scale-094 tw-duration-100 d-md-inline-flex d-none align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder rounded-pill position-absolute top-50 translate-middle-y end-0 tw-me-105 tw-py-405"
               data-block="button">
@@ -1994,7 +1953,7 @@
   </div>
 
   <!-- bottom Footer -->
-  <div class="border-top bg-black border-dashed border-neutral-600 border-0 tw-py-8">
+  <div class="border-top bg-black border-dashed border-neutral-800 border-0 tw-py-8">
     <div class="container container-two">
       <div class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
         <p class="text-dark-light text-line-1 fw-semibold">

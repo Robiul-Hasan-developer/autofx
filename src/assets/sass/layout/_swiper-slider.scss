@@ -6,11 +6,17 @@
     opacity: 1;
     background: #FFFFFF8C;
     transition: .3s linear;
+}
 
-    &.swiper-pagination-bullet-active {
-        width: 56px;
-        background-color: var(--vs-theme-color1);
+.style-dark {
+    .swiper-pagination-bullet {
+        background-color: #1616164D;
     }
 }
-/* ========================== Swiper Slider css end ============================= */
 
+.swiper-pagination-bullet-active {
+    width: 56px;
+    background-color: var(--vs-theme-color1) !important;
+}
+
+/* ========================== Swiper Slider css end ============================= */
