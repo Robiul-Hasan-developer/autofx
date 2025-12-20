@@ -325,9 +325,6 @@
     // ========================= magnific Popup Js End =====================
 
     // ============== Magnific Popup Js Start =======================
-    $(".popup-video-link").magnificPopup({
-      type: "iframe",
-    });
     $(".gallery-popup").magnificPopup({
       type: "image",
       gallery: {

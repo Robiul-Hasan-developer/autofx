@@ -1784,6 +1784,10 @@ figure {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.grid-col-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* grid css end */
 /* Inset class start */
 .tw-start-0 {
@@ -5325,6 +5329,24 @@ figure {
     background-color: var(--vs-theme-color1);
     bottom: -3px;
     inset-inline-start: 0;
+}
+
+.hover-item-overlay::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--vs-theme-color1);
+    transform: scale(0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.hover-item-overlay:hover::before {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 0.3;
 }
 
 /* Footer Css End */
