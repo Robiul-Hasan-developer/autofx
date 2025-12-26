@@ -241,16 +241,6 @@
       grabCursor: true,
       loop: true,
       speed: 1000,
-      // effect: fade,
-      // creativeEffect: {
-      //   prev: {
-      //     shadow: true,
-      //     translate: [0, 0, -400],
-      //   },
-      //   next: {
-      //     translate: ["100%", 0, 0],
-      //   },
-      // },
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
@@ -296,7 +286,7 @@
     // ================================= Testimonials One slider Start =========================
     var testimonialsSlider = new Swiper(".testimonials-slider", {
       autoplay: {
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
       },
       autoplay: true,
