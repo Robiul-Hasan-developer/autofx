@@ -3858,6 +3858,10 @@ figure {
     object-position: top;
 }
 
+.tw--scale-x-1 {
+    transform: scaleX(-1);
+}
+
 /* Transform Css End */
 /* Text Decoration Start */
 .hover-underline:hover {
@@ -5365,6 +5369,8 @@ figure {
 }
 
 /* Testimonials Css end */
+/* About Two section start */
+/* About Two section end */
 /* Footer Css Start */
 .bg-dark-light {
     background-color: #1F1F1F;
