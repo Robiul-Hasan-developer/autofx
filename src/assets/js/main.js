@@ -236,26 +236,27 @@
     // ========================== Add Attribute For Bg Image Js End =====================
 
     // ================================= Banner slider Start =========================
-    var bannerOne = new Swiper(".banner-one-slider", {
+    var bannerOne = new Swiper(".banner-slider", {
       slidesPerView: 1,
       grabCursor: true,
       loop: true,
       speed: 1000,
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: [0, 0, -400],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      },
+      // effect: fade,
+      // creativeEffect: {
+      //   prev: {
+      //     shadow: true,
+      //     translate: [0, 0, -400],
+      //   },
+      //   next: {
+      //     translate: ["100%", 0, 0],
+      //   },
+      // },
       autoplay: {
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
       },
       pagination: {
-        el: ".banner-one-slider-pagination",
+        el: ".banner-slider-pagination",
         clickable: true,
       },
     });

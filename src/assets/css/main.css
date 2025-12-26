@@ -3456,13 +3456,13 @@ figure {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.125rem);
 }
 
-.lg-tw-pe-170-px {
+.lg-tw-pe-200-px {
     padding-inline-end: 90px;
 }
 
 @media (min-width: 768px) {
-    .lg-tw-pe-170-px {
-        padding-inline-end: 170px;
+    .lg-tw-pe-200-px {
+        padding-inline-end: 200px;
     }
 }
 
@@ -5048,6 +5048,39 @@ figure {
     background-color: var(--vs-theme-color1) !important;
 }
 
+/* Slider Animation Css Start */
+.animate-left-right {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-80px);
+    transform: translateX(-80px);
+    transition: 0.6s ease-in-out;
+}
+
+.swiper-slide-active .animate-left-right {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.animation-delay-08 {
+    transition-delay: 800ms;
+}
+
+.animation-delay-1 {
+    transition-delay: 1000ms;
+}
+
+.animation-delay-12 {
+    transition-delay: 1200ms;
+}
+
+.animation-delay-15 {
+    transition-delay: 1500ms;
+}
+
+/* Slider Animation Css End */
 /* ========================== Swiper Slider css end ============================= */
 /* Top header css start */
 .before-bg-end::before {
@@ -5072,12 +5105,12 @@ figure {
 
 /* Top header css end */
 /* ========================== Banner One section start ============================= */
-.banner-one {
+.banner {
     padding: 180px 0 112px;
 }
 
 @media (min-width: 992px) {
-    .banner-one {
+    .banner {
         padding: 260px 0 112px;
     }
 }
