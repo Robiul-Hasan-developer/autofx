@@ -8,6 +8,10 @@
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #07070733;
+    transition: .3s linear;
+    &:hover {
+        -webkit-text-stroke-color: #070707;
+    }
 }
 
 .hover-border-top-bottom {

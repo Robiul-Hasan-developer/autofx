@@ -1080,6 +1080,10 @@ figure {
     border-style: dashed !important;
 }
 
+.tw-border-9-px {
+    border-width: 9px !important;
+}
+
 .border-transparent {
     border-color: transparent !important;
 }
@@ -5413,6 +5417,11 @@ figure {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #07070733;
+    transition: 0.3s linear;
+}
+
+.text-stroke:hover {
+    -webkit-text-stroke-color: #070707;
 }
 
 .hover-border-top-bottom {
@@ -5439,6 +5448,12 @@ figure {
 }
 
 /* Service Two css end */
+/* project css start */
+.project-two-item__content {
+    max-width: 360px;
+}
+
+/* project css end */
 /* Footer Css Start */
 .bg-dark-light {
     background-color: #1F1F1F;
