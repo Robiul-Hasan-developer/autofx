@@ -5065,7 +5065,7 @@ figure {
 }
 
 .style-dark .swiper-pagination-bullet {
-    background-color: #1616164D;
+    background-color: #949797;
 }
 
 .swiper-pagination-bullet-active {
@@ -5450,7 +5450,11 @@ figure {
 /* Service Two css end */
 /* project css start */
 .project-two-item__content {
-    max-width: 360px;
+    transform: translateY(102%);
+}
+
+.project-two-item:hover .project-two-item__content {
+    transform: translateY(0);
 }
 
 /* project css end */

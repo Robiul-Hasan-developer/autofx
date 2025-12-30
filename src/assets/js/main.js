@@ -327,6 +327,41 @@
       },
     });
     // ================================= Testimonials One slider End =========================
+    // ================================= Testimonials One slider Start =========================
+    var projectTwoSlider = new Swiper(".project-two-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1000,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: ".project-two-slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+        1350: {
+          slidesPerView: 5,
+        },
+      },
+    });
+    // ================================= Testimonials One slider End =========================
 
     // ========================= AOS Js Start ===========================
     AOS.init({
