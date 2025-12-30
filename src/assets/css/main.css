@@ -1258,6 +1258,10 @@ figure {
     font-size: inherit;
 }
 
+.text-36-px {
+    font-size: clamp(1.5rem, 0.9615rem + 2.1635vw, 2.25rem);
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -3757,6 +3761,10 @@ figure {
     box-shadow: 0px 4px 5px 0px #0000000A;
 }
 
+.common-shadow-four {
+    box-shadow: 0px 4px 14px 0px #00000014;
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
@@ -5391,6 +5399,41 @@ figure {
 }
 
 /* About Two section end */
+/* Service Two css start */
+.text-vertical-style {
+    writing-mode: sideways-lr;
+}
+
+.text-stroke {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #07070733;
+}
+
+.hover-border-top-bottom {
+    position: relative;
+}
+
+.hover-border-top-bottom::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-top: 7px solid var(--vs-theme-color1);
+    border-bottom: 7px solid var(--vs-theme-color1);
+    z-index: 2;
+    transition: 0.3s linear;
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%) scaleY(1.1);
+    pointer-events: none;
+}
+
+.hover-border-top-bottom:hover::before {
+    transform: translateY(-50%) scaleY(1);
+}
+
+/* Service Two css end */
 /* Footer Css Start */
 .bg-dark-light {
     background-color: #1F1F1F;
