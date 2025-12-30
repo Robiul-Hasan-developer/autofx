@@ -2570,6 +2570,11 @@ figure {
     margin-inline-start: -18px;
 }
 
+.tw--ms-140-px {
+    margin-inline-start: -18px;
+    margin-inline-start: -140px;
+}
+
 .tw-me-auto {
     margin-inline-end: auto;
 }

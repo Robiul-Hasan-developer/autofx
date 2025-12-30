@@ -333,26 +333,49 @@ if ($(".scale-up-wrapper").length > 0) {
 
 // **************************** item goes bottom on scroll js start ****************************
 if ($(".item-goes-bottom-on-scroll").length > 0) {
-  document.querySelectorAll(".item-goes-bottom-on-scroll").forEach((scrollItem) => {
+  document
+    .querySelectorAll(".item-goes-bottom-on-scroll")
+    .forEach((scrollItem) => {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: scrollItem,
+            start: "top 20%",
+            end: "bottom 5%",
+            scrub: true,
+            invalidateOnRefresh: true,
+            markers: false,
+          },
+        })
+        .to(scrollItem, {
+          y: "80%",
+          x: "-100px",
+          scale: 1.6,
+        });
+    });
+}
+// **************************** item goes bottom on scroll js End ****************************
+
+// **************************** item goes left to right on scroll js start ****************************
+if ($(".left-to-right").length > 0) {
+  document.querySelectorAll(".left-to-right").forEach((scrollItem) => {
     gsap
       .timeline({
         scrollTrigger: {
           trigger: scrollItem,
-          start: "top 20%",
-          end: "bottom 5%",
-          scrub: true,
+          start: "top bottom-=100",
+          end: "top top+=100",
+          scrub: 9,
           invalidateOnRefresh: true,
           markers: false,
         },
       })
       .to(scrollItem, {
-        y: "80%",
-        x: "-100px",
-        scale: 1.6,
+        x: "100vw",
       });
   });
 }
-// **************************** item goes bottom on scroll js End ****************************
+// **************************** item goes left to right on scroll js End ****************************
 
 // **************************** item rotate on scroll js start ****************************
 // if ($(".item-rotate-on-scroll").length > 0) {
