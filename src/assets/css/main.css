@@ -1575,6 +1575,7 @@ figure {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 1;
+    pointer-events: none;
 }
 
 .hover-animation-white:hover:after {
@@ -5314,11 +5315,18 @@ figure {
     inset-block-start: 0;
     z-index: 1;
     opacity: 0;
+    visibility: hidden;
     transition: 0.3s linear;
 }
 
 .group-item:hover .hover-bg-main-light::before {
     opacity: 0.3;
+    visibility: visible;
+}
+
+.bg-light-dark::before {
+    background-color: #2626264b;
+    opacity: 1 !important;
 }
 
 .social-icon-item {
@@ -5417,6 +5425,7 @@ figure {
     background-color: #fff;
     border-radius: 30px;
     padding: 10px;
+    padding-inline-end: 0 !important;
 }
 
 @media (min-width: 1200px) {
@@ -5475,6 +5484,31 @@ figure {
 }
 
 /* project css end */
+/* Product css start */
+.wishlist-btn.active i {
+    font-weight: 900;
+    color: var(--vs-theme-color1);
+}
+
+.action-buttons {
+    transform: translateY(-100%) translateX(-50%);
+}
+
+.select-option-btn {
+    transform: translateY(100%) translateX(-50%);
+}
+
+.product-item:hover .action-buttons {
+    transform: translateY(-50%) translateX(-50%);
+    top: 50% !important;
+}
+
+.product-item:hover .select-option-btn {
+    transform: translateY(0) translateX(-50%);
+    margin-bottom: 28px;
+}
+
+/* Product css end */
 /* Footer Css Start */
 .bg-dark-light {
     background-color: #1F1F1F;

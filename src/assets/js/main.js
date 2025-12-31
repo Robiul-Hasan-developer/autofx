@@ -386,6 +386,13 @@
     });
     // ============== Magnific Popup Js End =======================
 
+
+    // ============== Wishlist button Js Start =======================
+    $(document).on('click', '.wishlist-btn', function () {
+      $(this).toggleClass('active');
+    });
+    // ============== Wishlist button Js End =======================
+
     // ========================= Counter Up Js End ===================
     // const counterUp = window.counterUp.default;
 
