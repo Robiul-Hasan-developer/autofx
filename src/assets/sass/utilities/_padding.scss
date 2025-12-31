@@ -63,7 +63,12 @@
   &-px-50-px {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.125rem);
   }
+  &-px-32-px {
+      padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2rem);
+    }
 }
+
+    
 
 .lg-tw-pe-200-px {
   padding-inline-end: 90px;

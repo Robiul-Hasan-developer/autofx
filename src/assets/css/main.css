@@ -3474,6 +3474,10 @@ figure {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.125rem);
 }
 
+.tw-px-32-px {
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2rem);
+}
+
 .lg-tw-pe-200-px {
     padding-inline-end: 90px;
 }
@@ -3622,6 +3626,11 @@ figure {
 }
 
 .tw-rounded-3xl {
+    border-radius: 1.5rem;
+  /* 24px */
+}
+
+.tw-rounded-30-px {
     border-radius: 1.5rem;
   /* 24px */
 }
@@ -5509,6 +5518,18 @@ figure {
 }
 
 /* Product css end */
+/* Price two section start */
+.rounded-glob-shape {
+    margin-inline-start: 8%;
+    margin-block-end: 8%;
+}
+
+.arrow-curve-shape {
+    margin-inline-end: 13%;
+    margin-block-start: 5%;
+}
+
+/* Price two section end */
 /* Footer Css Start */
 .bg-dark-light {
     background-color: #1F1F1F;
