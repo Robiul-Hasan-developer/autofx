@@ -1526,6 +1526,14 @@ figure {
     height: 72px;
 }
 
+.tw-h-78-px {
+    height: 78px;
+}
+
+.tw-h-94-px {
+    height: 94px;
+}
+
 .tw-h-75-px {
     height: 75px;
 }
@@ -2578,6 +2586,10 @@ figure {
 .tw--ms-140-px {
     margin-inline-start: -18px;
     margin-inline-start: -140px;
+}
+
+.tw--mb-46-px {
+    margin-bottom: -46px;
 }
 
 .tw-me-auto {
@@ -4015,6 +4027,14 @@ figure {
 
 .tw-w-72-px {
     width: 72px;
+}
+
+.tw-w-78-px {
+    width: 78px;
+}
+
+.tw-w-94-px {
+    width: 94px;
 }
 
 .tw-w-300-px {
