@@ -5407,6 +5407,23 @@ figure {
     border-radius: 24px;
 }
 
+.statistics-style-two {
+    position: absolute;
+    bottom: 0;
+    inset-inline-end: 0;
+    max-width: 370px;
+    width: 100%;
+    margin-block-end: 36px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+@media (min-width: 1200px) {
+    .statistics-style-two {
+        padding: 20px;
+    }
+}
 /* About Two section end */
 /* Service Two css start */
 .text-vertical-style {
