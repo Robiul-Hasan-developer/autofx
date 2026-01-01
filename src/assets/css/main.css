@@ -1216,6 +1216,10 @@ figure {
     color: var(--body-color);
 }
 
+.text-body-two {
+    color: #C9C9C9;
+}
+
 .text-dark-light {
     color: #989797;
 }
@@ -2771,6 +2775,10 @@ figure {
 
 .max-w-220-px {
     max-width: 220px;
+}
+
+.max-w-250-px {
+    max-width: 250px;
 }
 
 .max-w-576-px {
@@ -5621,6 +5629,27 @@ figure {
 }
 
 /* Price two section end */
+/* Counter three css start */
+.cols-4 {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 400px) {
+    .cols-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .cols-4 {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+    }
+}
+/* Counter three css end */
 /* Footer Css Start */
 .bg-dark-light {
     background-color: #1F1F1F;
