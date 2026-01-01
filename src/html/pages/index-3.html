@@ -1,4 +1,6 @@
-@@include('../partials/_template-top.html')
+@@include('../partials/_template-top.html', {
+    'bodyClass': 'bg-main-two'
+})
 
 @@include('../partials/_header-two.html', {
 'headerTwoClass': 'phone-info-none'
@@ -8,9 +10,12 @@
     <div id="smooth-content">
         <main>
             @@include('../partials/_banner-three.html')
+            
+            @@include('../partials/_about-three.html')
 
 
-            <div class="py-120 bg-white"></div>
+            <div class="py-120"></div>
+            <div class="py-120"></div>
             
             @@include('../partials/_footer.html')
 
