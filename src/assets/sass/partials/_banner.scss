@@ -31,4 +31,8 @@
     opacity: .4;
     z-index: -1;
 }
+
+.plain-stair-shape {
+    clip-path: polygon(0 94%, 100% 0, 100% 100%, 0 100%);
+}
 /* ========================== Banner One section end ============================= */

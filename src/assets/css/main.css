@@ -2718,6 +2718,10 @@ figure {
     max-width: 700px;
 }
 
+.max-w-840-px {
+    max-width: 840px;
+}
+
 .max-w-1610-px {
     max-width: 1610px;
 }
@@ -5193,6 +5197,10 @@ figure {
     left: 0;
     opacity: 0.4;
     z-index: -1;
+}
+
+.plain-stair-shape {
+    clip-path: polygon(0 94%, 100% 0, 100% 100%, 0 100%);
 }
 
 /* ========================== Banner One section end ============================= */
