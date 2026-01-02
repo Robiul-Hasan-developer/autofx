@@ -966,6 +966,10 @@ figure {
     background-color: var(--section-bg);
 }
 
+.bg-dark-light {
+    background-color: #1F1F1F;
+}
+
 .bg-white-08 {
     background-color: hsl(var(--white)/0.08);
 }
@@ -5650,11 +5654,21 @@ figure {
     }
 }
 /* Counter three css end */
-/* Footer Css Start */
-.bg-dark-light {
-    background-color: #1F1F1F;
+/* service three section css start */
+.btn-shape {
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.service-three-icon {
+    position: absolute;
+    top: -39px;
+    inset-inline-end: 0;
+    z-index: 1;
+    margin-inline-end: 24px;
+}
+
+/* service three section css end */
+/* Footer Css Start */
 .border-bottom-black-main {
     position: relative;
     border-bottom: 3px solid #FFFFFF26;

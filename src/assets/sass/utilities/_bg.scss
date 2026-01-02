@@ -52,6 +52,10 @@
   background-color: var(--section-bg);
 }
 
+.bg-dark-light {
+    background-color: #1F1F1F;
+}
+
 .bg-white {
   &-08 {
     background-color: hsl(var(--white) / 0.08);

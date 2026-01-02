@@ -301,7 +301,7 @@
     });
     // ================================= Testimonials One slider End =========================
 
-    // ================================= Testimonials One slider Start =========================
+    // ================================= Blog One slider Start =========================
     var blogSlider = new Swiper(".blog-slider", {
       autoplay: {
         delay: 2000,
@@ -326,8 +326,9 @@
         },
       },
     });
-    // ================================= Testimonials One slider End =========================
-    // ================================= Testimonials One slider Start =========================
+    // ================================= Blog One slider End =========================
+
+    // ================================= Project Two slider Start =========================
     var projectTwoSlider = new Swiper(".project-two-slider", {
       autoplay: {
         delay: 2000,
@@ -361,8 +362,38 @@
         },
       },
     });
-    // ================================= Testimonials One slider End =========================
+    // ================================= Project Two slider End =========================
 
+    // ================================= Blog One slider Start =========================
+    var serviceThreeSlider = new Swiper(".service-three-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1000,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: ".service-three-slider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+    });
+    // ================================= Blog One slider End =========================
+    
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false,
