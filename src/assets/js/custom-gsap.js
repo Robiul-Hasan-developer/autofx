@@ -19,15 +19,26 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // **************************** Nav Menu js End ****************************
 
 // **************************** ScrollSmoother js start ****************************
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const smoother = ScrollSmoother.create({
+// const smoother = ScrollSmoother.create({
+//   wrapper: "#smooth-wrapper",
+//   content: "#smooth-content",
+//   smooth: 1.35,
+//   effects: true,
+//   smoothTouch: 0.1,
+//   ignoreMobileResize: false,
+// });
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+let smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
-  smooth: 1.35,
+  smooth: 1.2,
   effects: true,
-  smoothTouch: 0.1,
-  ignoreMobileResize: false,
+  smoothTouch: false, // IMPORTANT
+  normalizeScroll: true,
 });
 // **************************** ScrollSmoother js End ****************************
 

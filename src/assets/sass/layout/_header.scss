@@ -203,15 +203,16 @@
     max-width: 200px;
   }
 }
+
 /* Logo Shape */
 
 
 .header-style-absolute {
-    position: absolute;
-    inset-block-start: 0;
-    width: 100%;
-    inset-inline-start: 0;
-    inset-inline-end: 0;
+  position: absolute;
+  inset-block-start: 0;
+  width: 100%;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
 }
 
 .phone-info-none {
@@ -221,8 +222,8 @@
 }
 
 .header-style-absolute.fixed-header {
-    position: fixed;
-    background-color: var(--vs-theme-color2);
+  position: fixed;
+  background-color: var(--vs-theme-color2);
 }
 
 .header-space {
@@ -236,4 +237,5 @@
     padding-top: 154px;
   }
 }
+
 /* ================================= Header Css End =========================== */
