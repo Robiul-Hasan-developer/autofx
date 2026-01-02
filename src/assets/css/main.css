@@ -1337,6 +1337,10 @@ figure {
     font-size: clamp(1.5rem, 0.9615rem + 2.1635vw, 2.25rem);
 }
 
+.text-140-px {
+    font-size: clamp(4.5rem, 0.0962rem + 5.5288vw, 8.75rem) !important;
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -3567,6 +3571,10 @@ figure {
 
 .tw-px-32-px {
     padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2rem);
+}
+
+.tw-px-36-px {
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
 }
 
 .lg-tw-pe-200-px {
