@@ -974,6 +974,10 @@ figure {
     background-color: #171717;
 }
 
+.bg-dark-light-three {
+    background-color: #070707;
+}
+
 .bg-white-08 {
     background-color: hsl(var(--white)/0.08);
 }
