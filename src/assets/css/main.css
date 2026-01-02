@@ -90,7 +90,7 @@
   /* template main color */
   // --vs-theme-color1: #DB3705;
     --vs-theme-color1: #f25000;
-    --vs-theme-color2: #161616;
+    --vs-theme-color2: #0C0C0C;
   /* template main color ennd */
   /* White Color */
     --white: 0 0% 100%;
@@ -2671,6 +2671,10 @@ figure {
     margin-bottom: -46px;
 }
 
+.tw--mb-5-px {
+    margin-bottom: -5px;
+}
+
 .tw-me-auto {
     margin-inline-end: auto;
 }
@@ -2795,6 +2799,10 @@ figure {
 
 .max-w-250-px {
     max-width: 250px;
+}
+
+.max-w-530-px {
+    max-width: 530px;
 }
 
 .max-w-576-px {

@@ -393,7 +393,38 @@
       },
     });
     // ================================= Blog One slider End =========================
-    
+
+    // ================================= Testimonials three slider Start =========================
+    var testimonialsThreeSlider = new Swiper(".testimonials-three-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: false,
+      speed: 1000,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: ".testimonials-three-slider-pagination",
+        clickable: true,
+      },
+       navigation: {
+        nextEl: ".testimonials-three-button-next",
+        prevEl: ".testimonials-three-button-prev",
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+      },
+    });
+    // ================================= Testimonials three slider End =========================
+
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false,
@@ -417,14 +448,13 @@
     });
     // ============== Magnific Popup Js End =======================
 
-
     // ============== Wishlist button Js Start =======================
-    $(document).on('click', '.wishlist-btn', function () {
-      $(this).toggleClass('active');
+    $(document).on("click", ".wishlist-btn", function () {
+      $(this).toggleClass("active");
     });
     // ============== Wishlist button Js End =======================
 
-   // ========================= Counter Up Js Start ===================
+    // ========================= Counter Up Js Start ===================
     const counterUp = window.counterUp.default;
 
     const callback = (entries) => {
@@ -457,7 +487,6 @@
       });
     }
     // ========================= Counter Up Js End ===================
-
 
     // ================================ Floating Progress js start =================================
     const progressContainers = document.querySelectorAll(".progress-container");
@@ -502,8 +531,6 @@
       observer.observe(progressContainer);
     });
     // ================================ Floating Progress js End =================================
-    
-    
   });
   // ==========================================
   //      End Document Ready function
