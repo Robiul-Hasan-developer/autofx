@@ -2779,6 +2779,10 @@ figure {
     max-height: 200px;
 }
 
+.tw-max-h-310-px {
+    max-height: 310px;
+}
+
 /* Max Height Css Class End */
 /* Max width Css Class Start */
 .max-w-645-px {
