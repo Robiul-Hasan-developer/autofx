@@ -4841,6 +4841,21 @@ figure {
     background-color: var(--vs-theme-color2);
 }
 
+.header-space {
+    padding-top: 71px;
+}
+
+@media (min-width: 768px) {
+    .header-space {
+        padding-top: 130px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-space {
+        padding-top: 154px;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -5701,6 +5716,16 @@ figure {
 }
 
 /* service three section css end */
+/* Banner Four start */
+.banner-four {
+    padding: 180px 0 112px;
+}
+
+.banner-four-img {
+    margin-inline-end: -11%;
+}
+
+/* Banner Four End */
 /* Footer Css Start */
 .border-bottom-black-main {
     position: relative;

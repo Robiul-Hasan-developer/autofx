@@ -224,4 +224,16 @@
     position: fixed;
     background-color: var(--vs-theme-color2);
 }
+
+.header-space {
+  padding-top: 71px;
+
+  @media (min-width: 768px) {
+    padding-top: 130px;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 154px;
+  }
+}
 /* ================================= Header Css End =========================== */
