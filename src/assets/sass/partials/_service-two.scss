@@ -24,11 +24,12 @@
         border-top: 7px solid var(--vs-theme-color1);
         border-bottom: 7px solid var(--vs-theme-color1);
         z-index: 2;
-        transition: .3s linear;
         inset-inline-start: 0;
         inset-block-start: 50%;
         transform: translateY(-50%) scaleY(1.1);
         pointer-events: none;
+        border-radius: inherit;
+        transition: inherit;
     }
     &:hover::before {
         transform: translateY(-50%) scaleY(1);
