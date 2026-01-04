@@ -35,10 +35,10 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 let smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
-  smooth: 1.2,
+  smooth: 1.35,
   effects: true,
   smoothTouch: false, // IMPORTANT
-  normalizeScroll: true,
+  // normalizeScroll: true,
 });
 // **************************** ScrollSmoother js End ****************************
 

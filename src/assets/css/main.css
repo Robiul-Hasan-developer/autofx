@@ -4664,7 +4664,7 @@ figure {
     inset-block-start: 0;
     inset-inline-end: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
@@ -4857,21 +4857,6 @@ figure {
     background-color: var(--vs-theme-color2);
 }
 
-.header-space {
-    padding-top: 71px;
-}
-
-@media (min-width: 768px) {
-    .header-space {
-        padding-top: 130px;
-    }
-}
-
-@media (min-width: 992px) {
-    .header-space {
-        padding-top: 154px;
-    }
-}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -5745,7 +5730,13 @@ figure {
 /* service three section css end */
 /* Banner Four start */
 .banner-four {
-    padding: 180px 0 112px;
+    padding: 220px 0 112px;
+}
+
+@media (min-width: 992px) {
+    .banner-four {
+        padding: 340px 0 112px;
+    }
 }
 
 .banner-four-img {

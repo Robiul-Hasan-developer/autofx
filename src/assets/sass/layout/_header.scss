@@ -10,7 +10,7 @@
     inset-block-start: 0;
     inset-inline-end: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
@@ -224,18 +224,6 @@
 .header-style-absolute.fixed-header {
   position: fixed;
   background-color: var(--vs-theme-color2);
-}
-
-.header-space {
-  padding-top: 71px;
-
-  @media (min-width: 768px) {
-    padding-top: 130px;
-  }
-
-  @media (min-width: 992px) {
-    padding-top: 154px;
-  }
 }
 
 /* ================================= Header Css End =========================== */
