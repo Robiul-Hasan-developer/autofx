@@ -26,9 +26,20 @@
     border-radius: 30px;
     padding: 10px;
     padding-inline-end: 0 !important;
+
     @media (min-width: 1200px) {
         padding: 20px;
     }
+}
+
+.line-left::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 132px;
+    background-color: var(--vs-theme-color1);
+    inset-inline-start: -32px;
+    inset-block-start: 0;
 }
 
 /* About Two section end */

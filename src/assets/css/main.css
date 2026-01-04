@@ -3585,6 +3585,10 @@ figure {
     padding: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
 }
 
+.tw-p-24-px {
+    padding: clamp(1rem, -6.1013rem + 9.4763vw, 1.5rem);
+}
+
 .tw-p-48-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
 }
@@ -5596,6 +5600,17 @@ figure {
         padding: 20px;
     }
 }
+
+.line-left::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 132px;
+    background-color: var(--vs-theme-color1);
+    inset-inline-start: -32px;
+    inset-block-start: 0;
+}
+
 /* About Two section end */
 /* Service Two css start */
 .text-vertical-style {
