@@ -1633,6 +1633,10 @@ figure {
     height: 92px;
 }
 
+.tw-h-100-px {
+    height: 100px;
+}
+
 .tw-h-110-px {
     height: 110px;
 }
@@ -4174,6 +4178,10 @@ figure {
 
 .tw-w-110-px {
     width: 110px;
+}
+
+.tw-w-100-px {
+    width: 100px;
 }
 
 .tw-w-145-px {
