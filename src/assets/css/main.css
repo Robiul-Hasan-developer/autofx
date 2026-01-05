@@ -3606,7 +3606,7 @@ figure {
 }
 
 .tw-p-60-px {
-    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+    padding: clamp(2rem, 0.3846rem + 3.3654vw, 3.75rem);
 }
 
 .tw-px-50-px {
@@ -5774,6 +5774,11 @@ figure {
 
 /* Banner Four End */
 /* ================================ banner five section start ============================ */
+@media (min-width: 768px) {
+    .banner-five-form {
+        max-width: 300px;
+    }
+}
 /* ================================ banner five section end ============================ */
 /* Footer Css Start */
 .border-bottom-black-main {
