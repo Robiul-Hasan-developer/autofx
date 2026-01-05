@@ -170,7 +170,7 @@
 
 .menu-link-py-505 {
   .nav-menu__link {
-    padding-block: 22px;
+    padding-block: 24px;
   }
 }
 
@@ -240,6 +240,13 @@
 .header-style-absolute.fixed-header {
   position: fixed;
   background-color: var(--vs-theme-color2);
+}
+
+.middle-header {
+  padding-block: 24px;
+  @media (min-width: 992px) {
+    padding-block: 32px;
+  }
 }
 
 /* ================================= Header Css End =========================== */

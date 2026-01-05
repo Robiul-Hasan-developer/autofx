@@ -4810,7 +4810,7 @@ figure {
 }
 
 .menu-link-py-505 .nav-menu__link {
-    padding-block: 22px;
+    padding-block: 24px;
 }
 
 /* Logo Shape */
@@ -4877,9 +4877,16 @@ figure {
     background-color: var(--vs-theme-color2);
 }
 
+.middle-header {
+    padding-block: 24px;
+}
+
+@media (min-width: 992px) {
+    .middle-header {
+        padding-block: 32px;
+    }
+}
 /* ================================= Header Css End =========================== */
-/* Middle header css start */
-/* Middle header css end */
 /* Mega menu css start */
 .mega-menu {
     position: absolute;
