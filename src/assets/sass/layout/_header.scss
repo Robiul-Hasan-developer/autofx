@@ -158,6 +158,22 @@
   }
 }
 
+.hover-nav-menu-black {
+  .nav-menu__item:hover>a {
+    color: hsl(var(--black));
+  }
+
+  .has-submenu:hover>a::before {
+    color: hsl(var(--black));
+  }
+}
+
+.menu-link-py-505 {
+  .nav-menu__link {
+    padding-block: 22px;
+  }
+}
+
 
 /* Logo Shape */
 .logo-bg-shape {

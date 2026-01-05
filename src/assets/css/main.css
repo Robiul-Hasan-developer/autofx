@@ -1345,6 +1345,10 @@ figure {
     font-size: clamp(1.5rem, 0.9615rem + 2.1635vw, 2.25rem);
 }
 
+.text-40-px {
+    font-size: 40px;
+}
+
 .text-140-px {
     font-size: clamp(4.5rem, 0.0962rem + 5.5288vw, 8.75rem) !important;
 }
@@ -2785,6 +2789,10 @@ figure {
 
 .tw-max-h-310-px {
     max-height: 310px;
+}
+
+.tw-max-h-380-px {
+    max-height: 380px;
 }
 
 /* Max Height Css Class End */
@@ -4791,6 +4799,18 @@ figure {
 /* Header Menu and Submenu Css End */
 .nav-menu-white .nav-menu__link {
     color: hsl(var(--white));
+}
+
+.hover-nav-menu-black .nav-menu__item:hover > a {
+    color: hsl(var(--black));
+}
+
+.hover-nav-menu-black .has-submenu:hover > a::before {
+    color: hsl(var(--black));
+}
+
+.menu-link-py-505 .nav-menu__link {
+    padding-block: 22px;
 }
 
 /* Logo Shape */
