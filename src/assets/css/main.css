@@ -1908,6 +1908,21 @@ figure {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-cols-res-3 {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 500px) {
+    .grid-cols-res-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-cols-res-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 /* grid css end */
 /* Inset class start */
 .tw-start-0 {
