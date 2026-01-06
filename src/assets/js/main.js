@@ -466,6 +466,38 @@
     });
     // ================================= Category slider End =========================
 
+ // ================================= Brand slider Start =========================
+    var brandSlider = new Swiper(".brand-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1500,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 6,
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+        },
+        575: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      },
+    });
+    // ================================= Brand slider End =========================
+
+
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false,

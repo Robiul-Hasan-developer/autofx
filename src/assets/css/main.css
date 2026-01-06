@@ -958,6 +958,10 @@ figure {
     background-color: #FFB800;
 }
 
+.bg-danger-600 {
+    background-color: #FF450C;
+}
+
 .hover-bg-main:hover {
     background-color: var(--vs-theme-color1) !important;
 }
@@ -1347,6 +1351,10 @@ figure {
 
 .text-36-px {
     font-size: clamp(1.5rem, 0.9615rem + 2.1635vw, 2.25rem);
+}
+
+.text-30-px {
+    font-size: clamp(1.25rem, 1.9489rem - 0.091vw, 1.875rem);
 }
 
 .text-40-px {

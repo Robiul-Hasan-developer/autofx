@@ -6,6 +6,9 @@
   &-36-px {
     font-size: clamp(1.5rem, 0.9615rem + 2.1635vw, 2.25rem);
   }
+  &-30-px {
+    font-size: clamp(1.25rem, 1.9489rem + -0.091vw, 1.875rem);
+  }
   &-40-px {
     font-size: 40px;
   }
