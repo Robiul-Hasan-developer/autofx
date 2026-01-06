@@ -954,6 +954,10 @@ figure {
     background-color: var(--vs-theme-color2);
 }
 
+.bg-yellow-deep {
+    background-color: #FFB800;
+}
+
 .hover-bg-main:hover {
     background-color: var(--vs-theme-color1) !important;
 }
@@ -3623,6 +3627,10 @@ figure {
 
 .tw-px-36-px {
     padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+}
+
+.tw-px-40-px {
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.5rem);
 }
 
 .lg-tw-pe-200-px {
