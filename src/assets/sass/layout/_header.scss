@@ -244,8 +244,16 @@
 
 .middle-header {
   padding-block: 24px;
+
   @media (min-width: 992px) {
     padding-block: 32px;
+  }
+}
+
+.home-five-header-space {
+  height: 178px;
+  @media (min-width: 768px) {
+    height: 250px;
   }
 }
 

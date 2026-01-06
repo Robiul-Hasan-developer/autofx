@@ -4925,6 +4925,16 @@ figure {
         padding-block: 32px;
     }
 }
+
+.home-five-header-space {
+    height: 178px;
+}
+
+@media (min-width: 768px) {
+    .home-five-header-space {
+        height: 250px;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
