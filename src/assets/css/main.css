@@ -5846,6 +5846,17 @@ figure {
     }
 }
 /* ================================ banner five section end ============================ */
+/* Breadcrumb css start */
+.breadcrumb {
+    padding: 180px 0 150px;
+}
+
+@media (min-width: 768px) {
+    .breadcrumb {
+        padding: 345px 0 150px;
+    }
+}
+/* Breadcrumb css end */
 /* Footer Css Start */
 .border-bottom-black-main {
     position: relative;
