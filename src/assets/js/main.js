@@ -459,6 +459,10 @@
           slidesPerView: 7,
         },
       },
+      navigation: {
+        nextEl: ".category-slider-button-next",
+        prevEl: ".category-slider-button-prev",
+      },
     });
     // ================================= Category slider End =========================
 
