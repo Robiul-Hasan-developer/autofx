@@ -1,4 +1,43 @@
 /* ========================== Swiper Slider css start ============================= */
+
+.left-right-gradient::before,
+.left-right-gradient::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, var(--vs-theme-color2), transparent);
+    z-index: 2;
+}
+
+.left-right-gradient::after {
+    background: linear-gradient(90deg, transparent, var(--vs-theme-color2));
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}
+
+.gradient-section-bg {
+
+    &::before,
+    &::after {
+        width: 70px;
+
+        @media (min-width: 992px) {
+            width: 140px;
+        }
+    }
+
+    &::before {
+        background: linear-gradient(90deg, var(--section-bg), transparent);
+    }
+
+    &::after {
+        background: linear-gradient(90deg, transparent, var(--section-bg));
+    }
+}
+
 .swiper-pagination-bullet {
     width: 18px;
     height: 10px;
