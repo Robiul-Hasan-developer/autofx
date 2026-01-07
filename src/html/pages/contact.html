@@ -1,0 +1,83 @@
+@@include('../partials/_template-top.html', {
+'bodyClass': ''
+})
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+<div id="smooth-wrapper" class="header-space">
+    <div id="smooth-content">
+        <main>
+
+            @@include('../partials/_breadcrumb.html', {
+            'breadcrumbText': 'Contact us'
+            })
+
+            <!-- ============================= Contact Section start ============================ -->
+            <section class="py-120">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="">
+
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7">
+                            <form action="#" class="">
+                                <div class="row gy-4">
+                                    <div class="col-sm-6">
+                                        <input type="text"
+                                            class="bg-neutral-200 tw-px-6 tw-py-5 outline-0 border tw-duration-300 border-neutral-300 w-100 focus-border-main"
+                                            placeholder="First Name *">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text"
+                                            class="bg-neutral-200 tw-px-6 tw-py-5 outline-0 border tw-duration-300 border-neutral-300 w-100 focus-border-main"
+                                            placeholder="Last Name *">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="email"
+                                            class="bg-neutral-200 tw-px-6 tw-py-5 outline-0 border tw-duration-300 border-neutral-300 w-100 focus-border-main"
+                                            placeholder="Your Email *">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="tel"
+                                            class="bg-neutral-200 tw-px-6 tw-py-5 outline-0 border tw-duration-300 border-neutral-300 w-100 focus-border-main"
+                                            placeholder="Your Phone *">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <textarea
+                                            class="bg-neutral-200 tw-px-6 tw-py-5 outline-0 border tw-duration-300 border-neutral-300 w-100 focus-border-main tw-h-180-px"
+                                            placeholder="Your Message..."></textarea>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="submit" 
+                                            class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder button-shape shape-bg-white tw-tracking-2-percent tw-mt-4"
+                                            data-block="button">
+                                            <span class="button__flair"></span>
+                                            <span class="button__label">
+                                                submit now
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================= Contact Section end ============================ -->
+
+            @@include('../partials/_footer-two.html')
+
+        </main>
+    </div>
+</div>
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
