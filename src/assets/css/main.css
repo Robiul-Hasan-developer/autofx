@@ -2726,6 +2726,10 @@ figure {
     margin-inline-end: auto;
 }
 
+.tw--mt-70-px {
+    margin-top: -70px;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -3960,6 +3964,10 @@ figure {
 
 .common-shadow-four {
     box-shadow: 0px 4px 14px 0px #00000014;
+}
+
+.common-shadow-five {
+    box-shadow: 0px 4px 8px 0px #0707071F;
 }
 
 /* Box shadow End */
