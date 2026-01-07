@@ -1,0 +1,56 @@
+@@include('../partials/_template-top.html', {
+'bodyClass': ''
+})
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+<div id="smooth-wrapper" class="header-space">
+    <div id="smooth-content">
+        <main>
+
+            @@include('../partials/_breadcrumb.html', {
+            'breadcrumbText': '404 Not Found'
+            })
+
+            <!-- ============================= Not Found Section start ============================ -->
+            <section class="not-found py-120">
+                <div class="container">
+                    <div class="text-center">
+                        <div class="">
+                            <img src="assets/images/shapes/error-img.png" alt="Error Image">
+                        </div>
+                        <div class="tw-mt-6 max-w-576-px mx-auto">
+                            <h2 class="text-capitalize">“ oops! page not found ”</h2>
+                            <p class="max-w-530-px mx-auto tw-mt-4">operating systems paired with user-friendly mobile devices with elegant design
+                                and premium build quality striving. </p>
+                            <div class="tw-mt-6">
+                                <a href="index.html"
+                                    class="btn btn-main hover-style-two button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder button-shape shape-bg-white tw-tracking-2-percent"
+                                    data-block="button">
+                                    <span class="button__flair"></span>
+                                    <span class="button__label">
+                                        back to home
+                                        <span class="tw-ps-2 tw-text-sm d-sm-inline-flex d-none"><i
+                                                class="fa-solid fa-plus"></i></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================= Not Found Section end ============================ -->
+
+            @@include('../partials/_footer-two.html')
+
+        </main>
+    </div>
+</div>
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
