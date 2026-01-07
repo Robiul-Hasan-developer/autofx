@@ -1143,6 +1143,10 @@ figure {
     border-color: var(--vs-theme-color2) !important;
 }
 
+.border-white-03 {
+    border-color: #FFFFFF4D !important;
+}
+
 .hover-border-main:hover {
     border-color: var(--vs-theme-color1) !important;
 }
@@ -1233,7 +1237,7 @@ figure {
 }
 
 .text-body {
-    color: var(--body-color);
+    color: var(--body-color) !important;
 }
 
 .text-body-two {
@@ -1292,11 +1296,11 @@ figure {
 
 /* Text Color */
 .hover-text-main:hover {
-    color: var(--vs-theme-color1);
+    color: var(--vs-theme-color1) !important;
 }
 
 .hover-text-main-two:hover {
-    color: var(--vs-theme-color2);
+    color: var(--vs-theme-color2) !important;
 }
 
 .hover-text-white:hover {
@@ -2842,6 +2846,14 @@ figure {
 
 .max-w-685-px {
     max-width: 685px;
+}
+
+.max-w-420-px {
+    max-width: 420px;
+}
+
+.max-w-460-px {
+    max-width: 460px;
 }
 
 .max-w-480-px {
