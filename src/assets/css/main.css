@@ -7340,12 +7340,12 @@ blockquote.vs-quote .quote-author {
     border-radius: 12px 0 0 12px;
     font-size: 16px;
     font-weight: 600;
-    font-family: var(--font-body);
-    color: var(--vs-title-color);
+    font-family: var(--body-font);
+    color: hsl(var(--heading-color));
 }
 
 .wp-block-search .wp-block-search__input::placeholder {
-    color: var(--vs-title-color);
+    color: hsl(var(--heading-color));
 }
 
 .wp-block-search .wp-block-search__button {
@@ -7369,7 +7369,7 @@ blockquote.vs-quote .quote-author {
 
 .widget {
     padding: var(--widget-padding-y, 35px) var(--widget-padding-x, 27px);
-    background-color: var(--vs-theme-color6);
+    background-color: var(--neutral-100);
     position: relative;
     margin-bottom: 30px;
     border: 1.5px solid rgba(var(--vs-title-color-rgb), 0.07);
