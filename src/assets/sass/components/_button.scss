@@ -110,6 +110,16 @@
             }
         }
     }
+    &-black {
+        background-color: hsl(var(--black)) !important;
+        color: hsl(var(--white)) !important;
+
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
 }
 
 .hover-style {

@@ -1,0 +1,106 @@
+@@include('../partials/_template-top.html', {
+'bodyClass': ''
+})
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+<div id="smooth-wrapper" class="header-space">
+    <div id="smooth-content">
+        <main>
+
+            @@include('../partials/_breadcrumb.html', {
+            'breadcrumbText': 'products Details'
+            })
+
+            <!-- =============================== Product Details section start ============================= -->
+            <section class="product-details py-120">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center tw-gap-205">
+                                <div class="d-flex align-items-center tw-gap-1">
+                                    <span class="text-heading tw-text-sm d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-heading tw-text-sm d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-heading tw-text-sm d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-heading tw-text-sm d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-heading tw-text-sm d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <span class="text-body fw-bold fw-bold text-uppercase">accessories</span>
+                            </div>
+                            <div class="tw-mt-5">
+                                <h2 class="text-capitalize splitTextStyleOne">Shock absorber P01</h2>
+                                <span class="fw-bold text-main font-heading h5 d-block tw-mt-205">$155.00</span>
+                                <p class="tw-mt-5">operating systems paired with user-friendly mobile devices with
+                                    elegant design and premium build quality striving. …</p>
+                                <p class="text-capitalize tw-mt-4 fw-semibold">color : <span
+                                        class="text-heading fw-semibold text-capitalize font-heading"> black</span>
+                                </p>
+                                <div class="tw-mt-4 d-flex align-items-center tw-gap-5">
+                                    <span class="text-heading fw-semibold text-capitalize font-heading">quantity</span>
+                                    <div class="d-inline-flex tw-rounded-lg overflow-hidden border border-neutral-300">
+                                        <button type="button"
+                                            class="text-body hover-text-main bg-white active-scale-09 tw-text-xl tw-w-11 tw-h-11 tw-leading-none decrement-btn">
+                                            <i class="fa-regular fa-minus"></i>
+                                        </button>
+                                        <input type="text"
+                                            class="bg-white tw-w-11 tw-h-11 text-center focus-outline-0 text-heading fw-bold tw-w-11 input-value border-0"
+                                            value="0">
+                                        <button type="button"
+                                            class="text-body hover-text-main bg-white active-scale-09 tw-text-xl tw-w-11 tw-h-11 tw-leading-none increment-btn">
+                                            <i class="fa-regular fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tw-mt-705 d-flex align-items-center tw-gap-4">
+                                    <button type="button"
+                                        class="btn btn-black hover-style-three button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder tw-tracking-2-percent"
+                                        data-block="button">
+                                        <span class="button__flair"></span>
+                                        <span class="button__label">
+                                            add to cart
+                                        </span>
+                                    </button>
+                                    <button type="button" class="tw-text-lg text-heading hover-text-main">
+                                        <i class="fa-regular fa-arrow-right-arrow-left"></i>
+                                    </button>
+                                    <span class="tw-w-px tw-h-11 bg-neutral-200"></span>
+                                    <button type="button"
+                                        class="d-flex align-items-center tw-gap-4 text-heading hover-text-main text-uppercase fw-bold tw-duration-300 wishlist-btn">
+                                        <span
+                                            class="tw-text-2xl tw-leading-none d-flex tw-duration-300 hover-scale-2 active-scale-102">
+                                            <i class="fa-regular fa-heart tw-duration-200"></i>
+                                        </span>
+                                        add to wishlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =============================== Product Details section end ============================= -->
+
+            @@include('../partials/_footer-two.html')
+
+        </main>
+    </div>
+</div>
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>

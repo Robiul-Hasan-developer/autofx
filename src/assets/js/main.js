@@ -466,7 +466,7 @@
     });
     // ================================= Category slider End =========================
 
- // ================================= Brand slider Start =========================
+    // ================================= Brand slider Start =========================
     var brandSlider = new Swiper(".brand-slider", {
       autoplay: {
         delay: 2000,
@@ -496,7 +496,6 @@
       },
     });
     // ================================= Brand slider End =========================
-
 
     // ========================= AOS Js Start ===========================
     AOS.init({
@@ -604,6 +603,22 @@
       observer.observe(progressContainer);
     });
     // ================================ Floating Progress js End =================================
+
+    // ========================= Increment & Decrement Js Start =====================
+    $(document).on("click", ".increment-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      $input.val(count + 1);
+    });
+
+    $(document).on("click", ".decrement-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      if (count > 0) {
+        $input.val(count - 1);
+      }
+    });
+    // ========================= Increment & Decrement Js End =====================
   });
   // ==========================================
   //      End Document Ready function

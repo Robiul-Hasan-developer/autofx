@@ -1,7 +1,11 @@
 /* Product css start */
-.wishlist-btn.active i {
-    font-weight: 900;
+.wishlist-btn.active {
     color: var(--vs-theme-color1);
+
+    i {
+        font-weight: 900;
+        color: var(--vs-theme-color1);
+    }
 }
 
 .action-buttons {
