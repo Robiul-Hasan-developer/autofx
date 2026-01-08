@@ -5910,6 +5910,10 @@ figure {
     inset-inline-start: 0;
 }
 
+.style-black::before {
+    background-color: var(--vs-theme-color2);
+}
+
 .hover-item-overlay::before {
     position: absolute;
     content: "";
