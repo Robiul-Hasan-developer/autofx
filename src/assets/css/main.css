@@ -5894,6 +5894,12 @@ figure {
     }
 }
 /* Breadcrumb css end */
+/* Product Details Css start */
+.small-images-wrapper {
+    width: 110px;
+}
+
+/* Product Details Css end */
 /* Footer Css Start */
 .border-bottom-black-main {
     position: relative;

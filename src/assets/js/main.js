@@ -497,6 +497,28 @@
     });
     // ================================= Brand slider End =========================
 
+    // ================================= Product Details slider Start =========================
+    var mySwiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      // direction: "vertical",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var mySwiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      thumbs: {
+        swiper: mySwiper,
+      },
+    });
+    // ================================= Product Details slider End =========================
+
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false,
