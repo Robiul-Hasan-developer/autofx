@@ -1,6 +1,25 @@
 /* Product Details Css start */
 .small-images-wrapper {
-    width: 110px;
+    flex-shrink: 0;
+    @media (min-width: 576px) {
+        width: 110px;
+    }
+}
+
+.small-images-height, .big-images-height {
+    @media (min-width: 576px) {
+        height: 624px;
+    }
+}
+
+.big-images-wrapper {
+    flex-grow: 1;
+}
+
+.swiper-slide-thumb-active {
+    .small-images-item {
+        border-color: var(--vs-theme-color1) !important;
+    }
 }
 
 /* Product Details Css end */

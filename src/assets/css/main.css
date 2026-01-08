@@ -491,6 +491,10 @@ input[type=number] {
     color: var(--vs-theme-color1);
 }
 
+.active-main .nav-item .nav-link.active {
+    color: var(--vs-theme-color1) !important;
+}
+
 /* ================================= Tab Css End =========================== */
 /* Toast Message Css start  */
 :root {
@@ -5896,7 +5900,27 @@ figure {
 /* Breadcrumb css end */
 /* Product Details Css start */
 .small-images-wrapper {
-    width: 110px;
+    flex-shrink: 0;
+}
+
+@media (min-width: 576px) {
+    .small-images-wrapper {
+        width: 110px;
+    }
+}
+
+@media (min-width: 576px) {
+    .small-images-height, .big-images-height {
+        height: 624px;
+    }
+}
+
+.big-images-wrapper {
+    flex-grow: 1;
+}
+
+.swiper-slide-thumb-active .small-images-item {
+    border-color: var(--vs-theme-color1) !important;
 }
 
 /* Product Details Css end */

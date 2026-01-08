@@ -499,24 +499,57 @@
 
     // ================================= Product Details slider Start =========================
     var mySwiper = new Swiper(".mySwiper", {
-      loop: true,
       spaceBetween: 10,
-      slidesPerView: 4,
+      slidesPerView: 3,
       freeMode: true,
       watchSlidesProgress: true,
-      // direction: "vertical",
+      direction: "horizontal",
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+        450: {
+           slidesPerView: 4,
+        },
+        576: {
+          direction: "vertical",
+           slidesPerView: 5,
+        },
+      },
     });
     var mySwiper2 = new Swiper(".mySwiper2", {
-      loop: true,
+      effect: "fade",
       spaceBetween: 10,
+      direction: "horizontal",
       thumbs: {
         swiper: mySwiper,
       },
+      breakpoints: {
+        576: {
+           direction: "vertical",
+        },
+      },
     });
+    // var mySwiper = new Swiper(".mySwiper", {
+    //   spaceBetween: 10,
+    //   slidesPerView: 5,
+    //   freeMode: true,
+    //   watchSlidesProgress: true,
+    //   direction: "vertical",
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    // });
+    // var mySwiper2 = new Swiper(".mySwiper2", {
+    //   effect: "fade",
+    //   spaceBetween: 10,
+    //   direction: "vertical",
+    //   thumbs: {
+    //     swiper: mySwiper,
+    //   },
+    // });
     // ================================= Product Details slider End =========================
 
     // ========================= AOS Js Start ===========================
