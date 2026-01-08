@@ -13,6 +13,7 @@
             @@include('../partials/_breadcrumb.html', {
             'breadcrumbText': 'products page'
             })
+
             <!-- =============================== Product section start ============================= -->
             <section class="product py-120">
                 <div class="container">
@@ -379,24 +380,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tw-mt-15 d-flex tw-gap-3 flex-wrap">
-                        <a href="javascript:void(0)"
-                            class="tw-h-12 tw-w-13 bg-neutral-200 hover-bg-main hover-text-white tw-duration-300 text-main tw-text-xl d-flex justify-content-center align-items-center tw-rounded-md fw-bold">
-                            <i class="fa-solid fa-angles-left"></i>
-                        </a>
-                        <a href="javascript:void(0)"
-                            class="tw-h-12 tw-w-13 bg-neutral-200 hover-bg-main hover-text-white tw-duration-300 text-main tw-text-xl d-flex justify-content-center align-items-center tw-rounded-md fw-bold">
-                            01
-                        </a>
-                        <a href="javascript:void(0)"
-                            class="tw-h-12 tw-w-13 bg-neutral-200 hover-bg-main hover-text-white tw-duration-300 text-main tw-text-xl d-flex justify-content-center align-items-center tw-rounded-md fw-bold">
-                            02
-                        </a>
-                        <a href="javascript:void(0)"
-                            class="tw-h-12 tw-w-13 bg-neutral-200 hover-bg-main hover-text-white tw-duration-300 text-main tw-text-xl d-flex justify-content-center align-items-center tw-rounded-md fw-bold">
-                            <i class="fa-solid fa-angles-right"></i>
-                        </a>
-                    </div>
+                   @@include('../partials/_pagination.html')
                 </div>
             </section>
             <!-- =============================== Product section end ============================= -->
