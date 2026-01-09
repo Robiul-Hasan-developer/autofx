@@ -8559,7 +8559,11 @@ blockquote.vs-quote .quote-author {
 }
 
 [dir=rtl] .triangle-left::before {
-    transform: translateY(-50%) rotate(180deg);
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+[dir=rtl] .triangle-right::before {
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 
 /* ================================== rtl css End ================================== */
