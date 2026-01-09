@@ -510,11 +510,11 @@
       },
       breakpoints: {
         450: {
-           slidesPerView: 4,
+          slidesPerView: 4,
         },
         576: {
           direction: "vertical",
-           slidesPerView: 5,
+          slidesPerView: 5,
         },
       },
     });
@@ -527,7 +527,7 @@
       },
       breakpoints: {
         576: {
-           direction: "vertical",
+          direction: "vertical",
         },
       },
     });
@@ -674,6 +674,18 @@
       }
     });
     // ========================= Increment & Decrement Js End =====================
+
+    // ========================= Woocommerce Rating Toggle =========================
+    $(".rating-select .stars a").each(function () {
+      $(this).on("click", function (e) {
+        e.preventDefault();
+        $(this).siblings().removeClass("active");
+        $(this).parent().parent().addClass("selected");
+        $(this).addClass("active");
+      });
+    });
+    // ========================= Woocommerce Rating Toggle =========================
+
   });
   // ==========================================
   //      End Document Ready function

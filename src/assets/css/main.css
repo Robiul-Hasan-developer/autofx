@@ -6266,10 +6266,9 @@ blockquote.vs-quote .quote-author {
     display: inline-flex;
     align-items: center;
     gap: 9px;
-    font-family: var(--vs-body-font);
     font-weight: 500;
-    color: var(--vs-body-color);
     text-transform: capitalize;
+    color: hsl(var(--body-color));
 }
 
 .vs-blog__meta--link::after {
@@ -6286,7 +6285,7 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-blog__meta--link:hover {
-    color: var(--vs-theme-color2);
+    color: var(--vs-theme-color1);
 }
 
 .vs-blog__heading {

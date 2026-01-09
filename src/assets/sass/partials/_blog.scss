@@ -213,6 +213,7 @@ blockquote.vs-quote {
   &__content {
     padding: 30px 0 35px 0;
   }
+
   &__heading {
     margin-bottom: 30px;
   }
@@ -227,10 +228,9 @@ blockquote.vs-quote {
       display: inline-flex;
       align-items: center;
       gap: 9px;
-      font-family: var(--vs-body-font);
       font-weight: 500;
-      color: var(--vs-body-color);
       text-transform: capitalize;
+      color: hsl(var(--body-color));
 
       &::after {
         content: "/";
@@ -250,7 +250,7 @@ blockquote.vs-quote {
       }
 
       &:hover {
-        color: var(--vs-theme-color2);
+        color: var(--vs-theme-color1);
       }
     }
   }
@@ -292,9 +292,10 @@ blockquote.vs-quote {
 
     &:hover {
       color: var(--vs-theme-color2);
-       i {
-      color: var(--vs-theme-color2);
-    }
+
+      i {
+        color: var(--vs-theme-color2);
+      }
     }
   }
 
@@ -1129,7 +1130,8 @@ blockquote.vs-quote {
   &:nth-child(odd) {
     .blog-body {
       display: flex;
-      flex-direction: column-reverse;}
+      flex-direction: column-reverse;
+    }
   }
 
   .blog-content {
@@ -1344,6 +1346,6 @@ blockquote.vs-quote {
 }
 
 .input-check-bg-main:checked {
-    background-color: var(--vs-theme-color1);
-    border-color: var(--vs-theme-color1) !important;
-} 
+  background-color: var(--vs-theme-color1);
+  border-color: var(--vs-theme-color1) !important;
+}
