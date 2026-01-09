@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    box-shadow: 0px 4px 14px 0px #00000014;
 
     .wp-block-search__input {
         height: 65px;
@@ -15,6 +16,7 @@
         color: hsl(var(--heading-color));
         border: 0;
         outline: 0 !important;
+
         &:focus {
             outline: 2px solid var(--vs-theme-color1) !important;
         }
@@ -52,7 +54,6 @@
     margin-bottom: 30px;
     border-radius: 10px;
 
-    .wp-block-heading,
     h2,
     .wp-block-search__label {
         display: flex;
@@ -83,17 +84,17 @@
         padding: 14px 23px;
         margin-right: 5px;
         margin-bottom: 10px;
-        color: var(--vs-theme-color2);
-        background-color: var(--vs-smoke-color);
-        border-radius: 40px;
-        text-transform: uppercase;
+        color: hsl(var(--body-color));
+        background-color: hsl(var(--white));
+        border-radius: 0px;
+        text-transform: capitalize;
 
         @include lg {
             padding: 10px 12px;
         }
 
         &:hover {
-            background-color: var(--vs-theme-color2);
+            background-color: var(--vs-theme-color1);
             color: hsl(var(--white)) !important;
         }
     }
@@ -105,7 +106,7 @@
 
     a {
         background-color: hsl(var(--white));
-        color: hsl(var(--heading-color));
+        box-shadow: 0px 4px 14px 0px #00000014;
     }
 }
 
@@ -135,7 +136,7 @@
     }
 
     .post-title {
-        font-weight: 900;
+        font-weight: 600;
         font-size: 20px;
         line-height: 24px;
         margin: 0 0 0px 0;
@@ -592,7 +593,7 @@
 
 @include md {
     .sidebar-area {
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     .wp-block-tag-cloud a,
