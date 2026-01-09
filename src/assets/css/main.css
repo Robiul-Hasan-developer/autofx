@@ -8558,5 +8558,9 @@ blockquote.vs-quote .quote-author {
     clip-path: polygon(0 0, 100% 100%, 100% 0%);
 }
 
+[dir=rtl] .triangle-left::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
 /* ================================== rtl css End ================================== */
 /*# sourceMappingURL=main.css.map */
