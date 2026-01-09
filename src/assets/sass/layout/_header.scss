@@ -253,14 +253,19 @@
 
 .home-five-header-space {
   height: 178px;
+
   @media (min-width: 768px) {
     height: 250px;
   }
 }
 
 header.bg-white .nav-submenu {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-menu__item.pages-menu.activePage > a {
+  color: hsl(var(--heading-color)) !important;
 }
 
 /* ================================= Header Css End =========================== */

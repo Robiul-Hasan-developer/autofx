@@ -2963,7 +2963,7 @@ figure {
     inset-inline-start: 0;
     inset-block-start: 0;
     background-color: #000000bd;
-    z-index: 99;
+    z-index: 9999;
     transition: 0.2s linear;
     visibility: hidden;
     opacity: 0;
@@ -4318,6 +4318,10 @@ figure {
     z-index: 999;
 }
 
+.tw-z-99999 {
+    z-index: 99999;
+}
+
 /* Z index css End */
 /* ======================== Animation Css Start ==================================== */
 /* Raw animations start here */
@@ -5019,6 +5023,10 @@ figure {
 header.bg-white .nav-submenu {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+.nav-menu__item.pages-menu.activePage > a {
+    color: hsl(var(--heading-color)) !important;
 }
 
 /* ================================= Header Css End =========================== */
