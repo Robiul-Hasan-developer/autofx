@@ -94,12 +94,13 @@
       content: "\f078";
       inset-inline-end: 0;
       inset-block-start: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-60%);
       font-family: "Font Awesome 6 Pro";
       font-weight: 500;
       color: inherit;
       font-size: 14px;
       transition: 0.2s linear;
+      line-height: 1;
     }
   }
 }
@@ -255,6 +256,11 @@
   @media (min-width: 768px) {
     height: 250px;
   }
+}
+
+header.bg-white .nav-submenu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 /* ================================= Header Css End =========================== */

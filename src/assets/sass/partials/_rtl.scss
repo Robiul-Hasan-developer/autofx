@@ -1,18 +1,14 @@
 /* ================================== rtl css start ================================== */
-// .text-start {
-//   text-align: start !important;
-// }
-// .form-check {
-//   padding-left: 0;
-// }
-// .form-check {
-//   padding-inline-start: 1.5em;
-// }
-// .form-check .form-check-input {
-//   margin-left: 0;
-// }
+[dir="rtl"] {
+    .triangle-shape::after {
+        clip-path: polygon(0% 0, 0% 100%, 100% 100%);
+    }
 
-// [dir="rtl"] {
+    .logo-bg-shape::after {
+        clip-path: polygon(0 0, 100% 100%, 100% 0%);
+    }
+}
+
 //   .tw-translate-x-50 {
 //     transform: translateX(50%);
 //   }
