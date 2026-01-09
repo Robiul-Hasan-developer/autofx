@@ -531,25 +531,6 @@
         },
       },
     });
-    // var mySwiper = new Swiper(".mySwiper", {
-    //   spaceBetween: 10,
-    //   slidesPerView: 5,
-    //   freeMode: true,
-    //   watchSlidesProgress: true,
-    //   direction: "vertical",
-    //   navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    //   },
-    // });
-    // var mySwiper2 = new Swiper(".mySwiper2", {
-    //   effect: "fade",
-    //   spaceBetween: 10,
-    //   direction: "vertical",
-    //   thumbs: {
-    //     swiper: mySwiper,
-    //   },
-    // });
     // ================================= Product Details slider End =========================
 
     // ========================= AOS Js Start ===========================
