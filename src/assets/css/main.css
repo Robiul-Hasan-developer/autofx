@@ -364,6 +364,10 @@
     background-color: var(--vs-theme-color2);
 }
 
+.shape-bg-neutral-200::before, .shape-bg-neutral-200::after {
+    background-color: var(--neutral-200);
+}
+
 /* =========================== Button Css End =================== */
 /* ================================= Form Css Start =========================== */
 .outline-0 {
@@ -6674,8 +6678,8 @@ blockquote.vs-quote .quote-author {
     display: flex;
     align-items: center;
     gap: 30px;
-    border-radius: 20px;
-    background-color: var(--vs-theme-color1);
+    border-radius: 10px;
+    background-color: var(--neutral-200);
     overflow: hidden;
     padding: 35px 52px 35px 30px;
     margin-top: 50px;
@@ -6700,7 +6704,6 @@ blockquote.vs-quote .quote-author {
     width: 140px;
     height: 140px;
     flex-shrink: 0;
-    border: 4px solid var(--vs-theme-color2);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -6814,7 +6817,7 @@ blockquote.vs-quote .quote-author {
     width: 118px;
     height: 118px;
     flex-shrink: 0;
-    border: 4px solid var(--vs-theme-color2);
+    border: 4px solid var(--vs-theme-color1);
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -6835,7 +6838,7 @@ blockquote.vs-quote .quote-author {
     display: flex;
     align-items: baseline;
     gap: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
     flex-wrap: wrap;
 }
 
@@ -6846,7 +6849,7 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-comments-wrap .comment-content .content-header .name {
-    font-weight: 900;
+    font-weight: 700;
     text-transform: capitalize;
     line-height: 1;
     font-size: 24px;
@@ -7323,6 +7326,11 @@ blockquote.vs-quote .quote-author {
     .blog-author .author-degi {
         margin-bottom: 10px;
     }
+}
+
+.input-check-bg-main:checked {
+    background-color: var(--vs-theme-color1);
+    border-color: var(--vs-theme-color1) !important;
 }
 
 .wp-block-search {

@@ -215,4 +215,12 @@
     }
 }
 
+.shape-bg-neutral-200 {
+
+    &::before,
+    &::after {
+        background-color: var(--neutral-200);
+    }
+}
+
 /* =========================== Button Css End =================== */
