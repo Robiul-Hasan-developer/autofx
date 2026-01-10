@@ -6,7 +6,7 @@
 
     .wp-block-search__input {
         height: 65px;
-        padding-left: 24px;
+        padding-inline-start: 24px;
         flex: 1;
         min-width: 0;
         border-radius: 0;
@@ -82,7 +82,7 @@
         font-weight: 600;
         line-height: 1;
         padding: 14px 23px;
-        margin-right: 5px;
+        margin-inline-end: 5px;
         margin-bottom: 10px;
         color: hsl(var(--body-color));
         background-color: hsl(var(--white));
@@ -101,7 +101,7 @@
 }
 
 .tagcloud {
-    margin-right: -5px;
+    margin-inline-end: -5px;
     margin-bottom: -10px;
 
     a {
@@ -123,7 +123,7 @@
     }
 
     .media-img {
-        margin-right: 18px;
+        margin-inline-end: 18px;
         width: 90px;
         overflow: hidden;
         border-radius: 15px;
@@ -182,7 +182,7 @@
             font-family: var(--vs-body-font);
 
             i {
-                margin-right: 5px;
+                margin-inline-end: 5px;
                 color: var(--vs-body-color);
             }
 
@@ -239,7 +239,7 @@
         padding: 5px 5px;
         border: none;
         text-align: center;
-        border-right: 1px solid #fff;
+        border-inline-end: 1px solid #fff;
         color: #01133c;
         font-weight: 500;
 
@@ -424,7 +424,7 @@
 
     .vs-btn {
         border: 1px solid hsl(var(--heading-color));
-        margin-right: 10px;
+        margin-inline-end: 10px;
         text-transform: capitalize;
         height: 50px;
         line-height: 47px;
@@ -531,7 +531,7 @@
         }
 
         i {
-            margin-right: 10px;
+            margin-inline-end: 10px;
         }
     }
 }
@@ -803,8 +803,8 @@
         align-items: center;
         justify-content: center;
         min-width: 30px;
-        padding-right: 10px;
-        border-right: 1px solid rgba(var(--vs-title-color-rgb), $alpha: 0.20);
+        padding-inline-end: 10px;
+        border-inline-end: 1px solid rgba(var(--vs-title-color-rgb), $alpha: 0.20);
         color: rgba(var(--vs-body-color-rgb), $alpha: 0.80);
         font-size: 16px;
     }

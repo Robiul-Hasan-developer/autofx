@@ -8,7 +8,7 @@ blockquote {
   font-family: var(--heading-font);
   color: hsl(var(--heading-color));
   background-color: var(--quote-bg, #eff1f5);
-  border-left: 4px solid var(--vs-theme-color1);
+  border-inline-start: 4px solid var(--vs-theme-color1);
 
   padding: 43px 50px 42px 35px;
   margin: 35px 0;
@@ -72,7 +72,7 @@ blockquote {
 blockquote.vs-quote {
   text-align: left;
   padding: 0px 35px 20px 127px;
-  border-left: 0;
+  border-inline-start: 0;
   border-radius: 30px;
   box-shadow: 0 8px 0 var(--vs-theme-color2);
   background-color: transparent;
@@ -1148,14 +1148,14 @@ blockquote.vs-quote {
     a {
       position: relative;
       line-height: 1;
-      border-right: 1px solid #c8c8c8;
+      border-inline-end: 1px solid #c8c8c8;
       margin-inline-end: 12px;
       padding: 0 15px 0 0;
 
       &:last-child {
         margin-inline-end: 0;
         padding-inline-end: 0;
-        border-right: none;
+        border-inline-end: none;
       }
     }
   }
