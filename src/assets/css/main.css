@@ -8592,6 +8592,15 @@ blockquote.vs-quote .quote-author {
     transform: rotate(12deg);
 }
 
+[dir=rtl] .percentage {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+[dir=rtl] .btn-shape {
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+}
+
 [dir=rtl] .fa-arrow-up-right {
     --fa: "";
 }
@@ -8601,16 +8610,21 @@ blockquote.vs-quote .quote-author {
     --fa: "";
 }
 
+[dir=rtl] .fa-arrow-left-long,
+[dir=rtl] .fa-long-arrow-left {
+    --fa: "";
+}
+
+[dir=rtl] .fa-arrow-right {
+    --fa: "";
+}
+
 [dir=rtl] .form-select {
     background-position: left 0.75rem center;
 }
 
 [dir=rtl] .common-check .form-check-input::before {
     transform: translate(50%, -50%);
-}
-
-[dir=rtl] .translate-middle {
-    transform: translate(50%, -50%) !important;
 }
 
 /* ================================== rtl css End ================================== */

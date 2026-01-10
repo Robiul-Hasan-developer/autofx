@@ -34,6 +34,15 @@
         transform: rotate(12deg);
     }
 
+    .percentage {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+
+    .btn-shape {
+        clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+    }
+
 
     /* Font Awesome 6 pro icon support start */
     .fa-arrow-up-right {
@@ -43,6 +52,15 @@
     .fa-arrow-right-long,
     .fa-long-arrow-right {
         --fa: "\f177";
+    }
+
+    .fa-arrow-left-long,
+    .fa-long-arrow-left {
+        --fa: "\f178";
+    }
+
+    .fa-arrow-right {
+        --fa: "\f060";
     }
 
     /* Font Awesome 6 pro icon support end */
@@ -57,9 +75,9 @@
         transform: translate(50%, -50%);
     }
 
-    .translate-middle {
-        transform: translate(50%, -50%) !important;
-    }
+    // .translate-middle {
+    //     transform: translate(50%, -50%) !important;
+    // }
 
     /* Default RTL support end */
 
