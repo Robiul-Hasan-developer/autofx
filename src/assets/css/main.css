@@ -6099,7 +6099,7 @@ blockquote cite {
     font-weight: 600;
     display: inline-block;
     position: relative;
-    padding-left: 45px;
+    padding-inline-start: 45px;
     line-height: 1;
     margin-top: 20px;
     font-style: normal;
@@ -6149,7 +6149,7 @@ blockquote.vs-quote:before {
 blockquote.vs-quote cite {
     padding: 0;
     margin-top: 18px;
-    padding-left: 34px;
+    padding-inline-start: 34px;
     position: relative;
     color: var(--vs-theme-color2);
     font-family: var(--vs-body-font);
@@ -6179,19 +6179,19 @@ blockquote.vs-quote .quote-author {
 .blog-meta span,
 .blog-meta a {
     display: inline-block;
-    margin-right: 16px;
+    margin-inline-end: 16px;
     font-size: 16px;
     color: #8b919c;
 }
 
 .blog-meta span:last-child,
 .blog-meta a:last-child {
-    margin-right: 0;
+    margin-inline-end: 0;
 }
 
 .blog-meta span i,
 .blog-meta a i {
-    margin-right: 10px;
+    margin-inline-end: 10px;
     color: var(--vs-theme-color1);
 }
 
@@ -6207,7 +6207,7 @@ blockquote.vs-quote .quote-author {
     display: inline-block;
     color: hsl(var(--white));
     padding: 4.5px 24.5px;
-    margin-right: 5px;
+    margin-inline-end: 5px;
     margin-bottom: 10px;
     border: 1px solid transparent;
     background-color: var(--vs-theme-color1);
@@ -6280,7 +6280,7 @@ blockquote.vs-quote .quote-author {
 
 .vs-blog__meta--link::after {
     content: "/";
-    padding-right: 9px;
+    padding-inline-end: 9px;
 }
 
 .vs-blog__meta--link:first-child i {
@@ -6379,7 +6379,7 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-blog--style2 .vs-blog__meta--link i {
-    margin-right: 11px;
+    margin-inline-end: 11px;
     color: var(--vs-body-color);
 }
 
@@ -6432,7 +6432,7 @@ blockquote.vs-quote .quote-author {
 
 .vs-blog--style2 .vs-blog__share ul {
     list-style: none;
-    padding-left: 0;
+    padding-inline-start: 0;
     margin-bottom: 0;
 }
 
@@ -6857,11 +6857,11 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-comments-wrap .reply_and_edit {
-    margin-left: 138px;
+    margin-inline-start: 138px;
 }
 
 .vs-comments-wrap .reply_and_edit .replay-btn {
-    margin-left: 0;
+    margin-inline-start: 0;
     margin-top: 20px;
     color: var(--vs-theme-color2);
     font-size: 16px;
@@ -6876,17 +6876,17 @@ blockquote.vs-quote .quote-author {
 
 @media (max-width: 991px) {
     .vs-comments-wrap .reply_and_edit {
-        margin-left: 0;
+        margin-inline-start: 0;
     }
 }
 
 .vs-comments-wrap .children {
-    margin-left: 60px;
+    margin-inline-start: 60px;
 }
 
 @media (max-width: 991px) {
     .vs-comments-wrap .children {
-        margin-left: 40px;
+        margin-inline-start: 40px;
     }
 }
 
@@ -7039,11 +7039,11 @@ blockquote.vs-quote .quote-author {
 
 .blog-single .social-links li {
     display: inline-block;
-    margin-right: 13px;
+    margin-inline-end: 13px;
 }
 
 .blog-single .social-links li:last-child {
-    margin-right: 0;
+    margin-inline-end: 0;
 }
 
 .blog-single .social-links a {
@@ -7225,13 +7225,13 @@ blockquote.vs-quote .quote-author {
     position: relative;
     line-height: 1;
     border-right: 1px solid #c8c8c8;
-    margin-right: 12px;
+    margin-inline-end: 12px;
     padding: 0 15px 0 0;
 }
 
 .blog-style3 .blog-meta a:last-child {
-    margin-right: 0;
-    padding-right: 0;
+    margin-inline-end: 0;
+    padding-inline-end: 0;
     border-right: none;
 }
 
