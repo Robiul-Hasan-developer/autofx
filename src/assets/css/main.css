@@ -8575,11 +8575,11 @@ blockquote.vs-quote .quote-author {
 }
 
 [dir=rtl] .left-right-gradient::before {
-    background: linear-gradient(90deg, transparent, var(--vs-theme-color2));
+    transform: rotate(-180deg);
 }
 
 [dir=rtl] .left-right-gradient::after {
-    background: linear-gradient(90deg, var(--vs-theme-color2), transparent);
+    transform: rotate(180deg);
 }
 
 [dir=rtl] .dashed-arrow-right::before {
