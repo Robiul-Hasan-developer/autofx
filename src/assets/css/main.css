@@ -8619,6 +8619,16 @@ blockquote.vs-quote .quote-author {
     --fa: "";
 }
 
+[dir=rtl] .fa-angle-double-right,
+[dir=rtl] .fa-angles-right {
+    --fa: "";
+}
+
+[dir=rtl] .fa-angle-double-left,
+[dir=rtl] .fa-angles-left {
+    --fa: "";
+}
+
 [dir=rtl] .form-select {
     background-position: left 0.75rem center;
 }
