@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ======================= Css table of contents Start =================================
    * Template name: EduAll
    * Version: 1.0
@@ -5025,7 +5026,7 @@ header.bg-white .nav-submenu {
     border-top-right-radius: 0;
 }
 
-.nav-menu__item.pages-menu.activePage > a {
+header.bg-white .nav-menu__item.pages-menu.activePage > a {
     color: hsl(var(--heading-color)) !important;
 }
 
@@ -8550,6 +8551,13 @@ blockquote.vs-quote .quote-author {
 
 /* Footer Css End */
 /* ================================== rtl css start ================================== */
+[dir=rtl] {
+  /* Font Awesome 6 pro icon support start */
+  /* Font Awesome 6 pro icon support end */
+  /* Default RTL support start */
+  /* Default RTL support end */
+}
+
 [dir=rtl] .triangle-shape::after {
     clip-path: polygon(0% 0, 0% 100%, 100% 100%);
 }
@@ -8564,6 +8572,45 @@ blockquote.vs-quote .quote-author {
 
 [dir=rtl] .triangle-right::before {
     clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+[dir=rtl] .left-right-gradient::before {
+    background: linear-gradient(90deg, transparent, var(--vs-theme-color2));
+}
+
+[dir=rtl] .left-right-gradient::after {
+    background: linear-gradient(90deg, var(--vs-theme-color2), transparent);
+}
+
+[dir=rtl] .dashed-arrow-right::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+[dir=rtl] .choose-us-item__icon::before {
+    height: 28px;
+    inset-block-end: -14px;
+    transform: rotate(12deg);
+}
+
+[dir=rtl] .fa-arrow-up-right {
+    --fa: "";
+}
+
+[dir=rtl] .fa-arrow-right-long,
+[dir=rtl] .fa-long-arrow-right {
+    --fa: "";
+}
+
+[dir=rtl] .form-select {
+    background-position: left 0.75rem center;
+}
+
+[dir=rtl] .common-check .form-check-input::before {
+    transform: translate(50%, -50%);
+}
+
+[dir=rtl] .translate-middle {
+    transform: translate(50%, -50%) !important;
 }
 
 /* ================================== rtl css End ================================== */

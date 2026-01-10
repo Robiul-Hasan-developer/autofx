@@ -16,6 +16,54 @@
         clip-path: polygon(100% 0, 0 50%, 100% 100%);
     }
 
+    .left-right-gradient::before {
+        background: linear-gradient(90deg, transparent, var(--vs-theme-color2));
+    }
+
+    .left-right-gradient::after {
+        background: linear-gradient(90deg, var(--vs-theme-color2), transparent);
+    }
+
+    .dashed-arrow-right::before {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .choose-us-item__icon::before {
+        height: 28px;
+        inset-block-end: -14px;
+        transform: rotate(12deg);
+    }
+
+
+    /* Font Awesome 6 pro icon support start */
+    .fa-arrow-up-right {
+        --fa: "\e09d";
+    }
+
+    .fa-arrow-right-long,
+    .fa-long-arrow-right {
+        --fa: "\f177";
+    }
+
+    /* Font Awesome 6 pro icon support end */
+
+
+    /* Default RTL support start */
+    .form-select {
+        background-position: left .75rem center;
+    }
+
+    .common-check .form-check-input::before {
+        transform: translate(50%, -50%);
+    }
+
+    .translate-middle {
+        transform: translate(50%, -50%) !important;
+    }
+
+    /* Default RTL support end */
+
+
 }
 
 //   .tw-translate-x-50 {

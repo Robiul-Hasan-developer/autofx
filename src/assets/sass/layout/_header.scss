@@ -264,7 +264,7 @@ header.bg-white .nav-submenu {
   border-top-right-radius: 0;
 }
 
-.nav-menu__item.pages-menu.activePage > a {
+header.bg-white .nav-menu__item.pages-menu.activePage > a {
   color: hsl(var(--heading-color)) !important;
 }
 
