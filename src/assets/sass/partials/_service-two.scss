@@ -35,4 +35,9 @@
         transform: translateY(-50%) scaleY(1);
     }
 }
+
+.bottom-border-only::before {
+    border-top: 0;
+}
+
 /* Service Two css end */

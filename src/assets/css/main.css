@@ -1206,8 +1206,16 @@ figure {
     border-color: #FFFFFF4D !important;
 }
 
+.border-white-05 {
+    border-color: #FFFFFF0D !important;
+}
+
 .border-white-10 {
     border-color: #FFFFFF1A !important;
+}
+
+.border-black-15 {
+    border-color: #00000026 !important;
 }
 
 .hover-border-main:hover {
@@ -1680,6 +1688,10 @@ figure {
     height: 4rem;
 }
 
+.tw-h-100 {
+    height: calc(100% + 1px) !important;
+}
+
 .tw-h-px {
     height: 1px;
 }
@@ -2029,7 +2041,7 @@ figure {
 }
 
 .tw-end-0 {
-    inset-inline-end: 0;
+    inset-inline-end: -1px;
 }
 
 .tw-end-100 {
@@ -4446,8 +4458,8 @@ figure {
     }
 
     14% {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
     }
 
     28% {
@@ -4456,8 +4468,8 @@ figure {
     }
 
     42% {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
     }
 
     70% {
@@ -5854,6 +5866,10 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 
 .hover-border-top-bottom:hover::before {
     transform: translateY(-50%) scaleY(1);
+}
+
+.bottom-border-only::before {
+    border-top: 0;
 }
 
 /* Service Two css end */
