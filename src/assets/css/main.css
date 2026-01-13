@@ -5063,6 +5063,10 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     color: hsl(var(--heading-color)) !important;
 }
 
+.active-link-black .nav-menu__item.activePage > a, .active-link-black .nav-menu__item.activePage > a::before {
+    color: hsl(var(--heading-color)) !important;
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -5606,6 +5610,11 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
         width: calc(39% + 3px);
     }
 }
+
+.border-right-none-not-last .swiper-slide:nth-last-of-type(n + 2) {
+    border-right: 0 !important;
+}
+
 /* Brand One css end */
 /* Service Css start */
 .dashed-arrow-right::before {

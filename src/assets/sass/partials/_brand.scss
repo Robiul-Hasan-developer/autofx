@@ -35,4 +35,8 @@
         }
     }
 }
+
+.border-right-none-not-last .swiper-slide:nth-last-of-type(n + 2) {
+    border-right: 0 !important;
+}
 /* Brand One css end */
