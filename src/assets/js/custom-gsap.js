@@ -389,24 +389,6 @@ if ($(".left-to-right").length > 0) {
 // **************************** item goes left to right on scroll js End ****************************
 
 // **************************** item rotate on scroll js start ****************************
-// if ($(".item-rotate-on-scroll").length > 0) {
-//   gsap
-//     .timeline({
-//       scrollTrigger: {
-//         trigger: ".item-rotate-on-scroll",
-//         start: "top 28%",
-//         end: "bottom 1%",
-//         scrub: true,
-//         invalidateOnRefresh: true,
-//         markers: false,
-//       },
-//     })
-//     .to(".item-rotate-on-scroll", {
-//       rotate: 360,
-//       y: "80%",
-//       scale: 1.6,
-//     });
-// }
 if ($(".item-rotate-on-scroll").length > 0) {
   gsap.utils.toArray(".item-rotate-on-scroll").forEach((item) => {
     gsap
@@ -423,7 +405,6 @@ if ($(".item-rotate-on-scroll").length > 0) {
       .to(item, {
         rotate: 360,
         y: "80%",
-        scale: 1.6,
         ease: "none",
       });
   });

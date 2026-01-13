@@ -811,6 +811,7 @@ h6, .h6 {
 
 h1, .h1 {
     font-size: var(--heading-one);
+    line-height: 0.94;
 }
 
 h2, .h2 {
@@ -1725,6 +1726,10 @@ figure {
 
 .tw-h-145-px {
     height: 145px;
+}
+
+.tw-h-290-px {
+    height: 290px;
 }
 
 .tw-h-320-px {

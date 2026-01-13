@@ -242,7 +242,7 @@
       loop: true,
       speed: 1000,
       autoplay: {
-        delay: 4000,
+        delay: 6000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -286,7 +286,7 @@
     // ================================= Testimonials One slider Start =========================
     var testimonialsSlider = new Swiper(".testimonials-slider", {
       autoplay: {
-        delay: 4000,
+        delay: 6000,
         disableOnInteraction: false,
       },
       autoplay: true,
