@@ -323,12 +323,12 @@ if ($(".split-reveal").length) {
 if ($(".scale-up-wrapper").length > 0) {
   document.querySelectorAll(".scale-up-wrapper").forEach((section) => {
     const img = section.querySelector(".scale-up__img");
-    if (!img) return; // skip if no target found
+    if (!img) return;
 
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: section,
-        start: "top 95%",
+        start: "top 70%",
         end: "bottom 10%",
         scrub: 1,
         markers: false,
@@ -336,7 +336,7 @@ if ($(".scale-up-wrapper").length > 0) {
     });
 
     tl.to(section.querySelector(".scale-up__img"), {
-      scale: 1.5,
+      scale: 1.2,
     });
   });
 }

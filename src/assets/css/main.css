@@ -1206,6 +1206,10 @@ figure {
     border-color: #FFFFFF4D !important;
 }
 
+.border-white-10 {
+    border-color: #FFFFFF1A !important;
+}
+
 .hover-border-main:hover {
     border-color: var(--vs-theme-color1) !important;
 }
@@ -2939,6 +2943,14 @@ figure {
     max-width: 250px;
 }
 
+.max-w-275-px {
+    max-width: 275px;
+}
+
+.max-w-356-px {
+    max-width: 356px;
+}
+
 .max-w-530-px {
     max-width: 530px;
 }
@@ -3701,6 +3713,10 @@ figure {
 
 .tw-pb-16 {
     padding-block-end: var(--size-16);
+}
+
+.tw-p-30-px {
+    padding: clamp(1rem, -2.7917rem + 4.6667vw, 1.875rem);
 }
 
 .tw-p-32-px {
