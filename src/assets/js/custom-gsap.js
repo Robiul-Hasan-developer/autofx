@@ -184,7 +184,7 @@ class Button {
 
     this.DOM = {
       button: this.block,
-      flair: el(".button__flair"),
+      flair: el(".button__flair")
     };
 
     this.xSet = gsap.quickSetter(this.DOM.flair, "xPercent");
@@ -192,8 +192,12 @@ class Button {
   }
 
   getXY(e) {
-    const { left, top, width, height } =
-      this.DOM.button.getBoundingClientRect();
+    const {
+      left,
+      top,
+      width,
+      height
+    } = this.DOM.button.getBoundingClientRect();
 
     const xTransformer = gsap.utils.pipe(
       gsap.utils.mapRange(0, width, 0, 100),
@@ -207,7 +211,7 @@ class Button {
 
     return {
       x: xTransformer(e.clientX - left),
-      y: yTransformer(e.clientY - top),
+      y: yTransformer(e.clientY - top)
     };
   }
 
@@ -220,8 +224,8 @@ class Button {
 
       gsap.to(this.DOM.flair, {
         scale: 1,
-        duration: 0.9,
-        ease: "power2.out",
+        duration: 0.6,
+        ease: "power2.out"
       });
     });
 
@@ -234,8 +238,8 @@ class Button {
         xPercent: x > 90 ? x + 20 : x < 10 ? x - 20 : x,
         yPercent: y > 90 ? y + 20 : y < 10 ? y - 20 : y,
         scale: 0,
-        duration: 0.9,
-        ease: "power2.out",
+        duration: 0.5,
+        ease: "power2.out"
       });
     });
 
@@ -245,8 +249,8 @@ class Button {
       gsap.to(this.DOM.flair, {
         xPercent: x,
         yPercent: y,
-        duration: 0.9,
-        ease: "power2",
+        duration: 0.6,
+        ease: "power2"
       });
     });
   }

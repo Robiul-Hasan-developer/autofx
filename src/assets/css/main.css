@@ -242,6 +242,10 @@
     pointer-events: none;
 }
 
+.button__flair {
+    will-change: transform;
+}
+
 .btn {
     border: 0;
     color: hsl(var(--white));
@@ -249,7 +253,7 @@
     padding: 18px 30px;
     position: relative;
     overflow: hidden;
-    border-radius: 0px;
+    border-radius: 0.01px;
     z-index: 1;
     transition: 0.2s linear;
     position: relative;
