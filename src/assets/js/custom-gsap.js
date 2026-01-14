@@ -30,16 +30,50 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 //   ignoreMobileResize: false,
 // });
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-let smoother = ScrollSmoother.create({
-  wrapper: "#smooth-wrapper",
-  content: "#smooth-content",
-  smooth: 1.35,
-  effects: true,
-  smoothTouch: false, // IMPORTANT
-  // normalizeScroll: true,
-});
+// let smoother = ScrollSmoother.create({
+//   wrapper: "#smooth-wrapper",
+//   content: "#smooth-content",
+//   smooth: 1.35,
+//   effects: true,
+//   smoothTouch: false, // IMPORTANT
+//   // normalizeScroll: true,
+// });
+
+// ScrollTrigger.normalizeScroll(true);
+
+// ScrollSmoother.create({
+//   smooth: 2,
+//   effects: true,
+//   normalizeScroll: true
+// });
+
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+// // create the smooth scroller FIRST!
+// const smoother = ScrollSmoother.create({
+//   content: "#scrollsmoother-container",
+//   smooth: 3,
+//   normalizeScroll: true,
+//   ignoreMobileResize: true,
+// 	effects: true,
+//   preventDefault: true,
+//   ease: 'power4.out',
+//   smoothTouch: 0.1,
+// });
+
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+if ($("#smooth-wrapper").length && $("#smooth-content").length) {
+  ScrollSmoother.create({
+    smooth: 1.35,
+    effects: true,
+    smoothTouch: 0.15,
+    ignoreMobileResize: true,
+  });
+}
+
 // **************************** ScrollSmoother js End ****************************
 
 // **************************** Custom Cursor Js Start ****************************
