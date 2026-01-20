@@ -364,7 +364,7 @@
     });
     // ================================= Project Two slider End =========================
 
-    // ================================= Blog One slider Start =========================
+    // ================================= service three slider Start =========================
     var serviceThreeSlider = new Swiper(".service-three-slider", {
       autoplay: {
         delay: 2000,
@@ -392,7 +392,7 @@
         },
       },
     });
-    // ================================= Blog One slider End =========================
+    // ================================= service three slider End =========================
 
     // ================================= Testimonials three slider Start =========================
     var testimonialsThreeSlider = new Swiper(".testimonials-three-slider", {
@@ -532,6 +532,42 @@
       },
     });
     // ================================= Product Details slider End =========================
+
+    
+    // ================================= service Two slider Start =========================
+    var serviceThreeSlider = new Swiper(".service-two-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1000,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: ".service-two-slider-pagination",
+        clickable: true,
+      },
+       navigation: {
+        nextEl: ".service-two-slider-button-next",
+        prevEl: ".service-two-slider-button-prev",
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+    });
+    // ================================= service Two slider End =========================
+
 
     // ========================= AOS Js Start ===========================
     AOS.init({
