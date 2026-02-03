@@ -661,12 +661,12 @@
             progressContainer
               .querySelector(".percentage")
               .classList.remove("active");
-            observer.unobserve(progressContainer); // Stop observing once animation is triggered
+            observer.unobserve(progressContainer); 
           }
         });
       },
       {
-        threshold: 0.5, // Adjust this value as needed (0.5 means half the section needs to be visible)
+        threshold: 0.5, 
       }
     );
 
@@ -692,7 +692,7 @@
     });
     // ========================= Increment & Decrement Js End =====================
 
-    // ========================= Woocommerce Rating Toggle =========================
+    // ========================= Woo-commerce Rating Toggle =========================
     $(".rating-select .stars a").each(function () {
       $(this).on("click", function (e) {
         e.preventDefault();
@@ -701,7 +701,7 @@
         $(this).addClass("active");
       });
     });
-    // ========================= Woocommerce Rating Toggle =========================
+    // ========================= Woo-commerce Rating Toggle =========================
 
   });
   // ==========================================
