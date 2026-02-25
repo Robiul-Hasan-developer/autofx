@@ -2118,6 +2118,10 @@ figure {
     -webkit-line-clamp: 4;
 }
 
+.line-height-95-px {
+    line-height: 95px;
+}
+
 /* Line Clamp End */
 /* ================================= Margin Css Start =========================== */
 .tw-m-05 {
@@ -3005,6 +3009,10 @@ figure {
 
 .max-w-700-px {
     max-width: 700px;
+}
+
+.max-w-780-px {
+    max-width: 780px;
 }
 
 .max-w-840-px {
@@ -5523,7 +5531,15 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     visibility: hidden;
     -webkit-transform: translateX(-80px);
     transform: translateX(-80px);
-    transition: 0.6s ease-in-out;
+    transition: 0.6s ease;
+}
+
+.animate-bottom-top {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(80px);
+    transform: translateY(80px);
+    transition: 0.6s ease;
 }
 
 .swiper-slide-active .animate-left-right {
@@ -5531,6 +5547,13 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     visibility: visible;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+}
+
+.swiper-slide-active .animate-bottom-top {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 }
 
 .animation-delay-08 {
@@ -5574,13 +5597,13 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 
 /* Top header css end */
 /* ========================== Banner One section start ============================= */
-.banner {
-    padding: 180px 0 112px;
+.banner-padding {
+    padding: 180px 0 212px;
 }
 
 @media (min-width: 992px) {
-    .banner {
-        padding: 260px 0 112px;
+    .banner-padding {
+        padding: 260px 0 212px;
     }
 }
 
@@ -5611,6 +5634,13 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 
 .plain-stair-shape {
     clip-path: polygon(0 94%, 100% 0, 100% 100%, 0 100%);
+}
+
+.pagination-absolute-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 94px;
+    inset-inline-start: 0;
 }
 
 /* ========================== Banner One section end ============================= */

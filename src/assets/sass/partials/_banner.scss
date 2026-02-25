@@ -1,9 +1,9 @@
 /* ========================== Banner One section start ============================= */
-.banner {
-    padding: 180px 0 112px;
+.banner-padding {
+    padding: 180px 0 212px;
 
     @media (min-width: 992px) {
-        padding: 260px 0 112px;
+        padding: 260px 0 212px;
     }
 }
 
@@ -34,5 +34,12 @@
 
 .plain-stair-shape {
     clip-path: polygon(0 94%, 100% 0, 100% 100%, 0 100%);
+}
+
+.pagination-absolute-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 94px;
+    inset-inline-start: 0;
 }
 /* ========================== Banner One section end ============================= */
