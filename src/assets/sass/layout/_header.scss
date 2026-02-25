@@ -203,8 +203,19 @@
     height: 100%;
     background: inherit;
     inset-inline-start: calc(100% - 1px);
-    clip-path: polygon(0 0, 0 100%, 100% 0);
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
   }
+}
+
+.black-curve-shape::before {
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 14px;
+    height: 100%;
+    z-index: 1;
+    inset-inline-end: -24px;
+    transform: skewX(22deg);
 }
 
 .mobile-padding-0 {

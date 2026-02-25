@@ -2119,7 +2119,15 @@ figure {
 }
 
 .line-height-95-px {
-    line-height: 95px;
+    line-height: 1.055;
+}
+
+.line-height-08 {
+    line-height: 0.8;
+}
+
+.line-height-15 {
+    line-height: 1.5;
 }
 
 /* Line Clamp End */
@@ -5042,7 +5050,18 @@ figure {
     height: 100%;
     background: inherit;
     inset-inline-start: calc(100% - 1px);
-    clip-path: polygon(0 0, 0 100%, 100% 0);
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
+}
+
+.black-curve-shape::before {
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 14px;
+    height: 100%;
+    z-index: 1;
+    inset-inline-end: -24px;
+    transform: skewX(22deg);
 }
 
 @media (max-width: 991px) {
@@ -5614,6 +5633,16 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 @media (min-width: 992px) {
     .banner-padding {
         padding: 260px 0 212px;
+    }
+}
+
+.banner-padding-four {
+    padding: 220px 0 212px;
+}
+
+@media (min-width: 992px) {
+    .banner-padding-four {
+        padding: 300px 0 212px;
     }
 }
 

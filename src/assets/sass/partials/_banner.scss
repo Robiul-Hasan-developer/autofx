@@ -15,6 +15,14 @@
     }
 }
 
+.banner-padding-four {
+    padding: 220px 0 212px;
+
+    @media (min-width: 992px) {
+        padding: 300px 0 212px;
+    }
+}
+
 .banner-img {
     inset-inline-start: 50%;
 }
@@ -62,4 +70,5 @@
     visibility: visible;
     opacity: 1;
 }
+
 /* ========================== Banner One section end ============================= */
