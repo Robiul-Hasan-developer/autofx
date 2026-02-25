@@ -5539,7 +5539,7 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     visibility: hidden;
     -webkit-transform: translateY(80px);
     transform: translateY(80px);
-    transition: 0.6s ease;
+    transition: 0.96s ease;
 }
 
 .swiper-slide-active .animate-left-right {
@@ -5597,6 +5597,16 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 
 /* Top header css end */
 /* ========================== Banner One section start ============================= */
+.banner {
+    padding: 180px 0 112px;
+}
+
+@media (min-width: 992px) {
+    .banner {
+        padding: 260px 0 112px;
+    }
+}
+
 .banner-padding {
     padding: 180px 0 212px;
 }
@@ -5641,6 +5651,17 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     bottom: 0;
     margin-bottom: 94px;
     inset-inline-start: 0;
+}
+
+.banner-contents {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.swiper-slide-active .banner-contents {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* ========================== Banner One section end ============================= */

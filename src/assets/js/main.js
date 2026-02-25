@@ -241,10 +241,12 @@
       grabCursor: true,
       loop: true,
       speed: 1000,
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-      },
+      effect: "fade",
+      // autoplay: {
+      //   delay: 6000,
+      //   disableOnInteraction: false,
+      // },
+      autoplay: false,
       pagination: {
         el: ".banner-slider-pagination",
         clickable: true,

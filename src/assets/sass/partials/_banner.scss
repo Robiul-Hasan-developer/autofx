@@ -1,4 +1,12 @@
 /* ========================== Banner One section start ============================= */
+.banner {
+    padding: 180px 0 112px;
+
+    @media (min-width: 992px) {
+        padding: 260px 0 112px;
+    }
+}
+
 .banner-padding {
     padding: 180px 0 212px;
 
@@ -41,5 +49,17 @@
     bottom: 0;
     margin-bottom: 94px;
     inset-inline-start: 0;
+}
+
+
+.banner-contents {
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s;
+}
+
+.swiper-slide-active .banner-contents {
+    visibility: visible;
+    opacity: 1;
 }
 /* ========================== Banner One section end ============================= */
