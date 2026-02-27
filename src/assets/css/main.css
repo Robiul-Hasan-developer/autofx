@@ -4990,6 +4990,21 @@ figure {
     color: hsl(var(--heading-color));
 }
 
+.nav-menu__item > a {
+    color: var(--heading-color);
+    padding-block: 36px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.nav-menu__item.has-submenu > a {
+    padding-inline-end: 20px;
+}
+
+.nav-menu-white .nav-menu__item > a {
+    color: #fff;
+}
+
 .nav-menu__link,
 .nav-submenu__link {
     font-size: 14px;
