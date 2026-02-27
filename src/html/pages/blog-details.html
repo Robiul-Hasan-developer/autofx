@@ -173,7 +173,7 @@
                                     </div>
                                 </div>
 
-                                <div class="vs-comments-wrap tw-mt-16 tw-pt-2">
+                                <div class="vs-comments-wrap">
                                     <h4 class="blog-inner-title">3 Comments</h4>
                                     <ul>
                                         <li class="vs-comment-item">
@@ -197,7 +197,7 @@
                                                 </div>
                                                 <div class="reply_and_edit">
                                                     <a href="blog-details.html" class="replay-btn">Replay
-                                                        <i class="fa-solid fa-reply text-main"></i>
+                                                        <i class="fa-solid fa-reply"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -216,8 +216,7 @@
                                                                 </div>
                                                                 <p class="text">
                                                                     consectetur adipisc ing elits dictum quam augue
-                                                                    laoret
-                                                                    liglero
+                                                                    laoret liglero
                                                                     comiodo conseqatcoe ctetur adipisc ing elit, sed do
                                                                     eiusmod
                                                                 </p>
@@ -225,7 +224,7 @@
                                                         </div>
                                                         <div class="reply_and_edit">
                                                             <a href="blog-details.html" class="replay-btn">Replay<i
-                                                                    class="fa-solid fa-reply text-main"></i></a>
+                                                                    class="fa-solid fa-reply"></i></a>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -252,59 +251,58 @@
                                                 </div>
                                                 <div class="reply_and_edit">
                                                     <a href="blog-details.html" class="replay-btn">Replay<i
-                                                            class="fa-solid fa-reply text-main"></i></a>
+                                                            class="fa-solid fa-reply"></i></a>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="vs-comment-form tw-mt-10 bg-neutral-200 tw-rounded-xl tw-px-32-px tw-py-10">
+                                <div class="vs-comment-form">
                                     <div id="respond" class="comment-respond">
                                         <div class="form-title">
-                                            <h4 class="h3 tw-mb-7">Leave a Comment</h4>
+                                            <h4 class="blog-inner-title">Leave a Comment</h4>
+                                            <p class="form-text">
+                                                Your email address will not be published. Required
+                                                fields are marked*
+                                            </p>
                                         </div>
-                                        <form action="#" class="form-submit">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-12">
-                                                    <textarea
-                                                        class="bg-white tw-rounded-md tw-px-6 tw-py-5 outline-0 border tw-border-dashed tw-duration-300 border-neutral-300 w-100 focus-border-main tw-h-180-px"
-                                                        placeholder="Your Message..."></textarea>
+                                        <form action="mail.php" method="post" class="row gx-20 gy-20 ajax-contact">
+                                            <div class="col-12 form-group">
+                                                <textarea class="form-control" placeholder="Your Comment *"></textarea>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" placeholder="Your Name *">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="email" class="form-control" placeholder="Your Email *">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="custom-checkbox notice">
+                                                    <input id="comment-cookies-consent" name="comment-cookies-consent"
+                                                        type="checkbox" value="yes">
+                                                    <label for="comment-cookies-consent">
+                                                        <span class="checkmark"></span>
+                                                        Save my name, email, and website next time I comment. *
+                                                    </label>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <input type="text"
-                                                        class="bg-white tw-rounded-md tw-px-6 tw-py-5 outline-0 border tw-border-dashed tw-duration-300 border-neutral-300 w-100 focus-border-main"
-                                                        placeholder="First Name *">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <input type="email"
-                                                        class="bg-white tw-rounded-md tw-px-6 tw-py-5 outline-0 border tw-border-dashed tw-duration-300 border-neutral-300 w-100 focus-border-main"
-                                                        placeholder="Your Email *">
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-check d-flex align-items-center tw-gap-4 tw-mt-4">
-                                                        <input class="form-check-input input-check-bg-main border-neutral-200 tw-border-dashed shadow-none tw-w-6 tw-h-6 float-none tw-rounded-md" type="checkbox"
-                                                            id="sameInfo">
-                                                        <label class="form-check-label tw-mt-1" for="sameInfo">
-                                                            Save my name, email, and website next time I comment. *
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <button type="submit"
-                                                        class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder button-shape shape-bg-neutral-200 tw-tracking-2-percent tw-mt-4"
-                                                        data-block="button">
-                                                        <span class="button__flair"></span>
-                                                        <span class="button__label">
-                                                            post comment
-                                                        </span>
-                                                    </button>
-                                                </div>
-
+                                            </div>
+                                            <div class="col-12 form-group mb-0">
+                                                <button type="submit"
+                                                    class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 text-uppercase fw-bolder button-shape shape-bg-white tw-tracking-2-percent tw-mt-4"
+                                                    data-block="button">
+                                                    <span class="button__flair"></span>
+                                                    <span class="button__label">
+                                                        post comment
+                                                    </span>
+                                                </button>
                                             </div>
                                         </form>
+                                        <p class="form-messages my-3"></p>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
                         <div class="col-lg-4">
