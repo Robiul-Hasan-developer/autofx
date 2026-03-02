@@ -246,7 +246,6 @@
         delay: 6000,
         disableOnInteraction: false,
       },
-      autoplay: false,
       pagination: {
         el: ".banner-slider-pagination",
         clickable: true,
