@@ -5655,12 +5655,12 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 }
 
 .banner-padding-four {
-    padding: 220px 0 212px;
+    padding: 130px 0 212px;
 }
 
 @media (min-width: 992px) {
     .banner-padding-four {
-        padding: 300px 0 212px;
+        padding: 130px 0 212px;
     }
 }
 

@@ -242,10 +242,10 @@
       loop: true,
       speed: 1000,
       effect: "fade",
-      // autoplay: {
-      //   delay: 6000,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
       autoplay: false,
       pagination: {
         el: ".banner-slider-pagination",
