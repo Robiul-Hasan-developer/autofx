@@ -13,11 +13,9 @@
         height: 50%;
         background-color: var(--vs-theme-color1);
         z-index: -1;
-        opacity: .9;
     }
 
     &::after {
-        background-image: url("../images/shapes/brand-bg-shape.png");
         background-color: transparent;
         opacity: 1;
     }
