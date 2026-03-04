@@ -137,18 +137,18 @@
   }
 }
 
-.nav-menu__item > a {
+.nav-menu__item>a {
   color: var(--heading-color);
   padding-block: 36px;
   font-weight: 600;
   width: 100%;
 }
 
-.nav-menu__item.has-submenu > a {
+.nav-menu__item.has-submenu>a {
   padding-inline-end: 20px;
 }
 
-.nav-menu-white .nav-menu__item > a {
+.nav-menu-white .nav-menu__item>a {
   color: #fff;
 }
 
@@ -223,14 +223,14 @@
 }
 
 .black-curve-shape::before {
-    position: absolute;
-    content: "";
-    background-color: #000;
-    width: 14px;
-    height: 100%;
-    z-index: 1;
-    inset-inline-end: -24px;
-    transform: skewX(22deg);
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 14px;
+  height: 100%;
+  z-index: 1;
+  inset-inline-end: -24px;
+  transform: skewX(22deg);
 }
 
 .mobile-padding-0 {
@@ -294,8 +294,16 @@ header.bg-white .nav-menu__item.pages-menu.activePage>a {
   color: hsl(var(--heading-color)) !important;
 }
 
-.active-link-black .nav-menu__item.activePage>a, .active-link-black .nav-menu__item.activePage>a::before {
+.active-link-black .nav-menu__item.activePage>a,
+.active-link-black .nav-menu__item.activePage>a::before {
   color: hsl(var(--heading-color)) !important;
+}
+
+
+.home-five-menu-padding {
+  .nav-menu__item>a {
+    padding-block: 22px !important;
+  }
 }
 
 /* ================================= Header Css End =========================== */
