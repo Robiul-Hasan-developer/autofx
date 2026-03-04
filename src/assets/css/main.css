@@ -1449,6 +1449,10 @@ figure {
     opacity: 0.1;
 }
 
+.pointer-events-none {
+    pointer-events: none;
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {

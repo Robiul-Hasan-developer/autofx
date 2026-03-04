@@ -246,7 +246,6 @@
         delay: 6000,
         disableOnInteraction: false,
       },
-      autoplay: false,
       pagination: {
         el: ".banner-slider-pagination",
         clickable: true,
@@ -608,7 +607,7 @@
         const el = entry.target;
         if (entry.isIntersecting && !el.classList.contains("is-visible")) {
           counterUp(el, {
-            duration: 3500,
+            duration: 2500,
             delay: 16,
           });
           el.classList.add("is-visible");
