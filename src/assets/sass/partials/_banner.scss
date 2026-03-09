@@ -71,4 +71,9 @@
     opacity: 1;
 }
 
+.res-margin {
+     @media (max-width: 991px) {
+        margin-top: 36px;
+    }
+}
 /* ========================== Banner One section end ============================= */

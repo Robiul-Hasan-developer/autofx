@@ -5246,6 +5246,11 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
         gap: 14px !important;
     }
 }
+
+.top-header-five {
+    background-color: #0C0C0C;
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -5814,6 +5819,11 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     opacity: 1;
 }
 
+@media (max-width: 991px) {
+    .res-margin {
+        margin-top: 36px;
+    }
+}
 /* ========================== Banner One section end ============================= */
 /* Brand One css start */
 .brand-one {
