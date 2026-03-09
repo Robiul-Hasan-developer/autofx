@@ -223,6 +223,7 @@ blockquote.vs-quote {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 0 9px 0;
+    gap: 20px;
 
     &--link {
       display: inline-flex;
@@ -231,9 +232,11 @@ blockquote.vs-quote {
       font-weight: 500;
       text-transform: capitalize;
       color: hsl(var(--body-color));
+      &:hover {
+        text-decoration: underline;
+      }
 
       &::after {
-        content: "/";
         padding-inline-end: 9px;
       }
 

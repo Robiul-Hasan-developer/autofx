@@ -401,6 +401,10 @@
     background-color: var(--neutral-200);
 }
 
+.shape-bg-neutral-light::before, .shape-bg-neutral-light::after {
+    background-color: #EDEDED;
+}
+
 /* =========================== Button Css End =================== */
 /* ================================= Form Css Start =========================== */
 .outline-0 {
@@ -1473,6 +1477,10 @@ figure {
 
 .text-40-px {
     font-size: 40px;
+}
+
+.text-60-px {
+    font-size: clamp(2.25rem, 0.8654rem + 2.8846vw, 3.75rem);
 }
 
 .text-140-px {
@@ -6522,6 +6530,7 @@ blockquote.vs-quote .quote-author {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 0 9px 0;
+    gap: 20px;
 }
 
 .vs-blog__meta--link {
@@ -6533,8 +6542,11 @@ blockquote.vs-quote .quote-author {
     color: hsl(var(--body-color));
 }
 
+.vs-blog__meta--link:hover {
+    text-decoration: underline;
+}
+
 .vs-blog__meta--link::after {
-    content: "/";
     padding-inline-end: 9px;
 }
 
@@ -7708,7 +7720,7 @@ blockquote.vs-quote .quote-author {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: transparent;
+    background-color: #fff;
     border: 1px dashed rgba(6, 47, 52, 0.4);
     border-radius: 4px;
     transition: all 0.2s ease;
@@ -7742,7 +7754,7 @@ blockquote.vs-quote .quote-author {
 }
 
 .comment-respond .form-control {
-    background-color: transparent !important;
+    background-color: #fff !important;
     border: none;
     height: 55px;
 }
@@ -7960,10 +7972,11 @@ blockquote.vs-quote .quote-author {
 
 .vs-comment-form {
     margin-top: 55px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid rgba(var(--vs-title-color-rgb), 0.1);
-    background: var(--vs-theme-color6);
+    background: #07070712;
     padding: 50px 36px;
+    margin-bottom: 0 !important;
 }
 
 @media (max-width: 991px) {
@@ -8246,6 +8259,7 @@ blockquote.vs-quote .quote-author {
 
 .recent-post .post-title a:hover {
     color: var(--vs-theme-color1);
+    text-decoration: underline;
 }
 
 .recent-post .post-title + .recent-post-meta {

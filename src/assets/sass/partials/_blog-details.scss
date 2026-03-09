@@ -35,7 +35,7 @@
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: transparent;
+  background-color: #fff;
   border: 1px dashed rgba(6, 47, 52, 0.4);
   border-radius: 4px;
   transition: all 0.2s ease;
@@ -64,7 +64,7 @@
   --bs-gutter-y: 20px;
 }
 .comment-respond .form-control {
-  background-color: transparent !important;
+  background-color: #fff !important;
   border: none;
   height: 55px;
 }
@@ -248,10 +248,11 @@
 
 .vs-comment-form {
   margin-top: 55px;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 1px solid rgba(var(--vs-title-color-rgb), 0.1);
-  background: var(--vs-theme-color6);
+  background: #07070712;
   padding: 50px 36px;
+  margin-bottom: 0 !important;
 }
 @media (max-width: 991px) {
   .vs-comment-form {
