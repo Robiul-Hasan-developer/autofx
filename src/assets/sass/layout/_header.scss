@@ -144,8 +144,14 @@
   width: 100%;
   text-transform: uppercase;
   font-size: 16px;
+
   @media (min-width: 1400px) {
     font-size: 18px;
+  }
+
+  @media (max-width: 991px) {
+    padding-block: 14px;
+    font-weight: 700;
   }
 }
 
@@ -202,7 +208,7 @@
   position: relative;
 
   @media (max-width: 991px) {
-    padding-block: 12px;
+    padding: 12px 24px;
   }
 }
 
@@ -311,4 +317,15 @@ header.bg-white .nav-menu__item.pages-menu.activePage>a {
   }
 }
 
+.lists-icon-gap-res {
+  @media (max-width: 359px) {
+    gap: 14px !important;
+  }
+}
+
+.search-box {
+  @media (max-width: 991px) {
+    gap: 14px !important;
+  }
+}
 /* ================================= Header Css End =========================== */

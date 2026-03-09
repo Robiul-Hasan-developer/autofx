@@ -559,7 +559,7 @@
         300: {
           slidesPerView: 1,
         },
-        992: {
+        768: {
           slidesPerView: 2,
         },
         1200: {

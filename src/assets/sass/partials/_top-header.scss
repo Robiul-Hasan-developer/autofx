@@ -19,5 +19,8 @@
     inset-inline-end: calc(100% - 1px);
     inset-block-start: 0;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    @media (max-width: 830px) {
+        display: none;
+    }
 }
 /* Top header css end */

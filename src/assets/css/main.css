@@ -5071,6 +5071,13 @@ figure {
     }
 }
 
+@media (max-width: 991px) {
+    .nav-menu__item > a {
+        padding-block: 14px;
+        font-weight: 700;
+    }
+}
+
 .nav-menu__item.has-submenu > a {
     padding-inline-end: 20px;
 }
@@ -5123,7 +5130,7 @@ figure {
 
 @media (max-width: 991px) {
     .logo-bg-shape {
-        padding-block: 12px;
+        padding: 12px 24px;
     }
 }
 
@@ -5228,6 +5235,17 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     padding-block: 22px !important;
 }
 
+@media (max-width: 359px) {
+    .lists-icon-gap-res {
+        gap: 14px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .search-box {
+        gap: 14px !important;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -5712,6 +5730,11 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
+@media (max-width: 830px) {
+    .triangle-shape::after {
+        display: none;
+    }
+}
 /* Top header css end */
 /* ========================== Banner One section start ============================= */
 .banner {
@@ -5730,7 +5753,7 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 
 @media (min-width: 992px) {
     .banner-padding {
-        padding: 260px 0 212px;
+        padding: 227px 0 212px;
     }
 }
 
@@ -5745,7 +5768,7 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 }
 
 .banner-img {
-    inset-inline-start: 52%;
+    inset-inline-start: 50%;
 }
 
 .wheel-img {
@@ -6210,10 +6233,16 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 /* ================================ banner five section end ============================ */
 /* Breadcrumb css start */
 .breadcrumb {
-    padding: 180px 0 150px;
+    padding: 180px 0 90px;
 }
 
 @media (min-width: 768px) {
+    .breadcrumb {
+        padding: 240px 0 100px;
+    }
+}
+
+@media (min-width: 992px) {
     .breadcrumb {
         padding: 345px 0 150px;
     }
@@ -7675,6 +7704,20 @@ blockquote.vs-quote .quote-author {
 .input-check-bg-main:checked {
     background-color: var(--vs-theme-color1);
     border-color: var(--vs-theme-color1) !important;
+}
+
+.map-style {
+    margin-bottom: -10px;
+    filter: grayscale(1);
+}
+
+.para-style {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
 }
 
 /*------------------- Comments  -------------------*/

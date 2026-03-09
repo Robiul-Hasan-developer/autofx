@@ -1352,3 +1352,18 @@ blockquote.vs-quote {
   background-color: var(--vs-theme-color1);
   border-color: var(--vs-theme-color1) !important;
 }
+
+.map-style {
+    margin-bottom: -10px;
+    filter: grayscale(1);
+}
+
+
+.para-style {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
