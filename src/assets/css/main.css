@@ -1052,6 +1052,10 @@ figure {
     background-color: #FF450C;
 }
 
+.bg-neutral-light {
+    background-color: #07070712;
+}
+
 .hover-bg-main:hover {
     background-color: var(--vs-theme-color1) !important;
 }
@@ -3887,6 +3891,57 @@ figure {
         padding-block-end: 120px;
     }
 }
+
+.py-110 {
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+}
+
+@media (min-width: 576px) {
+    .py-110 {
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .py-110 {
+        padding-block-start: 110px;
+        padding-block-end: 110px;
+    }
+}
+
+.pb-110 {
+    padding-block-end: 60px;
+}
+
+@media (min-width: 576px) {
+    .pb-110 {
+        padding-block-end: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pb-110 {
+        padding-block-end: 110px;
+    }
+}
+
+.pt-110 {
+    padding-block-start: 60px;
+}
+
+@media (min-width: 576px) {
+    .pt-110 {
+        padding-block-start: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pt-110 {
+        padding-block-start: 110px;
+    }
+}
 /* ================================= Padding Css End =========================== */
 /* Placeholder Classes Start */
 .tw-placeholder-text-neutral-100::placeholder {
@@ -4998,6 +5053,14 @@ figure {
     padding-block: 36px;
     font-weight: 600;
     width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+@media (min-width: 1400px) {
+    .nav-menu__item > a {
+        font-size: 18px;
+    }
 }
 
 .nav-menu__item.has-submenu > a {

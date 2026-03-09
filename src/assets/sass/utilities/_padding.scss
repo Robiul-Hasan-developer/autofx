@@ -138,4 +138,45 @@
   }
 }
 
+
+
+.py-110 {
+  padding-block-start: 60px;
+  padding-block-end: 60px;
+
+  @media (min-width: 576px) {
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+
+  @media (min-width: 992px) {
+    padding-block-start: 110px;
+    padding-block-end: 110px;
+  }
+}
+
+.pb-110 {
+  padding-block-end: 60px;
+
+  @media (min-width: 576px) {
+    padding-block-end: 80px;
+  }
+
+  @media (min-width: 992px) {
+    padding-block-end: 110px;
+  }
+}
+
+.pt-110 {
+  padding-block-start: 60px;
+
+  @media (min-width: 576px) {
+    padding-block-start: 80px;
+  }
+
+  @media (min-width: 992px) {
+    padding-block-start: 110px;
+  }
+}
+
 /* ================================= Padding Css End =========================== */
