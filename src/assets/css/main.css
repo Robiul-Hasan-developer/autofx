@@ -111,9 +111,9 @@
   /* Font Size Variable Start */
     --heading-one: clamp(2.75rem, 0.0962rem + 5.5288vw, 5.625rem);
     --heading-two: clamp(2rem, 0.9615rem + 2.1635vw, 3.125rem);
-    --heading-three: clamp(1.5rem, 1.1538rem + 0.7212vw, 1.875rem);
-    --heading-four: clamp(1.375rem, 1.1442rem + 0.4808vw, 1.625rem);
-    --heading-five: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.5rem);
+    --heading-three: clamp(1.625rem, 1.1538rem + 0.7212vw, 1.875rem);
+    --heading-four: clamp(1.625rem, 1.1442rem + 0.4808vw, 1.625rem);
+    --heading-five: clamp(1.5rem, 1.0192rem + 0.4808vw, 1.5rem);
     --heading-six: 1rem // 16px
   /* Font Size End */
   /* template main color */
@@ -6084,6 +6084,10 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     background-color: var(--vs-theme-color1);
     inset-inline-start: -32px;
     inset-block-start: 0;
+}
+
+.border-rounded-before {
+    height: 76%;
 }
 
 /* About Two section end */
