@@ -8,7 +8,7 @@
 }
 
 .banner-padding {
-    padding: 180px 0 212px;
+    padding: 140px 0 120px;
 
     @media (min-width: 992px) {
         padding: 227px 0 212px;
@@ -16,7 +16,7 @@
 }
 
 .banner-padding-four {
-    padding: 220px 0 212px;
+    padding: 140px 0 120px;
 
     @media (min-width: 992px) {
         padding: 300px 0 212px;
@@ -55,8 +55,11 @@
 .pagination-absolute-bottom {
     position: absolute;
     bottom: 0;
-    margin-bottom: 94px;
     inset-inline-start: 0;
+    margin-bottom: 60px;
+    @media (min-width: 992px) {
+        margin-bottom: 94px;
+    }
 }
 
 

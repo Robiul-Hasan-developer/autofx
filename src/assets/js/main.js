@@ -308,7 +308,7 @@
         delay: 2000,
         disableOnInteraction: false,
       },
-      autoplay: true,
+      autoplay: false,
       speed: 1000,
       grabCursor: true,
       loop: true,

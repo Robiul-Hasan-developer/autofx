@@ -2972,6 +2972,10 @@ figure {
     max-height: 310px;
 }
 
+.tw-max-h-332-px {
+    max-height: 332px;
+}
+
 .tw-max-h-380-px {
     max-height: 380px;
 }
@@ -3846,6 +3850,10 @@ figure {
 
 .py-80-px {
     padding-block-start: 80px;
+    padding-block-end: 80px;
+}
+
+.pb-80-px {
     padding-block-end: 80px;
 }
 
@@ -5073,7 +5081,7 @@ figure {
 
 @media (max-width: 991px) {
     .nav-menu__item > a {
-        padding-block: 14px;
+        padding-block: 12px;
         font-weight: 700;
     }
 }
@@ -5753,7 +5761,7 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 }
 
 .banner-padding {
-    padding: 180px 0 212px;
+    padding: 140px 0 120px;
 }
 
 @media (min-width: 992px) {
@@ -5763,7 +5771,7 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 }
 
 .banner-padding-four {
-    padding: 220px 0 212px;
+    padding: 140px 0 120px;
 }
 
 @media (min-width: 992px) {
@@ -5804,8 +5812,14 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 .pagination-absolute-bottom {
     position: absolute;
     bottom: 0;
-    margin-bottom: 94px;
     inset-inline-start: 0;
+    margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+    .pagination-absolute-bottom {
+        margin-bottom: 94px;
+    }
 }
 
 .banner-contents {
@@ -5837,7 +5851,7 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     width: 100%;
     inset-block-start: 0;
     inset-inline-start: 0;
-    height: 50%;
+    height: 55%;
     background-color: var(--vs-theme-color1);
     z-index: -1;
 }
