@@ -332,4 +332,23 @@ header.bg-white .nav-menu__item.pages-menu.activePage>a {
 .top-header-five {
   background-color: #0C0C0C;
 }
+
+.nav-menu__item>a {
+  @media (max-width: 991px) {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 991px) {
+  .has-submenu>a::before {
+    width: 24px;
+    height: 24px;
+    background: #b3b3b333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}
+
 /* ================================= Header Css End =========================== */

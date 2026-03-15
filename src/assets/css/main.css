@@ -5263,6 +5263,23 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     background-color: #0C0C0C;
 }
 
+@media (max-width: 991px) {
+    .nav-menu__item > a {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+@media (max-width: 991px) {
+    .has-submenu > a::before {
+        width: 24px;
+        height: 24px;
+        background: #b3b3b333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -5339,7 +5356,7 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 
 .nav-menu--mobile .nav-submenu__link {
     width: 100%;
-    padding: 10px 0;
+    padding: 13px 0;
     border-bottom: 1px solid var(--neutral-200) !important;
 }
 
@@ -7756,12 +7773,12 @@ blockquote.vs-quote .quote-author {
     text-transform: capitalize;
 }
 
-.blog-link-gap {
+.link-res-gap {
     margin-top: 28px;
 }
 
 @media (min-width: 1200px) {
-    .blog-link-gap {
+    .link-res-gap {
         margin-top: 40px;
     }
 }
