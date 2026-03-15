@@ -215,15 +215,15 @@ blockquote.vs-quote {
   }
 
   &__heading {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__meta {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 0 9px 0;
-    gap: 20px;
+    margin: 0 0 16px 0;
+    gap: clamp(0.875rem, 0.5288rem + 0.7212vw, 1.25rem);
 
     &--link {
       display: inline-flex;
@@ -232,6 +232,7 @@ blockquote.vs-quote {
       font-weight: 500;
       text-transform: capitalize;
       color: hsl(var(--body-color));
+      line-height: 1;
       &:hover {
         text-decoration: underline;
       }

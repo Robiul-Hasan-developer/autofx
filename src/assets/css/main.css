@@ -1625,6 +1625,16 @@ figure {
         font-size: 18px;
     }
 }
+
+.text-res-24-px {
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .text-res-24-px {
+        font-size: 18px;
+    }
+}
 /* Font Size Class End */
 .font-heading {
     font-family: var(--heading-font);
@@ -1937,6 +1947,10 @@ figure {
 
 .tw-gap-16 {
     gap: var(--size-16);
+}
+
+.tw-gap-24-px {
+    gap: clamp(0.875rem, -0.75rem + 2vw, 1.5rem);
 }
 
 .tw-gap-26-px {
@@ -2874,6 +2888,10 @@ figure {
 
 .tw--mt-70-px {
     margin-top: -70px;
+}
+
+.mt-res-64-px {
+    margin-top: clamp(1.875rem, -0.0865rem + 4.0865vw, 4rem);
 }
 
 .my-120 {
@@ -5280,6 +5298,12 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
         border-radius: 50%;
     }
 }
+
+@media (max-width: 991px) {
+    .logo-res-130-px {
+        max-width: 130px;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
@@ -6600,15 +6624,15 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-blog__heading {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .vs-blog__meta {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 0 9px 0;
-    gap: 20px;
+    margin: 0 0 16px 0;
+    gap: clamp(0.875rem, 0.5288rem + 0.7212vw, 1.25rem);
 }
 
 .vs-blog__meta--link {
@@ -6618,6 +6642,7 @@ blockquote.vs-quote .quote-author {
     font-weight: 500;
     text-transform: capitalize;
     color: hsl(var(--body-color));
+    line-height: 1;
 }
 
 .vs-blog__meta--link:hover {
@@ -8096,7 +8121,7 @@ blockquote.vs-quote .quote-author {
 
 @media (max-width: 991px) {
     .vs-comment-form {
-        padding: 20px 20px 20px;
+        padding: 32px 20px 28px 20px;
     }
 }
 
@@ -8199,7 +8224,16 @@ blockquote.vs-quote .quote-author {
     .vs-comments-wrap .reply_and_edit {
         position: relative;
         top: 0;
-        margin: 15px 0 0 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .vs-comments-wrap .reply_and_edit {
+        margin-left: 0px;
+    }
+
+    .vs-comments-wrap .reply_and_edit .replay-btn {
+        margin-top: 16px;
     }
 }
 /* Small devices */
@@ -8266,8 +8300,8 @@ blockquote.vs-quote .quote-author {
 }
 
 .widget {
-    padding-block: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
-    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 2rem);
+    padding-block: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2rem);
     background-color: var(--neutral-100);
     position: relative;
     margin-bottom: 30px;
@@ -8797,7 +8831,7 @@ blockquote.vs-quote .quote-author {
     }
 
     .recent-post .post-title {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 22px;
     }
 
@@ -9197,7 +9231,7 @@ blockquote.vs-quote .quote-author {
     display: block;
     background-color: hsl(var(--white));
     color: var(--vs-body-color);
-    padding: 24px 18px;
+    padding: 24px 16px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1;

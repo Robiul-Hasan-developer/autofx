@@ -40,4 +40,11 @@
     font-size: 18px;
   }
 }
+
+.text-res-24-px {
+  font-size: 24px;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
+}
 /* Font Size Class End */

@@ -47,8 +47,8 @@
 }
 
 .widget {
-    padding-block: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
-    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 2rem);
+    padding-block: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2rem);
     background-color: var(--neutral-100);
     position: relative;
     margin-bottom: 30px;
@@ -583,7 +583,7 @@
 
     .recent-post {
         .post-title {
-            font-size: 14px;
+            font-size: 20px;
             line-height: 22px;
         }
 

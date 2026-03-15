@@ -351,4 +351,10 @@ header.bg-white .nav-menu__item.pages-menu.activePage>a {
   }
 }
 
+.logo-res-130-px {
+  @media (max-width: 991px) {
+    max-width: 130px;
+  }
+}
+
 /* ================================= Header Css End =========================== */

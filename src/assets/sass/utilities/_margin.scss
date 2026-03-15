@@ -62,9 +62,13 @@
   &-me-auto {
     margin-inline-end: auto;
   }
-    &--mt-70-px {
+  &--mt-70-px {
     margin-top: -70px;
   }
+}
+
+.mt-res-64-px {
+  margin-top: clamp(1.875rem, -0.0865rem + 4.0865vw, 4rem);
 }
 
 .my-120 {
