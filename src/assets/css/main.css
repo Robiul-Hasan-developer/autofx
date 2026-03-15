@@ -3857,6 +3857,10 @@ figure {
     padding-block-end: 80px;
 }
 
+.pt-80-px {
+    padding-block-start: 80px;
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;

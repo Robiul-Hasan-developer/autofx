@@ -142,33 +142,33 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-if ($(".splitTextStyleOne").length > 0) {
-  let character = gsap.utils.toArray(".splitTextStyleOne");
-  character.forEach((character) => {
-    let split_char = new SplitText(character, {
-      type: "chars, words",
-      lineThreshold: 0.3,
-    });
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: character,
-        start: "top 90%",
-        end: "bottom 60%",
-        scrub: false,
-        markers: false,
-        toggleActions: "play none none none",
-      },
-    });
-    tl2.from(split_char.chars, {
-      autoAlpha: 0,
-      x: 40,
-      duration: 0.5,
-      opacity: 0,
-      stagger: 0.05,
-      ease: "back.out(1.7)",
-    });
-  });
-}
+// if ($(".splitTextStyleOne").length > 0) {
+//   let character = gsap.utils.toArray(".splitTextStyleOne");
+//   character.forEach((character) => {
+//     let split_char = new SplitText(character, {
+//       type: "chars, words",
+//       lineThreshold: 0.3,
+//     });
+//     const tl2 = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: character,
+//         start: "top 90%",
+//         end: "bottom 60%",
+//         scrub: false,
+//         markers: false,
+//         toggleActions: "play none none none",
+//       },
+//     });
+//     tl2.from(split_char.chars, {
+//       autoAlpha: 0,
+//       x: 40,
+//       duration: 0.5,
+//       opacity: 0,
+//       stagger: 0.05,
+//       ease: "back.out(1.7)",
+//     });
+//   });
+// }
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
