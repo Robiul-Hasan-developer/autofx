@@ -742,7 +742,7 @@ blockquote.vs-quote {
       color: var(--vs-white-color);
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 162.5%;
       text-transform: capitalize;
       margin-bottom: 0;
@@ -797,6 +797,9 @@ blockquote.vs-quote {
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      &:hover {
+        color: var(--vs-theme-color1);
+      }
     }
 
     @include respond-below(md) {
@@ -866,7 +869,7 @@ blockquote.vs-quote {
     .text {
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 175%;
       text-transform: capitalize;
 
@@ -1366,4 +1369,19 @@ blockquote.vs-quote {
     line-height: 26px;
     letter-spacing: 0%;
     text-transform: capitalize;
+}
+
+
+.blog-link-gap {
+  margin-top: 28px;
+  @media (min-width: 1200px) {
+    margin-top: 40px;
+  }
+}
+
+.blog-content {
+  padding-inline-start: 16px;
+  @media (min-width: 1200px) {
+    padding-inline-start: 30px;
+  }
 }
