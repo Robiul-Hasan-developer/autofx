@@ -365,4 +365,8 @@
     padding: 30px 15px;
   }
 }
+
+.wp-block-heading {
+    margin-bottom: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+}
 /*------------------- Comments End  -------------------*/

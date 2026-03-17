@@ -8283,6 +8283,11 @@ blockquote.vs-quote .quote-author {
         padding: 30px 15px;
     }
 }
+
+.wp-block-heading {
+    margin-bottom: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+}
+
 /*------------------- Comments End  -------------------*/
 .wp-block-search {
     display: flex;
@@ -8419,6 +8424,7 @@ blockquote.vs-quote .quote-author {
     height: 95px;
     overflow: hidden;
     border-radius: 6px;
+    flex-shrink: 0;
 }
 
 .recent-post .media-img a {
@@ -8909,7 +8915,7 @@ blockquote.vs-quote .quote-author {
 /* Extra small devices */
 @media (max-width: 575px) {
     .widget {
-        padding: 30px 20px;
+        padding: 24px 20px;
     }
 }
 
