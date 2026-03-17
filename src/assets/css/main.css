@@ -7819,6 +7819,9 @@ blockquote.vs-quote .quote-author {
 
 .map-style {
     margin-bottom: -10px;
+}
+
+.map-style iframe {
     filter: grayscale(1);
 }
 
