@@ -5924,6 +5924,11 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     border-right: 0 !important;
 }
 
+@media (min-width: 1200px) {
+    .xl-bg-main-two {
+        background-color: var(--vs-theme-color2);
+    }
+}
 /* Brand One css end */
 /* Service Css start */
 .dashed-arrow-right::before {
@@ -6004,6 +6009,15 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     inset-inline-end: 0;
 }
 
+.item-visible-in-big-screen {
+    display: none;
+}
+
+@media (min-width: 1750px) {
+    .item-visible-in-big-screen {
+        display: flex;
+    }
+}
 /* choose us one css end */
 /* Team section css start */
 .hover-bg-main-light::before {
@@ -6192,6 +6206,10 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
 
 .bottom-border-only::before {
     border-top: 0;
+}
+
+.service-two-item__content {
+    padding-bottom: clamp(1.5rem, 0.3462rem + 2.4038vw, 2.75rem);
 }
 
 /* Service Two css end */

@@ -17,4 +17,10 @@
     }
 }
 
+.item-visible-in-big-screen {
+    display: none;
+    @media (min-width: 1750px) {
+        display: flex;
+    }
+}
 /* choose us one css end */
