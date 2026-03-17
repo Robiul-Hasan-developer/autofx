@@ -18,6 +18,10 @@
 .banner-padding-four {
     padding: 140px 0 120px;
 
+     @media (min-width: 768px) {
+        padding: 220px 0 120px;
+    }
+
     @media (min-width: 992px) {
         padding: 300px 0 212px;
     }
@@ -57,6 +61,7 @@
     bottom: 0;
     inset-inline-start: 0;
     margin-bottom: 60px;
+
     @media (min-width: 992px) {
         margin-bottom: 94px;
     }
@@ -75,8 +80,9 @@
 }
 
 .res-margin {
-     @media (max-width: 991px) {
+    @media (max-width: 991px) {
         margin-top: 36px;
     }
 }
+
 /* ========================== Banner One section end ============================= */

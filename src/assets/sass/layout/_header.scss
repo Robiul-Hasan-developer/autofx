@@ -302,11 +302,20 @@ header.bg-white .nav-submenu {
 }
 
 header.bg-white .nav-menu__item.pages-menu.activePage>a {
-  color: hsl(var(--heading-color)) !important;
+  color: var(--heading-color) !important;
 }
 
 .active-link-black .nav-menu__item.activePage>a,
 .active-link-black .nav-menu__item.activePage>a::before {
+  color: var(--heading-color) !important;
+}
+
+.home-five .bg-white .nav-menu__item.pages-menu.activePage>a {
+  color: hsl(var(--heading-color)) !important;
+}
+
+.home-five .active-link-black .nav-menu__item.activePage>a,
+.home-five .active-link-black .nav-menu__item.activePage>a::before {
   color: hsl(var(--heading-color)) !important;
 }
 
