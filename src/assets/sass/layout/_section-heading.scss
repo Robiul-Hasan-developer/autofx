@@ -31,4 +31,13 @@
     }
 }
 
+
+.small-left-align {
+    @media (max-width: 575px) {
+        display: flex;
+        flex-direction: column;
+        text-align: start !important;
+    }
+}
+
 /* ======================== Section Heading Css end ========================== */

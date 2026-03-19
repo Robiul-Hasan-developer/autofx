@@ -5625,6 +5625,13 @@ header.bg-white .nav-menu__item.pages-menu.activePage > a {
     clip-path: polygon(0 0, 0 100%, 100% 50%);
 }
 
+@media (max-width: 575px) {
+    .small-left-align {
+        display: flex;
+        flex-direction: column;
+        text-align: start !important;
+    }
+}
 /* ======================== Section Heading Css end ========================== */
 /* Play Animation css start */
 .play-button::before {
