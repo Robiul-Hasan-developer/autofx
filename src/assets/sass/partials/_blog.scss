@@ -185,7 +185,7 @@ blockquote.vs-quote {
 
 .vs-blog {
   $self: &;
-  margin-bottom: 50px;
+  margin-bottom:  clamp(1.5rem, -0.0865rem + 4.0865vw, 3.125rem);;
   position: relative;
 
   &__ele1 {

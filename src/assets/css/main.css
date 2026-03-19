@@ -2894,6 +2894,14 @@ figure {
     margin-top: clamp(1.875rem, -0.0865rem + 4.0865vw, 4rem);
 }
 
+.mt-res-60-px {
+    margin-top: clamp(1.5rem, -0.0865rem + 4.0865vw, 3.75rem);
+}
+
+.mt-res-20-px {
+    margin-top: clamp(0.5rem, -0.0865rem + 1.0865vw, 1.25rem);
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -5636,6 +5644,12 @@ header.bg-white .nav-menu__item.pages-menu:hover > a {
         text-align: start !important;
     }
 }
+
+@media (max-width: 991px) {
+    .cta-one {
+        padding-block: 80px;
+    }
+}
 /* ======================== Section Heading Css end ========================== */
 /* Play Animation css start */
 .play-button::before {
@@ -6637,7 +6651,7 @@ blockquote.vs-quote .quote-author {
 }
 
 .vs-blog {
-    margin-bottom: 50px;
+    margin-bottom: clamp(1.5rem, -0.0865rem + 4.0865vw, 3.125rem);
     position: relative;
 }
 
@@ -9411,7 +9425,7 @@ blockquote.vs-quote .quote-author {
 .widget_pages a,
 .widget_archive a,
 .widget_categories a {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 /* Footer Css Start */

@@ -71,6 +71,14 @@
   margin-top: clamp(1.875rem, -0.0865rem + 4.0865vw, 4rem);
 }
 
+.mt-res-60-px {
+  margin-top: clamp(1.5rem, -0.0865rem + 4.0865vw, 3.75rem);
+}
+
+.mt-res-20-px {
+  margin-top: clamp(.5rem, -0.0865rem + 1.0865vw, 1.25rem);
+}
+
 .my-120 {
   margin-block-start: 60px;
   margin-block-end: 60px;
