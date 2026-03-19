@@ -301,8 +301,11 @@ header.bg-white .nav-submenu {
   border-top-right-radius: 0;
 }
 
-header.bg-white .nav-menu__item.pages-menu.activePage>a {
+header.bg-white .nav-menu__item.pages-menu.activePage>a, header.bg-white .nav-menu__item.pages-menu.activePage>a::before {
   color: var(--heading-color) !important;
+}
+header.bg-white .nav-menu__item.pages-menu:hover > a {
+    color: red !important;
 }
 
 .active-link-black .nav-menu__item.activePage>a,
